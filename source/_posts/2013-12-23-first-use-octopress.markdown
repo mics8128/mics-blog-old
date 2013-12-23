@@ -14,3 +14,11 @@ categories:
 可以用vim來寫blog
 
 好特別XDDD
+
+<!--more-->
+
+Reference
+----
+* http://markdown.tw/ - markdown語法教學
+* http://octopress.org/docs/setup/ - octopress初始化教學
+* http://octopress.org/docs/deploying/github/ - octopress on github教學
