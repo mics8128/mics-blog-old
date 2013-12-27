@@ -8,6 +8,7 @@ categories:
 - mysql
 - database
 - note
+- program
 ---
 
 php套件管理
