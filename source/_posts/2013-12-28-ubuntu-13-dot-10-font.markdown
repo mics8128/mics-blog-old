@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Ubuntu 13.10 字體優化 & OpenJDK font patch"
+title: "Ubuntu 13.10 Netbeans 字體優化 & OpenJDK font patch"
 date: 2013-12-28 20:16:22 +0800
 comments: true
 categories: 
 - ubuntu
 - font
 - linux
+- netbeans
 ---
 
 最近在公司開發php的專案，使用Netbeans來作開發，但是字體有夠詭異的，所以就開始上網找解決方案了。
@@ -60,4 +61,4 @@ PPA
 
 [1]:http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html
 [2]:http://www.webupd8.org/2013/06/install-openjdk-patched-with-font-fixes.html
-[3]:http://blog.lyhdev.com/2013/11/netbeans-ide-on-ubuntu-linux.html]
+[3]:http://blog.lyhdev.com/2013/11/netbeans-ide-on-ubuntu-linux.html
