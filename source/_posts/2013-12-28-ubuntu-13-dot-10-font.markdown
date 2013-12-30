@@ -14,6 +14,7 @@ categories:
 
 
 教學: 
+<!--more-->
 
 在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到
 
