@@ -8,6 +8,8 @@ slug: html-box-sizing
 - padding
 - width
 
+<!-- PELICAN_END_SUMMARY -->
+
 但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上
 
     * { 

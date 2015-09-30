@@ -47,7 +47,7 @@ DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'search']
 
 #Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['tag_cloud', 'tipue_search' ]
+PLUGINS = ['tag_cloud', 'tipue_search', 'summary']
 
 #Added setting
 USE_FOLDER_AS_CATEGORY = False

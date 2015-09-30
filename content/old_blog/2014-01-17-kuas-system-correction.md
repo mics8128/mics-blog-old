@@ -12,7 +12,7 @@ slug: kuas-system-correction
 **<font color=red>注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決</font>**
 
 ##以下是使用教學
-<!--more-->
+<!-- PELICAN_END_SUMMARY -->
 
 首先安裝Firefox plugin Greasemonkey (好像chrome也有??，我只有在firefox上測試而已)
 

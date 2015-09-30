@@ -10,7 +10,7 @@ slug: first-use-octopress
 
 好特別XDDD
 
-<!--more-->
+<!-- PELICAN_END_SUMMARY -->
 
 Reference
 ----

@@ -5,7 +5,7 @@ slug: eye-protection-redshift
 今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做[f.lux](http://justgetflux.com/)，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到[Redshift](http://jonls.dk/redshift/)這套軟體，於是就把他裝上去了。
 
 詳細安裝方法請繼續閱讀
-<!-- more -->
+<!-- PELICAN_END_SUMMARY -->
 
 因為Ubuntu 13.10套件庫內已經有了，所以直接安裝即可
 

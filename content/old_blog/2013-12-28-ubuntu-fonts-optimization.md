@@ -4,6 +4,7 @@ slug: ubuntu-fonts-optimization
 
 最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。
 
+<!-- PELICAN_END_SUMMARY -->
 
 教學: 
 

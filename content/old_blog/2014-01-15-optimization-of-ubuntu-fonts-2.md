@@ -3,7 +3,7 @@ date: 2014-01-15 21:01 +0800
 slug: optimization-of-ubuntu
 
 一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 [Netbeans on Ubuntu字體優化](http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization) 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章([小心！GB 18030 就在你身邊](http://www.techbang.com/posts/16514))，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。
-<!--more-->
+<!-- PELICAN_END_SUMMARY -->
 我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)([教育部資料下載頁面](http://www.edu.tw/treasure/filedown.aspx?Node=1123&Index=2&WID=c5ad5187-55ef-4811-8219-e946fe04f725))，下載方式參考下圖
 
 ![螢幕擷圖存為 2014-01-16 17:37:49.png](http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png)

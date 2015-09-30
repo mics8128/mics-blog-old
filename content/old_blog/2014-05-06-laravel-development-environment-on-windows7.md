@@ -6,7 +6,7 @@ Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學
 
 大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。
 
-<!-- more -->
+<!-- PELICAN_END_SUMMARY -->
 
 ## 下載php
 * http://windows.php.net/download/
