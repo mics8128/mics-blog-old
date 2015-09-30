@@ -49,8 +49,3 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d (%a)"
 THEME = "pelican-bootstrap3"
-
-
-#filters
-
-JINJA_FILTERS = {'mytrans': custom_filters.mytrans}
