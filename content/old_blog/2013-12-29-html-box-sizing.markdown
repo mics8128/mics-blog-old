@@ -1,5 +1,6 @@
-title: "html box sizing"
+title: html box sizing
 date: 2013-12-29 12:25:25 +0800
+slug: html-box-sizing
 
 以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度
 

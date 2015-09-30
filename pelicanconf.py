@@ -26,8 +26,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),)
+LINKS = ()
+#LINKS = (('Pelican', 'http://getpelican.com/'),
+#         ('Python.org', 'http://python.org/'),)
 
 # Social widget
 SOCIAL = (('Facebook', 'https://www.facebook.com/mics8128'),
@@ -41,18 +42,27 @@ RELATIVE_URLS = True
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
+# Direct theme
+DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'search']
+
 #Plugins
 PLUGIN_PATHS = ['./pelican-plugins']
-PLUGINS = ['tag_cloud', ]
+PLUGINS = ['tag_cloud', 'tipue_search' ]
 
 #Added setting
-USE_FOLDER_AS_CATEGORY = True
-DEFAULT_CATEGORY = "others"
+USE_FOLDER_AS_CATEGORY = False
+
+DEFAULT_CATEGORY = "Blog"
 DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
+# GITHUB_USER = "mics8128"
+
+
 DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 THEME = "./pelican-bootstrap3"
+CC_LICENSE = "by-nc-sa"
 
 #URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
