@@ -42,8 +42,8 @@ STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 #Plugins
-PLUGIN_PATHS = ['./pelican-plugin']
-PLUGINS = ['tag_cloud']
+PLUGIN_PATHS = ['./pelican-plugins']
+PLUGINS = ['tag_cloud', ]
 
 #Added setting
 USE_FOLDER_AS_CATEGORY = True
@@ -52,7 +52,6 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"
-DISQUS_SITENAME = "mics8128"
 THEME = "./pelican-bootstrap3"
 
 #URLs
