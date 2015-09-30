@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+# add path
 import os
 import sys
 sys.path.append(os.curdir)
 
-import custom_filters
 
 AUTHOR = u'Mics'
 SITENAME = u"Mics Blog"
@@ -51,3 +51,6 @@ DEFAULT_DATE_FORMAT = "%Y-%m-%d (%a)"
 THEME = "pelican-bootstrap3"
 
 
+#filters
+
+JINJA_FILTERS = {'mytrans': custom_filters.mytrans}
