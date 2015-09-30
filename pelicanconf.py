@@ -54,5 +54,5 @@ THEME = "pelican-bootstrap3"
 
 
 #URLs
-ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{slug}/index.html'
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
