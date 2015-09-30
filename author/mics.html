@@ -1,62 +1,85 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="zh-tw" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-        <meta charset="utf-8" />
-        <title>Mics's Blog - Mics</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+    <title>Articles by Mics - Mics Blog</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+
+
+        <meta name="author" content="Mics" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="Mics Blog" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Mics Blog"/>
+        <meta property="og:url" content=".."/>
+        <meta property="og:description" content="Mics Blog"/>
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
+
+
+
+
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">Mics's Blog </a></h1>
-                <nav><ul>
-                    <li><a href="/pages/about-mics.html">About Mics</a></li>
-                    <li><a href="/category/misc.html">misc</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/my-first-review.html">My First Review</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2015-09-30T00:39:00+08:00">
-                Published: 三 30 9月 2015
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/mics.html">Mics</a>
-        </address>
-<p>In <a href="/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info --><p>哈囉測試囉~~~~~</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/html-box-sizing.html" rel="bookmark"
-                           title="Permalink to "html box sizing"">"html box sizing"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-12-29T12:25:25+08:00">
-                Published: 日 29 12月 2013
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/mics.html">Mics</a>
-        </address>
-<p>In <a href="/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info -->                <p>以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度</p>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../" class="navbar-brand">
+Mics Blog            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="../pages/about-mics.html">
+                             About Mics
+                          </a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <article>
+                <h2><a href="../gai-yong-pelicanlai-zuo-bu-luo-ge.html">改用Pelican來做部落格</a></h2>
+                <div class="summary"><p>已經很久沒寫部落格了，但是看到山姆鍋的文章i<a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/">程式人就該有個部落格</a>就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。</p>
+<p>然後加上我比較慣用Python，所以改用Pelican來當作部落格使用。</p>
+<p>在這邊紀錄一下用了什麼東西</p>
+<ul>
+<li><a href="http://blog.getpelican.com/">Pelican</a></li>
+<li><a href="https://github.com/DandyDev/pelican-bootstrap3">pelican-bootstrap3</a></li>
+</ul>
+                    <a class="btn btn-default btn-xs" href="../gai-yong-pelicanlai-zuo-bu-luo-ge.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../html-box-sizing.html">"html box sizing"</a></h2>
+                <div class="summary"><p>以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度</p>
 <ul>
 <li>border</li>
 <li>padding</li>
@@ -76,28 +99,13 @@
 <p>這個方法呢，會讓<em>內容+padding+border = 設定寬度</em>，多美好阿:D </p>
 <h2>參考資料</h2>
 <p>http://zh.learnlayout.com/box-sizing.html</p>
-                <a class="readmore" href="/html-box-sizing.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/di-yi-ci-shi-yong-octopress.html" rel="bookmark"
-                           title="Permalink to "第一次使用Octopress"">"第一次使用Octopress"</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2013-12-23T09:31:52+08:00">
-                Published: 一 23 12月 2013
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/mics.html">Mics</a>
-        </address>
-<p>In <a href="/category/misc.html">misc</a>.</p>
-
-</footer><!-- /.post-info -->                <p>第一次使用octopress :D</p>
+                    <a class="btn btn-default btn-xs" href="../html-box-sizing.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../di-yi-ci-shi-yong-octopress.html">"第一次使用Octopress"</a></h2>
+                <div class="summary"><p>第一次使用octopress :D</p>
 <p>用git的方式和markdown來撰寫blog</p>
 <p>可以用vim來寫blog</p>
 <p>好特別XDDD</p>
@@ -109,36 +117,68 @@
 <li>http://octopress.org/docs/setup/ - octopress初始化教學</li>
 <li>http://octopress.org/docs/deploying/github/ - octopress on github教學</li>
 </ul>
-                <a class="readmore" href="/di-yi-ci-shi-yong-octopress.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
+                    <a class="btn btn-default btn-xs" href="../di-yi-ci-shi-yong-octopress.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
-                            <li><a href="https://www.facebook.com/mics8128">Facebook</a></li>
-                            <li><a href="https://github.com/mics8128">GitHub</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://www.facebook.com/mics8128"><i class="fa fa-facebook-square fa-lg"></i> Facebook</a></li>
+                <li class="list-group-item"><a href="https://github.com/mics8128"><i class="fa fa-github-square fa-lg"></i> GitHub</a></li>
+              </ul>
+            </li>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+
+
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2015 Mics
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../theme/js/respond.min.js"></script>
+
 
 </body>
 </html>
