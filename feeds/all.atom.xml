@@ -7,7 +7,7 @@
 &lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;pelican-bootstrap3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="pelican"></category><category term="python"></category></entry><entry><title>Laravel 開發環境 on Windows7 - part I - 安裝Composer</title><link href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/" rel="alternate"></link><updated>2014-05-06T09:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-05-06:posts/2014/05/laravel-development-environment-on-windows7/</id><summary type="html">&lt;p&gt;Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。&lt;/p&gt;
 &lt;p&gt;大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。&lt;/p&gt;
-&lt;!-- more --&gt;
+
 
 &lt;h2&gt;下載php&lt;/h2&gt;
 &lt;ul&gt;
@@ -78,7 +78,7 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;因為我沒有IE所以我只好來研究有沒有什麼解決辦法，和爛的要死(一堆非標準寫法)的HTML奮戰兩小時後，把我有用到的功能修正了，我是用Greasemonkey的使用者腳本來達成修正的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;以下是使用教學&lt;/h2&gt;
-&lt;!--more--&gt;
+
 
 &lt;p&gt;首先安裝Firefox plugin Greasemonkey (好像chrome也有??，我只有在firefox上測試而已)&lt;/p&gt;
 &lt;p&gt;https://addons.mozilla.org/zh-tw/firefox/addon/greasemonkey/&lt;/p&gt;
@@ -87,7 +87,7 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;然後就會出現&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-17 08:50:26.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png" /&gt;&lt;/p&gt;
 &lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</summary></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/" rel="alternate"></link><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:posts/2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。
-&lt;!--more--&gt;
+
 我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)(&lt;a href="http://www.edu.tw/treasure/filedown.aspx?Node=1123&amp;amp;Index=2&amp;amp;WID=c5ad5187-55ef-4811-8219-e946fe04f725"&gt;教育部資料下載頁面&lt;/a&gt;)，下載方式參考下圖&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;安裝方法&lt;/h2&gt;
@@ -122,7 +122,7 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;最後附上一張教育部宋體字形檔的圖片&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png" /&gt;&lt;/p&gt;</summary></entry><entry><title>保護眼睛? Redshift</title><link href="http://mics.tw/posts/2014/01/eye-protection-redshift/" rel="alternate"></link><updated>2014-01-01T06:50:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-01:posts/2014/01/eye-protection-redshift/</id><summary type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
 &lt;p&gt;詳細安裝方法請繼續閱讀
-&lt;!-- more --&gt;&lt;/p&gt;
+&lt;/p&gt;
 &lt;p&gt;因為Ubuntu 13.10套件庫內已經有了，所以直接安裝即可&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gtk-redshift redshift python-appindicator
 gtk-redshift
@@ -200,6 +200,8 @@ lon=121.00
 &lt;li&gt;padding&lt;/li&gt;
 &lt;li&gt;width&lt;/li&gt;
 &lt;/ul&gt;
+
+
 &lt;p&gt;但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
      &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari/Chrome, other WebKit */&lt;/span&gt;
@@ -212,6 +214,8 @@ lon=121.00
 &lt;p&gt;這個方法呢，會讓&lt;em&gt;內容+padding+border = 設定寬度&lt;/em&gt;，多美好阿:D &lt;/p&gt;
 &lt;h2&gt;參考資料&lt;/h2&gt;
 &lt;p&gt;&lt;a href=""&gt;http://zh.learnlayout.com/box-sizing.html&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Netbeans On Ubuntu字體優化</title><link href="http://mics.tw/posts/2013/12/ubuntu-fonts-optimization/" rel="alternate"></link><updated>2013-12-28T12:15:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-28:posts/2013/12/ubuntu-fonts-optimization/</id><summary type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
+
+
 &lt;p&gt;教學: &lt;/p&gt;
 &lt;p&gt;在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;netbeans_default_options=&amp;quot;-J-xxxx -J-xxxx&amp;quot;
@@ -253,7 +257,7 @@ lon=121.00
 &lt;p&gt;用git的方式和markdown來撰寫blog&lt;/p&gt;
 &lt;p&gt;可以用vim來寫blog&lt;/p&gt;
 &lt;p&gt;好特別XDDD&lt;/p&gt;
-&lt;!--more--&gt;
+
 
 &lt;h2&gt;Reference&lt;/h2&gt;
 &lt;ul&gt;
