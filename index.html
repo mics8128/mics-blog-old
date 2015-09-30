@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>A Pelican Blog</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about-mics.html">About Mics</a></li>
+                    <li><a href="/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/my-first-review.html">My First Review</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-09-30T00:39:00+00:00">
+                Published: 三 30 9月 2015
+        </abbr>
+
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info --><p>哈囉測試囉~~~~~</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/html-box-sizing.html" rel="bookmark"
+                           title="Permalink to "html box sizing"">"html box sizing"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-12-29T12:25:25+08:00">
+                Published: 日 29 12月 2013
+        </abbr>
+
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <p>以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度</p>
+<ul>
+<li>border</li>
+<li>padding</li>
+<li>width</li>
+</ul>
+<p>但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上</p>
+<!--more-->
+
+<div class="highlight"><pre><span class="err">\</span><span class="o">*</span> <span class="p">{</span> 
+     <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span> <span class="c">/* Safari/Chrome, other WebKit */</span>
+     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>    <span class="c">/* Firefox, other Gecko */</span>
+     <span class="n">box</span><span class="o">-</span><span class="n">sizing</span><span class="o">:</span> <span class="k">border</span><span class="o">-</span><span class="n">box</span><span class="p">;</span>         <span class="c">/* Opera/IE 8+ */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>這個方法呢，會讓<em>內容+padding+border = 設定寬度</em>，多美好阿:D </p>
+<h2>參考資料</h2>
+<p>http://zh.learnlayout.com/box-sizing.html</p>
+                <a class="readmore" href="/html-box-sizing.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/di-yi-ci-shi-yong-octopress.html" rel="bookmark"
+                           title="Permalink to "第一次使用Octopress"">"第一次使用Octopress"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2013-12-23T09:31:52+08:00">
+                Published: 一 23 12月 2013
+        </abbr>
+
+<p>In <a href="/category/misc.html">misc</a>.</p>
+
+</footer><!-- /.post-info -->                <p>第一次使用octopress :D</p>
+<p>用git的方式和markdown來撰寫blog</p>
+<p>可以用vim來寫blog</p>
+<p>好特別XDDD</p>
+<!--more-->
+
+<h2>Reference</h2>
+<ul>
+<li>http://markdown.tw/ - markdown語法教學</li>
+<li>http://octopress.org/docs/setup/ - octopress初始化教學</li>
+<li>http://octopress.org/docs/deploying/github/ - octopress on github教學</li>
+</ul>
+                <a class="readmore" href="/di-yi-ci-shi-yong-octopress.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
