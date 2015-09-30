@@ -1,5 +1,4 @@
-Titel: My First Review
-Date: 2015年 9月30日 周三 00時24分20秒 EDT
-Category: Review
+Title: My First Review
+Date: 2015-09-30 00:39
 
 哈囉測試囉~~~~~
