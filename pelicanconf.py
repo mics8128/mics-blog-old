@@ -9,7 +9,7 @@ sys.path.append(os.curdir)
 
 
 AUTHOR = u'Mics'
-SITENAME = u"Mics Blog"
+SITENAME = u"Mics Blog - Coding The World"
 SITEURL = ''
 
 PATH = 'content'
@@ -47,11 +47,10 @@ DEFAULT_CATEGORY = "others"
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_DATE = 'fs'
-DEFAULT_DATE_FORMAT = "%Y-%m-%d (%a)"
+DEFAULT_DATE_FORMAT = "%Y-%m-%d"
+DISQUS_SITENAME = "mics8128"
 THEME = "pelican-bootstrap3"
-
-
-
+TAG_CLOUD_MAX_ITEMS = 5
 
 #URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'

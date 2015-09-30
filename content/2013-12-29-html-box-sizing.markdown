@@ -9,9 +9,7 @@ date: 2013-12-29 12:25:25 +0800
 
 但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上
 
-<!--more-->
-
-    \* { 
+    * { 
          -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
          -moz-box-sizing: border-box;    /* Firefox, other Gecko */
          box-sizing: border-box;         /* Opera/IE 8+ */
@@ -22,7 +20,7 @@ date: 2013-12-29 12:25:25 +0800
 
 參考資料
 ----
-http://zh.learnlayout.com/box-sizing.html
+[http://zh.learnlayout.com/box-sizing.html]()
 
 
 

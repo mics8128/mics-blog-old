@@ -7,3 +7,5 @@ venv/
 .sass-cache
 v/
 cache/
+pelican-theme
+pelican-plugins
