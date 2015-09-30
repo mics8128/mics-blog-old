@@ -49,3 +49,10 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d (%a)"
 THEME = "pelican-bootstrap3"
+
+
+
+
+#URLs
+ARTICLE_URL = 'articles/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'articles/{date:%Y}/{date:%m}/{slug}/index.html'

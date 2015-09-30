@@ -1,5 +1,6 @@
 Title: 改用Pelican來做部落格
 Date: 2015-09-30 10:06
+Slug: change-to-pelican
 
 已經很久沒寫部落格了，但是看到山姆鍋的文章i[程式人就該有個部落格](https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/)就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。
 

@@ -1,5 +1,6 @@
 title: "第一次使用Octopress"
 date: 2013-12-23 09:31:52 +0800
+slug: first-use-octopress
 
 第一次使用octopress :D
 
