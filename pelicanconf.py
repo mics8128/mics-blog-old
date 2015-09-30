@@ -53,7 +53,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 DISQUS_SITENAME = "mics8128"
-THEME = "pelican-bootstrap3"
+THEME = "./pelican-bootstrap3"
 
 #URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
