@@ -41,6 +41,10 @@ RELATIVE_URLS = True
 STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
+#Plugins
+PLUGIN_PATHS = ['./pelican-plugin']
+PLUGINS = ['tag_cloud']
+
 #Added setting
 USE_FOLDER_AS_CATEGORY = True
 DEFAULT_CATEGORY = "others"
@@ -50,7 +54,6 @@ DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 DISQUS_SITENAME = "mics8128"
 THEME = "pelican-bootstrap3"
-TAG_CLOUD_MAX_ITEMS = 5
 
 #URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
