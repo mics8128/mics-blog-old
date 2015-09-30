@@ -25,6 +25,7 @@
     <link href="http://mics.tw/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="http://mics.tw/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="http://mics.tw/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="http://mics.tw/theme/css/style.css" type="text/css"/>
 
         <link href="http://mics.tw/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -53,8 +54,16 @@ Mics Blog - Coding The World            </a>
                          <li><a href="http://mics.tw/pages/about-mics.html">
                              About Mics
                           </a></li>
+                        <li >
+                            <a href="http://mics.tw/category/blog.html">Blog</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
               <li><a href="http://mics.tw/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
@@ -67,7 +76,7 @@ Mics Blog - Coding The World            </a>
     <div class="row">
         <div class="col-sm-9">
     <h1>Authors on Mics Blog - Coding The World</h1>
-        <li><a href="http://mics.tw/author/mics.html">Mics</a> (3)</li>
+        <li><a href="http://mics.tw/author/mics.html">Mics</a> (8)</li>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -81,6 +90,35 @@ Mics Blog - Coding The World            </a>
               </ul>
             </li>
 
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2015/09/change-to-pelican/">
+                            改用Pelican來做部落格
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
+                            Laravel 開發環境 on Windows7 - part I - 安裝Composer
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/01/kuas-system-correction/">
+                            高應大校務系統修正
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/">
+                            Ubuntu字體優化 - 去除GB 18030
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/01/eye-protection-redshift/">
+                            保護眼睛? Redshift
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
 
             <li class="list-group-item"><a href="http://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
@@ -99,20 +137,6 @@ Mics Blog - Coding The World            </a>
             </li>
 
 
-    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://getpelican.com/" target="_blank">
-                Pelican
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://python.org/" target="_blank">
-                Python.org
-            </a>
-        </li>
-      </ul>
-    </li>
     </ul>
 </section>
             </aside>

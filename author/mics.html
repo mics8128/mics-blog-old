@@ -25,6 +25,7 @@
     <link href="http://mics.tw/theme/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="http://mics.tw/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="http://mics.tw/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
     <link rel="stylesheet" href="http://mics.tw/theme/css/style.css" type="text/css"/>
 
         <link href="http://mics.tw/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -53,8 +54,16 @@ Mics Blog - Coding The World            </a>
                          <li><a href="http://mics.tw/pages/about-mics.html">
                              About Mics
                           </a></li>
+                        <li >
+                            <a href="http://mics.tw/category/blog.html">Blog</a>
+                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><span>
+                <form class="navbar-search" action="/search.html">
+                  <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
+                </form></span>
+              </li>
               <li><a href="http://mics.tw/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
@@ -80,7 +89,107 @@ Mics Blog - Coding The World            </a>
             </article>
             <hr/>
             <article>
-                <h2><a href="http://mics.tw/posts/2013/12/html-box-sizing/">"html box sizing"</a></h2>
+                <h2><a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">Laravel 開發環境 on Windows7 - part I - 安裝Composer</a></h2>
+                <div class="summary"><p>Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。</p>
+<p>大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。</p>
+<!-- more -->
+
+<h2>下載php</h2>
+<ul>
+<li>http://windows.php.net/download/</li>
+</ul>
+<p>選擇適合自己的版本
+    VC11 x64 Thread Safe (for 64位元作業系統)
+    VC11 x86 Thread Safe (for 32位元作業系統)</p>
+<p>解壓縮到C:\php
+<img alt="Screenshot from 2014-05-06 16:16:54.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/76ADaLGkRmuQEMqekgww_Screenshot%20from%202014-05-06%2016:16:54.png" /></p>
+<p>增加php到PATH內
+<img alt="Screenshot from 2014-05-06 16:17:53.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/0indF8zcS5CHBs03UhJi_Screenshot%20from%202014-05-06%2016:17:53.png" /></p>
+<div class="highlight"><pre>PATH
+C:\php
+</pre></div>
+
+
+<h2>啟用php擴充套件 (安裝composer必須)</h2>
+<p>用純文字編輯程式打開C:\php\php.ini (如果沒有就從php.ini-development ...</p></!-->
+                    <a class="btn btn-default btn-xs" href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://mics.tw/posts/2014/01/kuas-system-correction/">高應大校務系統修正</a></h2>
+                <div class="summary"><p><strong><font color=red>本文已經過期，這裏有一個<a href="https://github.com/grapherd/kuas">學弟做的版本</a></font></strong></p>
+<p>最近把作業系統換成linux，完全把windows移除了，但是..但是..但是...我們學校的校務系統居然是IE Only.....哪年代的東西了阿，也該改一下了吧..........</p>
+<p>因為我沒有IE所以我只好來研究有沒有什麼解決辦法，和爛的要死(一堆非標準寫法)的HTML奮戰兩小時後，把我有用到的功能修正了，我是用Greasemonkey的使用者腳本來達成修正的。</p>
+<p><strong><font color=red>注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決</font></strong></p>
+<h2>以下是使用教學</h2>
+<!--more-->
+
+<p>首先安裝Firefox plugin Greasemonkey (好像chrome也有??，我只有在firefox上測試而已)</p>
+<p>https://addons.mozilla.org/zh-tw/firefox/addon/greasemonkey/</p>
+<p>到<a href="https://github.com/mics8128/kuas_system_fix/blob/master/%E9%AB%98%E6%87%89%E5%A4%A7%E6%A0%A1%E5%8B%99%E7%B3%BB%E7%B5%B1fix.user.js">我的github</a>上點</p>
+<p><img alt="kuas_system_fix 2014-01-17 08-49-16.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/6EkshdpSczTwB0hCG4QM_kuas_system_fix%202014-01-17%2008-49-16.png" /></p>
+<p>然後就會出現</p>
+<p><img alt="螢幕擷圖存為 2014-01-17 08:50:26.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png" /></p>
+<p>點選安裝，恭喜你可以正常進入校務系統了............</p>
+                    <a class="btn btn-default btn-xs" href="http://mics.tw/posts/2014/01/kuas-system-correction/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/">Ubuntu字體優化 - 去除GB 18030</a></h2>
+                <div class="summary"><p>一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 <a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization">Netbeans on Ubuntu字體優化</a> 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(<a href="http://www.techbang.com/posts/16514">小心！GB 18030 就在你身邊</a>)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。
+<!--more-->
+我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)(<a href="http://www.edu.tw/treasure/filedown.aspx?Node=1123&amp;Index=2&amp;WID=c5ad5187-55ef-4811-8219-e946fe04f725">教育部資料下載頁面</a>)，下載方式參考下圖</p>
+<p><img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png" /></p>
+<h2>安裝方法</h2>
+<p><strong><font color=red>注意!! 後來發現用教育部宋體字太細了，閱讀起來眼睛其實蠻不舒服的，最後還是為了保護眼睛妥協於droid了，如果各位有找到任何耐看的符合台灣標準的字體歡迎推薦給我!!!!</font></strong></p>
+<p>下載之後把檔案放在以下目錄</p>
+<div class="highlight"><pre>./fonts/
+</pre></div>
+
+
+<p>或是放到系統資料夾</p>
+<div class="highlight"><pre>/usr/share/fonts/
+</pre></div>
+
+
+<p>兩者選一個就可以了，前者是使用者自己的，後者是整個系統的。不過後面還是要修改系統檔案，還是建議以系統為主。然後修改字體優先順序檔案。</p>
+<div class="highlight"><pre>sudo vim /etc/fonts/conf.d/69-language-selector-zh-tw ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://mics.tw/posts/2014/01/eye-protection-redshift/">保護眼睛? Redshift</a></h2>
+                <div class="summary"><p>今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做<a href="http://justgetflux.com/">f.lux</a>，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到<a href="http://jonls.dk/redshift/">Redshift</a>這套軟體，於是就把他裝上去了。</p>
+<p>詳細安裝方法請繼續閱讀
+<!-- more --></p>
+<p>因為Ubuntu 13.10套件庫內已經有了，所以直接安裝即可</p>
+<div class="highlight"><pre>sudo apt-get install gtk-redshift redshift python-appindicator
+gtk-redshift
+</pre></div>
+
+
+<p>以上為安裝和執行
+如果要自訂設定請下以下指令</p>
+<div class="highlight"><pre>vim ~/.config/redshift.conf
+</pre></div>
+
+
+<p>(如果有其他編輯器請把vim替換 ex.gedit nano)</p>
+<p>貼上
+```ini redshift.conf
+; Global settings for redshift
+[redshift]
+; Set the day and night screen temperatures
+temp-day ...</p>
+                    <a class="btn btn-default btn-xs" href="http://mics.tw/posts/2014/01/eye-protection-redshift/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://mics.tw/posts/2013/12/html-box-sizing/">html box sizing</a></h2>
                 <div class="summary"><p>以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度</p>
 <ul>
 <li>border</li>
@@ -104,7 +213,27 @@ Mics Blog - Coding The World            </a>
             </article>
             <hr/>
             <article>
-                <h2><a href="http://mics.tw/posts/2013/12/first-use-octopress/">"第一次使用Octopress"</a></h2>
+                <h2><a href="http://mics.tw/posts/2013/12/ubuntu-fonts-optimization/">Netbeans On Ubuntu字體優化</a></h2>
+                <div class="summary"><p>最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。</p>
+<p>教學: </p>
+<p>在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到</p>
+<div class="highlight"><pre>netbeans_default_options=&quot;-J-xxxx -J-xxxx&quot;
+</pre></div>
+
+
+<p>然後在這段的最後雙引號(")前 加上</p>
+<div class="highlight"><pre>-J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd
+</pre></div>
+
+
+<p>看起來會像這樣</p>
+<div class="highlight"><pre>netbeans_default_options=&quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J -Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-D sun.java2d.noddraw=true -J-Dsun.java2d.dpiaware ...</pre></div>
+                    <a class="btn btn-default btn-xs" href="http://mics.tw/posts/2013/12/ubuntu-fonts-optimization/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="http://mics.tw/posts/2013/12/first-use-octopress/">第一次使用Octopress</a></h2>
                 <div class="summary"><p>第一次使用octopress :D</p>
 <p>用git的方式和markdown來撰寫blog</p>
 <p>可以用vim來寫blog</p>
@@ -135,6 +264,35 @@ Mics Blog - Coding The World            </a>
               </ul>
             </li>
 
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+                <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2015/09/change-to-pelican/">
+                            改用Pelican來做部落格
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
+                            Laravel 開發環境 on Windows7 - part I - 安裝Composer
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/01/kuas-system-correction/">
+                            高應大校務系統修正
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/">
+                            Ubuntu字體優化 - 去除GB 18030
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://mics.tw/posts/2014/01/eye-protection-redshift/">
+                            保護眼睛? Redshift
+                        </a>
+                    </li>
+                </ul>
+            </li>
 
 
             <li class="list-group-item"><a href="http://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
@@ -153,20 +311,6 @@ Mics Blog - Coding The World            </a>
             </li>
 
 
-    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
-      <ul class="list-group" id="links">
-        <li class="list-group-item">
-            <a href="http://getpelican.com/" target="_blank">
-                Pelican
-            </a>
-        </li>
-        <li class="list-group-item">
-            <a href="http://python.org/" target="_blank">
-                Python.org
-            </a>
-        </li>
-      </ul>
-    </li>
     </ul>
 </section>
             </aside>
