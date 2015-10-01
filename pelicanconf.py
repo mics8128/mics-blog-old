@@ -9,7 +9,7 @@ sys.path.append(os.curdir)
 
 
 AUTHOR = u'Mics'
-SITENAME = u"Mics Blog - Coding The World"
+SITENAME = u"Mics.tw"
 SITEURL = ''
 
 PATH = 'content'
@@ -39,8 +39,11 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-STATIC_PATHS = ['images', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ['images', 'extra']
+EXTRA_PATH_METADATA = {
+                'extra/CNAME': {'path': 'CNAME'},
+                'extra/favicon.ico': {'path': 'favicon.ico'},
+            }
 
 # Direct theme
 DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'search']
