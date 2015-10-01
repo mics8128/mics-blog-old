@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="http://mics.tw/" rel="alternate"></link><link href="http://mics.tw/feeds/all.atom.xml" rel="self"></link><id>http://mics.tw/</id><updated>2015-09-30T23:38:00-05:00</updated><entry><title>測試圖片</title><link href="http://mics.tw/posts/2015/09/test-photo/" rel="alternate"></link><updated>2015-09-30T23:38:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/test-photo/</id><summary type="html">&lt;p&gt;本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。&lt;/p&gt;
 
 
-&lt;p&gt;&lt;img alt="測試圖片1" src="http://mics.tw/posts/2015/09/test-photo/test-photo1.jpg" /&gt;
-&lt;img alt="測試圖片2" src="http://mics.tw/posts/2015/09/test-photo/test-photo2.jpg" /&gt;&lt;/p&gt;</summary></entry><entry><title>改用Pelican來做部落格</title><link href="http://mics.tw/posts/2015/09/change-to-pelican/" rel="alternate"></link><updated>2015-09-30T10:06:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/change-to-pelican/</id><summary type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="測試圖片1" src="http://mics.tw/images/test-photo1.jpg" /&gt;
+&lt;img alt="測試圖片2" src="http://mics.tw/images/test-photo2.jpg" /&gt;&lt;/p&gt;</summary></entry><entry><title>改用Pelican來做部落格</title><link href="http://mics.tw/posts/2015/09/change-to-pelican/" rel="alternate"></link><updated>2015-09-30T10:06:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/change-to-pelican/</id><summary type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
 &lt;p&gt;然後加上我比較慣用Python，所以改用Pelican來當作部落格使用。&lt;/p&gt;
 &lt;p&gt;在這邊紀錄一下用了什麼東西&lt;/p&gt;
 &lt;ul&gt;
