@@ -5,7 +5,7 @@
 &lt;li&gt;Composer&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://toolbelt.heroku.com/"&gt;Heroku toolbelt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;前兩個可以參考我的前一篇文章&lt;a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
 &lt;p&gt;登入並在heroku創建專案&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;heroku login
 Enter your Heroku credentials.
@@ -29,6 +29,11 @@ https://mighty-scrubland-5244.herokuapp.com/ &lt;span class="p"&gt;|&lt;/span&gt
 &lt;p&gt;增加Procfile&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo &lt;/span&gt;web: vendor/bin/heroku-php-apache2 public &amp;gt; Procfile
 &lt;span class="c"&gt;# 此檔案用意是告訴http server我們的根目錄是public&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Windows下可以直接把以下內容複製到Procfile裡面&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;vendor&lt;/span&gt;&lt;span class="sr"&gt;/bin/&lt;/span&gt;&lt;span class="n"&gt;heroku&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt; &lt;span class="kd"&gt;public&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
