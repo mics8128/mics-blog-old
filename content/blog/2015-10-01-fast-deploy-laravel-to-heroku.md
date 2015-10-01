@@ -1,5 +1,7 @@
 Title: 快速部署laravel到heroku
 Date: 2015-10-01 00:07 -0500
+Slug: fast-deploy-laravel-to-heroku
+Tags: php, laravel
 
 環境需求
 
@@ -7,7 +9,7 @@ Date: 2015-10-01 00:07 -0500
 * Composer
 * [Heroku toolbelt](https://toolbelt.heroku.com/)
 
-前兩個可以參考我的前一篇文章[Laravel 開發環境 on Windows7]({filename}../old_blog/2014-05-06-laravel-development-environment-on-windows7.md)
+Windows使用者前兩個可以參考我的前一篇文章[Laravel 開發環境 on Windows7]({filename}../old_blog/2014-05-06-laravel-development-environment-on-windows7.md)，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通
 
 登入並在heroku創建專案
     
@@ -35,6 +37,10 @@ Date: 2015-10-01 00:07 -0500
     :::bash
     $ echo web: vendor/bin/heroku-php-apache2 public > Procfile
     # 此檔案用意是告訴http server我們的根目錄是public
+
+Windows下可以直接把以下內容複製到Procfile裡面
+    
+    web: vendor/bin/heroku-php-apache2 public
 
 初始化git
 
