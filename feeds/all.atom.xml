@@ -1,5 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="http://mics.tw/" rel="alternate"></link><link href="http://mics.tw/feeds/all.atom.xml" rel="self"></link><id>http://mics.tw/</id><updated>2015-09-30T23:38:00-05:00</updated><entry><title>測試圖片</title><link href="http://mics.tw/posts/2015/09/test-photo/" rel="alternate"></link><updated>2015-09-30T23:38:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/test-photo/</id><summary type="html">&lt;p&gt;本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="http://mics.tw/" rel="alternate"></link><link href="http://mics.tw/feeds/all.atom.xml" rel="self"></link><id>http://mics.tw/</id><updated>2015-10-01T00:07:00-05:00</updated><entry><title>快速部署laravel到heroku</title><link href="http://mics.tw/posts/2015/10/kuai-su-bu-shu-laraveldao-heroku/" rel="alternate"></link><updated>2015-10-01T00:07:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-01:posts/2015/10/kuai-su-bu-shu-laraveldao-heroku/</id><summary type="html">&lt;p&gt;環境需求&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Composer&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toolbelt.heroku.com/"&gt;Heroku toolbelt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;前兩個可以參考我的前一篇文章&lt;a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;登入並在heroku創建專案&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;heroku login
+Enter your Heroku credentials.
+Email: yout@email.address
+Password &lt;span class="o"&gt;(&lt;/span&gt;typing will be hidden&lt;span class="o"&gt;)&lt;/span&gt;:
+&lt;span class="nv"&gt;$ &lt;/span&gt;heroku create
+Creating mighty-scrubland-5244... &lt;span class="k"&gt;done&lt;/span&gt;, stack is cedar-14
+https://mighty-scrubland-5244.herokuapp.com/ &lt;span class="p"&gt;|&lt;/span&gt; https://git.heroku.com/mighty-scrubland-5244.gi
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;把專案名稱記下來，在這裡是&lt;em&gt;mighty-scrubland-5244&lt;/em&gt;，&lt;strong&gt;&lt;font color=red&gt;後面請都將此字串取代為你自己的專案名稱&lt;/font&gt;&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;在本機使用composer創造一個新專案&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer create-project laravel/laravel laravel-heroku
+
+&lt;span class="c"&gt;# 進入Project資料夾&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;laravel-heroku
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;增加Procfile&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo &lt;/span&gt;web: vendor/bin/heroku-php-apache2 public &amp;gt; Procfile
+&lt;span class="c"&gt;# 此檔案用意是告訴http server我們的根目錄是public&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;初始化git&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git init
+&lt;span class="nv"&gt;$ &lt;/span&gt;git add .
+&lt;span class="nv"&gt;$ &lt;/span&gt;git commit -am &lt;span class="s2"&gt;&amp;quot;init&amp;quot;&lt;/span&gt;
+
+&lt;span class="c"&gt;# 增加remote端&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;heroku git:remote -a mighty-scrubland-5244
+
+&lt;span class="c"&gt;# 設定此app為php app&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
+
+&lt;span class="c"&gt;# 把本地端的master推送到heroku&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;git push heroku master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然後到 http://mighty-scrubland-5244.herokuapp.com 觀看 (請記得改成你自己得專案名稱)&lt;/p&gt;
+&lt;p&gt;你會看到&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Whoops, looks like something went wrong.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;會出現的原因是環境參數沒有設定&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 觀看環境參數&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;cat .env
+&lt;span class="nv"&gt;APP_ENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;local&lt;/span&gt;
+&lt;span class="nv"&gt;APP_DEBUG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt;
+&lt;span class="nv"&gt;APP_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
+
+&lt;span class="nv"&gt;DB_HOST&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;localhost
+&lt;span class="nv"&gt;DB_DATABASE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;homestead
+&lt;span class="nv"&gt;DB_USERNAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;homestead
+&lt;span class="nv"&gt;DB_PASSWORD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;secret
+
+&lt;span class="nv"&gt;CACHE_DRIVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;file
+&lt;span class="nv"&gt;SESSION_DRIVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;file
+&lt;span class="nv"&gt;QUEUE_DRIVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;sync
+
+&lt;span class="nv"&gt;MAIL_DRIVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;smtp
+&lt;span class="nv"&gt;MAIL_HOST&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;mailtrap.io
+&lt;span class="nv"&gt;MAIL_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;2525
+&lt;span class="nv"&gt;MAIL_USERNAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;null
+&lt;span class="nv"&gt;MAIL_PASSWORD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;null
+&lt;span class="nv"&gt;MAIL_ENCRYPTION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;null
+
+&lt;span class="c"&gt;# 設定參數 請記得把ZMz9G6.....改成自己的&lt;/span&gt;
+&lt;span class="nv"&gt;$ &lt;/span&gt;heroku config:set &lt;span class="nv"&gt;APP_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
+Setting config vars and restarting mighty-scrubland-5244... &lt;span class="k"&gt;done&lt;/span&gt;, v6
+APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
+&lt;span class="c"&gt;# 其他的DATABASE USERNAME也可以以同樣方法設定 這裏沒有用到就不設定了&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;最後再到同一個網址按下F5 就可以看到Laravel 5了~&lt;/p&gt;</summary></entry><entry><title>測試圖片</title><link href="http://mics.tw/posts/2015/09/test-photo/" rel="alternate"></link><updated>2015-09-30T23:38:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/test-photo/</id><summary type="html">&lt;p&gt;本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。&lt;/p&gt;
 
 
 &lt;h2&gt;千島湖&lt;/h2&gt;
