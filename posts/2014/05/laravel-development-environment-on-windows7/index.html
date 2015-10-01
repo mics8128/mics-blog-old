@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="http://mics.tw/favicon.png" rel="icon">
-    <!--[if IE]><link rel="shortcut icon" href="http://mics.tw/favicon.ico"><![endif]-->
+    <link href="https://mics.tw/favicon.png" rel="icon">
+    <!--[if IE]><link rel="shortcut icon" href="https://mics.tw/favicon.ico"><![endif]-->
 
-<link rel="canonical" href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
+<link rel="canonical" href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
 
         <meta name="author" content="Mics" />
         <meta name="description" content="Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel :D。 大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。" />
@@ -19,7 +19,7 @@
         <meta property="og:site_name" content="Mics.tw" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Laravel 開發環境 on Windows7 - part I - 安裝Composer"/>
-        <meta property="og:url" content="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"/>
+        <meta property="og:url" content="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"/>
         <meta property="og:description" content="Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel :D。 大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。"/>
         <meta property="article:published_time" content="2014-05-06" />
             <meta property="article:section" content="Post" />
@@ -27,19 +27,19 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://mics.tw/theme/css/bootstrap.min.css" type="text/css"/>
-    <link href="http://mics.tw/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://mics.tw/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="https://mics.tw/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="http://mics.tw/theme/css/pygments/native.css" rel="stylesheet">
-    <link href="http://mics.tw/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://mics.tw/theme/css/style.css" type="text/css"/>
+    <link href="https://mics.tw/theme/css/pygments/native.css" rel="stylesheet">
+    <link href="https://mics.tw/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://mics.tw/theme/css/style.css" type="text/css"/>
 
-        <link href="http://mics.tw/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://mics.tw/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Mics.tw ATOM Feed"/>
 
 
 
-        <link href="http://mics.tw/feeds/post.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="https://mics.tw/feeds/post.atom.xml" type="application/atom+xml" rel="alternate"
               title="Mics.tw Post ATOM Feed"/>
 
 </head>
@@ -54,7 +54,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://mics.tw/" class="navbar-brand">
+            <a href="https://mics.tw/" class="navbar-brand">
 Mics.tw            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -66,7 +66,7 @@ Mics.tw            </a>
                   <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
                 </form></span>
               </li>
-              <li><a href="http://mics.tw/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="https://mics.tw/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -81,7 +81,7 @@ Mics.tw            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"
+                    <a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"
                        rel="bookmark"
                        title="Permalink to Laravel 開發環境 on Windows7 - part I - 安裝Composer">
                         Laravel 開發環境 on Windows7 - part I - 安裝Composer
@@ -185,7 +185,7 @@ Part III - laravel Quickstart</p>
             var disqus_shortname = 'mics'; // required: replace example with your forum shortname
 
                     var disqus_identifier = 'laravel-development-environment-on-windows7';
-                var disqus_url = 'http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/';
+                var disqus_url = 'https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/';
 
             var disqus_config = function () {
                 this.language = "zh-tw";
@@ -224,27 +224,27 @@ Part III - laravel Quickstart</p>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2015/10/fast-deploy-laravel-to-heroku/">
+                        <a href="https://mics.tw/posts/2015/10/fast-deploy-laravel-to-heroku/">
                             快速部署laravel到heroku
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2015/09/test-photo/">
+                        <a href="https://mics.tw/posts/2015/09/test-photo/">
                             測試圖片
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2015/09/change-to-pelican/">
+                        <a href="https://mics.tw/posts/2015/09/change-to-pelican/">
                             改用Pelican來做部落格
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
+                        <a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
                             Laravel 開發環境 on Windows7 - part I - 安裝Composer
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2014/01/kuas-system-correction/">
+                        <a href="https://mics.tw/posts/2014/01/kuas-system-correction/">
                             高應大校務系統修正
                         </a>
                     </li>
@@ -252,26 +252,26 @@ Part III - laravel Quickstart</p>
             </li>
 
 
-            <li class="list-group-item"><a href="http://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="http://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/laravel.html">
+                            laravel
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://mics.tw/tag/php.html">
+                        <a href="https://mics.tw/tag/php.html">
                             php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://mics.tw/tag/python.html">
+                        <a href="https://mics.tw/tag/python.html">
                             python
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="http://mics.tw/tag/laravel.html">
-                            laravel
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                 </ul>
@@ -300,13 +300,13 @@ Part III - laravel Quickstart</p>
       </div>
    </div>
 </footer>
-<script src="http://mics.tw/theme/js/jquery.min.js"></script>
+<script src="https://mics.tw/theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="http://mics.tw/theme/js/bootstrap.min.js"></script>
+<script src="https://mics.tw/theme/js/bootstrap.min.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="http://mics.tw/theme/js/respond.min.js"></script>
+<script src="https://mics.tw/theme/js/respond.min.js"></script>
 
     <!-- Disqus -->
     <script type="text/javascript">
