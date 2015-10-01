@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script>
-            var host = "https://mics.tw".replace("/.*?:\/\//", "");
-            if ((host == window.location.host) && (window.location.protocol != "https:"))
+            // var host = "https://mics.tw".replace("/.*?:\/\//", "");
+            alert(window.location.protocol);
+            if (window.location.protocol != "https:")
                 window.location.protocol = "https";
         </script>
 
@@ -131,13 +132,8 @@ https://mighty-scrubland-5244.herokuapp.com/ <span class="p">|</span> https://gi
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/python.html">
+                            python
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -146,8 +142,13 @@ https://mighty-scrubland-5244.herokuapp.com/ <span class="p">|</span> https://gi
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
+                        <a href="https://mics.tw/tag/php.html">
+                            php
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                 </ul>
