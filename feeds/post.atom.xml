@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="http://mics.tw/" rel="alternate"></link><link href="http://mics.tw/feeds/blog.atom.xml" rel="self"></link><id>http://mics.tw/</id><updated>2015-09-30T10:06:00+08:00</updated><entry><title>改用Pelican來做部落格</title><link href="http://mics.tw/posts/2015/09/change-to-pelican/" rel="alternate"></link><updated>2015-09-30T10:06:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/change-to-pelican/</id><summary type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="http://mics.tw/" rel="alternate"></link><link href="http://mics.tw/feeds/post.atom.xml" rel="self"></link><id>http://mics.tw/</id><updated>2015-09-30T10:06:00+08:00</updated><entry><title>改用Pelican來做部落格</title><link href="http://mics.tw/2015/09/change-to-pelican/" rel="alternate"></link><updated>2015-09-30T10:06:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:2015/09/change-to-pelican/</id><summary type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
 &lt;p&gt;然後加上我比較慣用Python，所以改用Pelican來當作部落格使用。&lt;/p&gt;
 &lt;p&gt;在這邊紀錄一下用了什麼東西&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;pelican-bootstrap3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="pelican"></category><category term="python"></category></entry><entry><title>Laravel 開發環境 on Windows7 - part I - 安裝Composer</title><link href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/" rel="alternate"></link><updated>2014-05-06T09:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-05-06:posts/2014/05/laravel-development-environment-on-windows7/</id><summary type="html">&lt;p&gt;Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="pelican"></category><category term="python"></category></entry><entry><title>Laravel 開發環境 on Windows7 - part I - 安裝Composer</title><link href="http://mics.tw/2014/05/laravel-development-environment-on-windows7/" rel="alternate"></link><updated>2014-05-06T09:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-05-06:2014/05/laravel-development-environment-on-windows7/</id><summary type="html">&lt;p&gt;Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。&lt;/p&gt;
 &lt;p&gt;大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。&lt;/p&gt;
 
 
@@ -73,7 +73,7 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://laravel.com/docs/quick&lt;/li&gt;
 &lt;li&gt;https://getcomposer.org/doc/00-intro.md&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>高應大校務系統修正</title><link href="http://mics.tw/posts/2014/01/kuas-system-correction/" rel="alternate"></link><updated>2014-01-17T00:40:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-17:posts/2014/01/kuas-system-correction/</id><summary type="html">&lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;本文已經過期，這裏有一個&lt;a href="https://github.com/grapherd/kuas"&gt;學弟做的版本&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/ul&gt;</summary></entry><entry><title>高應大校務系統修正</title><link href="http://mics.tw/2014/01/kuas-system-correction/" rel="alternate"></link><updated>2014-01-17T00:40:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-17:2014/01/kuas-system-correction/</id><summary type="html">&lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;本文已經過期，這裏有一個&lt;a href="https://github.com/grapherd/kuas"&gt;學弟做的版本&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;最近把作業系統換成linux，完全把windows移除了，但是..但是..但是...我們學校的校務系統居然是IE Only.....哪年代的東西了阿，也該改一下了吧..........&lt;/p&gt;
 &lt;p&gt;因為我沒有IE所以我只好來研究有沒有什麼解決辦法，和爛的要死(一堆非標準寫法)的HTML奮戰兩小時後，把我有用到的功能修正了，我是用Greasemonkey的使用者腳本來達成修正的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -86,7 +86,7 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;&lt;img alt="kuas_system_fix 2014-01-17 08-49-16.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/6EkshdpSczTwB0hCG4QM_kuas_system_fix%202014-01-17%2008-49-16.png" /&gt;&lt;/p&gt;
 &lt;p&gt;然後就會出現&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-17 08:50:26.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png" /&gt;&lt;/p&gt;
-&lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</summary></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/" rel="alternate"></link><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:posts/2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。
+&lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</summary></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="http://mics.tw/2014/01/optimization-of-ubuntu/" rel="alternate"></link><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。
 
 我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)(&lt;a href="http://www.edu.tw/treasure/filedown.aspx?Node=1123&amp;amp;Index=2&amp;amp;WID=c5ad5187-55ef-4811-8219-e946fe04f725"&gt;教育部資料下載頁面&lt;/a&gt;)，下載方式參考下圖&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png" /&gt;&lt;/p&gt;
@@ -120,7 +120,7 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;之所以要把「AR PL New Sung」放到第二個是因為教育部的字體並沒有簡體中文，為了讓簡體文章不會看起來很詭異所以把類似的有簡體字的字體放在第二順位，才不會造成字體詭異的狀況(參考下圖)
 &lt;img alt="螢幕擷圖存為 2014-01-16 17:52:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/ikbaiuLSKGOUWA131LWm_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:52:36.png" /&gt;&lt;/p&gt;
 &lt;p&gt;最後附上一張教育部宋體字形檔的圖片&lt;/p&gt;
-&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png" /&gt;&lt;/p&gt;</summary></entry><entry><title>保護眼睛? Redshift</title><link href="http://mics.tw/posts/2014/01/eye-protection-redshift/" rel="alternate"></link><updated>2014-01-01T06:50:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-01:posts/2014/01/eye-protection-redshift/</id><summary type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png" /&gt;&lt;/p&gt;</summary></entry><entry><title>保護眼睛? Redshift</title><link href="http://mics.tw/2014/01/eye-protection-redshift/" rel="alternate"></link><updated>2014-01-01T06:50:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-01:2014/01/eye-protection-redshift/</id><summary type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
 &lt;p&gt;詳細安裝方法請繼續閱讀
 &lt;/p&gt;
 &lt;p&gt;因為Ubuntu 13.10套件庫內已經有了，所以直接安裝即可&lt;/p&gt;
@@ -194,7 +194,7 @@ lon=121.00
 &lt;span class="n"&gt;GenericName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;gtk&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;redshift&lt;/span&gt;
 &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;GNOME&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;FullName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Redshift&lt;/span&gt;
 &lt;span class="n"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;good&lt;/span&gt; &lt;span class="nl"&gt;redshift&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>html box sizing</title><link href="http://mics.tw/posts/2013/12/html-box-sizing/" rel="alternate"></link><updated>2013-12-29T12:25:25+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-29:posts/2013/12/html-box-sizing/</id><summary type="html">&lt;p&gt;以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>html box sizing</title><link href="http://mics.tw/2013/12/html-box-sizing/" rel="alternate"></link><updated>2013-12-29T12:25:25+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-29:2013/12/html-box-sizing/</id><summary type="html">&lt;p&gt;以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;border&lt;/li&gt;
 &lt;li&gt;padding&lt;/li&gt;
@@ -213,7 +213,7 @@ lon=121.00
 
 &lt;p&gt;這個方法呢，會讓&lt;em&gt;內容+padding+border = 設定寬度&lt;/em&gt;，多美好阿:D &lt;/p&gt;
 &lt;h2&gt;參考資料&lt;/h2&gt;
-&lt;p&gt;&lt;a href=""&gt;http://zh.learnlayout.com/box-sizing.html&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Netbeans On Ubuntu字體優化</title><link href="http://mics.tw/posts/2013/12/ubuntu-fonts-optimization/" rel="alternate"></link><updated>2013-12-28T12:15:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-28:posts/2013/12/ubuntu-fonts-optimization/</id><summary type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;http://zh.learnlayout.com/box-sizing.html&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Netbeans On Ubuntu字體優化</title><link href="http://mics.tw/2013/12/ubuntu-fonts-optimization/" rel="alternate"></link><updated>2013-12-28T12:15:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-28:2013/12/ubuntu-fonts-optimization/</id><summary type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
 
 
 &lt;p&gt;教學: &lt;/p&gt;
@@ -253,7 +253,7 @@ lon=121.00
 &lt;h2&gt;參考資料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.lyhdev.com/2013/11/netbeans-ide-on-ubuntu-linux.html"&gt;NetBeans IDE 字型美化 on Ubuntu Linux&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>第一次使用Octopress</title><link href="http://mics.tw/posts/2013/12/first-use-octopress/" rel="alternate"></link><updated>2013-12-23T09:31:52+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-23:posts/2013/12/first-use-octopress/</id><summary type="html">&lt;p&gt;第一次使用octopress :D&lt;/p&gt;
+&lt;/ul&gt;</summary></entry><entry><title>第一次使用Octopress</title><link href="http://mics.tw/2013/12/first-use-octopress/" rel="alternate"></link><updated>2013-12-23T09:31:52+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-23:2013/12/first-use-octopress/</id><summary type="html">&lt;p&gt;第一次使用octopress :D&lt;/p&gt;
 &lt;p&gt;用git的方式和markdown來撰寫blog&lt;/p&gt;
 &lt;p&gt;可以用vim來寫blog&lt;/p&gt;
 &lt;p&gt;好特別XDDD&lt;/p&gt;

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-tw" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>第一次使用Octopress - Mics.tw</title>
+    <title>Netbeans On Ubuntu字體優化 - Mics.tw</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -11,18 +11,18 @@
     <link href="http://mics.tw/favicon.png" rel="icon">
     <!--[if IE]><link rel="shortcut icon" href="http://mics.tw/favicon.ico"><![endif]-->
 
-<link rel="canonical" href="http://mics.tw/posts/2013/12/first-use-octopress/">
+<link rel="canonical" href="http://mics.tw/2013/12/ubuntu-fonts-optimization/">
 
         <meta name="author" content="Mics" />
-        <meta name="description" content="第一次使用octopress :D 用git的方式和markdown來撰寫blog 可以用vim來寫blog 好特別XDDD" />
+        <meta name="description" content="最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。" />
 
         <meta property="og:site_name" content="Mics.tw" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="第一次使用Octopress"/>
-        <meta property="og:url" content="http://mics.tw/posts/2013/12/first-use-octopress/"/>
-        <meta property="og:description" content="第一次使用octopress :D 用git的方式和markdown來撰寫blog 可以用vim來寫blog 好特別XDDD"/>
-        <meta property="article:published_time" content="2013-12-23" />
-            <meta property="article:section" content="Blog" />
+        <meta property="og:title" content="Netbeans On Ubuntu字體優化"/>
+        <meta property="og:url" content="http://mics.tw/2013/12/ubuntu-fonts-optimization/"/>
+        <meta property="og:description" content="最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。"/>
+        <meta property="article:published_time" content="2013-12-28" />
+            <meta property="article:section" content="Post" />
             <meta property="article:author" content="Mics" />
 
 
@@ -39,8 +39,8 @@
 
 
 
-        <link href="http://mics.tw/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate"
-              title="Mics.tw Blog ATOM Feed"/>
+        <link href="http://mics.tw/feeds/post.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Mics.tw Post ATOM Feed"/>
 
 </head>
 <body>
@@ -63,7 +63,7 @@ Mics.tw            </a>
                              About Mics
                           </a></li>
                         <li class="active">
-                            <a href="http://mics.tw/category/blog.html">Blog</a>
+                            <a href="http://mics.tw/category/post.html">Post</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -87,10 +87,10 @@ Mics.tw            </a>
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="http://mics.tw/posts/2013/12/first-use-octopress/"
+                    <a href="http://mics.tw/2013/12/ubuntu-fonts-optimization/"
                        rel="bookmark"
-                       title="Permalink to 第一次使用Octopress">
-                        第一次使用Octopress
+                       title="Permalink to Netbeans On Ubuntu字體優化">
+                        Netbeans On Ubuntu字體優化
                     </a>
                 </h1>
             </header>
@@ -100,7 +100,7 @@ Mics.tw            </a>
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2013-12-23T09:31:52+08:00"> 2013-12-23</time>
+        <i class="fa fa-calendar"></i><time datetime="2013-12-28T12:15:00+08:00"> 2013-12-28</time>
     </span>
 
 
@@ -110,17 +110,46 @@ Mics.tw            </a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>第一次使用octopress :D</p>
-<p>用git的方式和markdown來撰寫blog</p>
-<p>可以用vim來寫blog</p>
-<p>好特別XDDD</p>
+                <p>最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。</p>
 
 
-<h2>Reference</h2>
+<p>教學: </p>
+<p>在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到</p>
+<div class="highlight"><pre>netbeans_default_options=&quot;-J-xxxx -J-xxxx&quot;
+</pre></div>
+
+
+<p>然後在這段的最後雙引號(")前 加上</p>
+<div class="highlight"><pre>-J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd
+</pre></div>
+
+
+<p>看起來會像這樣</p>
+<div class="highlight"><pre>netbeans_default_options=&quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J -Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-D sun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemo ryMapping=true -J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd&quot;
+</pre></div>
+
+
+<h2>教學文章</h2>
+<p>然後參考以下安裝font Rendering 和 openJDK patch 就完成了!!</p>
 <ul>
-<li>http://markdown.tw/ - markdown語法教學</li>
-<li>http://octopress.org/docs/setup/ - octopress初始化教學</li>
-<li>http://octopress.org/docs/deploying/github/ - octopress on github教學</li>
+<li><a href="http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html">Better Font Rendering In Linux With Infinality</a></li>
+<li><a href="http://www.webupd8.org/2013/06/install-openjdk-patched-with-font-fixes.html">Install OpenJDK Patched With Font Fixes (ubuntu ppa)</a></li>
+</ul>
+<h2>PPA</h2>
+<p>如果懂ppa可以直接安裝XD</p>
+<ul>
+<li>ppa:no1wantdthisname/ppa</li>
+<li>ppa:no1wantdthisname/openjdk-fontfix</li>
+</ul>
+<h2>程式設計師用等寬字型</h2>
+<ul>
+<li>https://github.com/adobe/source-code-pro</li>
+<li>http://openfontlibrary.org/font/consolamono</li>
+</ul>
+<p>找了這麼久，結果最後用文泉驛等寬微米黑，因為Netbeans需要字體內有中文才能顯示中文 :/</p>
+<h2>參考資料</h2>
+<ul>
+<li><a href="http://blog.lyhdev.com/2013/11/netbeans-ide-on-ubuntu-linux.html">NetBeans IDE 字型美化 on Ubuntu Linux</a></li>
 </ul>
             </div>
             <!-- /.entry-content -->
@@ -133,8 +162,8 @@ Mics.tw            </a>
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'mics'; // required: replace example with your forum shortname
 
-                    var disqus_identifier = 'first-use-octopress';
-                var disqus_url = 'http://mics.tw/posts/2013/12/first-use-octopress/';
+                    var disqus_identifier = 'ubuntu-fonts-optimization';
+                var disqus_url = 'http://mics.tw/2013/12/ubuntu-fonts-optimization/';
 
             var disqus_config = function () {
                 this.language = "zh-tw";
@@ -173,27 +202,27 @@ Mics.tw            </a>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2015/09/change-to-pelican/">
+                        <a href="http://mics.tw/2015/09/change-to-pelican/">
                             改用Pelican來做部落格
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">
+                        <a href="http://mics.tw/2014/05/laravel-development-environment-on-windows7/">
                             Laravel 開發環境 on Windows7 - part I - 安裝Composer
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2014/01/kuas-system-correction/">
+                        <a href="http://mics.tw/2014/01/kuas-system-correction/">
                             高應大校務系統修正
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2014/01/optimization-of-ubuntu/">
+                        <a href="http://mics.tw/2014/01/optimization-of-ubuntu/">
                             Ubuntu字體優化 - 去除GB 18030
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="http://mics.tw/posts/2014/01/eye-protection-redshift/">
+                        <a href="http://mics.tw/2014/01/eye-protection-redshift/">
                             保護眼睛? Redshift
                         </a>
                     </li>
