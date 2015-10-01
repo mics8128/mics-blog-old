@@ -43,6 +43,7 @@ STATIC_PATHS = ['images', 'extra']
 EXTRA_PATH_METADATA = {
                 'extra/CNAME': {'path': 'CNAME'},
                 'extra/favicon.ico': {'path': 'favicon.ico'},
+                'extra/favicon.png': {'path': 'favicon.png'},
             }
 
 # Direct theme
@@ -70,3 +71,8 @@ CC_LICENSE = "by-nc-sa"
 #URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
+
+
+#Favicon
+FAVICON = "favicon.png"
+FAVICON_IE = "favicon.ico"
