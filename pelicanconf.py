@@ -56,23 +56,23 @@ PLUGINS = ['tag_cloud', 'tipue_search', 'summary']
 #Added setting
 USE_FOLDER_AS_CATEGORY = False
 
-DEFAULT_CATEGORY = "Blog"
+DEFAULT_CATEGORY = "Post"
 DISPLAY_PAGES_ON_MENU = True
-DISPLAY_CATEGORIES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 # GITHUB_USER = "mics8128"
 
 
 DEFAULT_DATE = 'fs'
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"
-THEME = "./pelican-bootstrap3"
-CC_LICENSE = "by-nc-sa"
 
 #URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
 
-#Favicon
+#Theme setting
+THEME = "./pelican-bootstrap3"
+CC_LICENSE = "by-nc-sa"
 FAVICON = "favicon.png"
 FAVICON_IE = "favicon.ico"
