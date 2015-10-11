@@ -18,7 +18,7 @@ tags: mac, software
 * [Yoink](http://eternalstorms.at/yoink/Yoink_-_Draggings_a_drag_no_more/Yoink_-_Simplify_drag_and_drop_on_your_Mac.html) ($4.99) - 拖拉暫放區
 * [CleanMyMac 3](http://macpaw.com/cleanmymac) ($39.95) - Mac清理工具
 * [MacClean](http://www.imobie.com/macclean/) (Free) - Mac清理工具
-* [Rescue Time](https://www.rescuetime.com) (Free for limir) - 記錄自己在電腦上做什麼
+* [Rescue Time](https://www.rescuetime.com) (Free for limit) - 記錄自己在電腦上做什麼
 * [CheatSheet](http://www.mediaatelier.com/CheatSheet/) (Free) - 熱鍵顯示工具
 * [Karabiner](https://pqrs.org/osx/karabiner/) (Free) - 修改鍵盤功能
 * [Xee<sup>3</sup>](http://xee.c3.cx)($3.99) - 看圖工具
