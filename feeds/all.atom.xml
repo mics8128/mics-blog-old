@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-10-01T00:07:00-05:00</updated><entry><title>快速部署laravel到heroku</title><link href="https://mics.tw/posts/2015/10/fast-deploy-laravel-to-heroku/" rel="alternate"></link><updated>2015-10-01T00:07:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-01:posts/2015/10/fast-deploy-laravel-to-heroku/</id><summary type="html">&lt;p&gt;環境需求&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-10-11T00:00:00+08:00</updated><entry><title>我的Mac使用軟體紀錄</title><link href="https://mics.tw/posts/2015/10/my-mac-software/" rel="alternate"></link><updated>2015-10-11T00:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-11:posts/2015/10/my-mac-software/</id><summary type="html">&lt;p&gt;此文章記錄一些在我自己的MacBook Pro上執行的好APP，使用的版本是OS X EI Capitan。&lt;/p&gt;
+
+
+&lt;h2&gt;Tools&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://itunes.apple.com/us/app/the-unarchiver/id425424353?mt=12"&gt;The Unarchiver&lt;/a&gt; (Free) - 解壓縮工具&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.derlien.com"&gt;Disk Inventory X&lt;/a&gt; (Free) - 硬碟分析，看看哪些東西佔走了你的硬碟&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://agilebits.com/onepassword"&gt;1Password&lt;/a&gt; ($49.99) - 紀錄密碼&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.alfredapp.com"&gt;Alfred 2&lt;/a&gt; (£17) - 搜尋工具，可取代內建Spotligh&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.macbartender.com"&gt;Bartender 2&lt;/a&gt; ($15) - 隱藏狀態列的icon&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bjango.com/mac/istatmenus/"&gt;iStat Menus&lt;/a&gt; ($18) - 狀態列系統狀態資訊&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://eternalstorms.at/yoink/Yoink_-_Draggings_a_drag_no_more/Yoink_-_Simplify_drag_and_drop_on_your_Mac.html"&gt;Yoink&lt;/a&gt; ($4.99) - 拖拉暫放區&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://macpaw.com/cleanmymac"&gt;CleanMyMac 3&lt;/a&gt; ($39.95) - Mac清理工具&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.imobie.com/macclean/"&gt;MacClean&lt;/a&gt; (Free) - Mac清理工具&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.rescuetime.com"&gt;Rescue Time&lt;/a&gt; (Free for limir) - 記錄自己在電腦上做什麼&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.mediaatelier.com/CheatSheet/"&gt;CheatSheet&lt;/a&gt; (Free) - 熱鍵顯示工具&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pqrs.org/osx/karabiner/"&gt;Karabiner&lt;/a&gt; (Free) - 修改鍵盤功能&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://xee.c3.cx"&gt;Xee&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;($3.99) - 看圖工具&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.5kplayer.com"&gt;5KPlayer&lt;/a&gt; (Free) - 影音播放&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.macupdate.com/app/mac/37991/nosleep"&gt;No Sleep&lt;/a&gt; (Free) - 防止電腦闔上時進入休眠狀態&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Design&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.sketchapp.com"&gt;Sketch&lt;/a&gt; ($99) - 向量繪圖軟體&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://affinity.serif.com/en-gb/photo/"&gt;Affinity Photo&lt;/a&gt; ($49.99) - 點陣圖繪圖軟體&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Programming&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.vim.org"&gt;Vim&lt;/a&gt; (Free) - 我是Vim派的 &lt;a href="https://github.com/mics8128/vimrc"&gt;我的設定檔&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://iterm2.com"&gt;iTerm&lt;/a&gt; (Free) - 終端機工具&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="mac"></category><category term="software"></category></entry><entry><title>快速部署laravel到heroku</title><link href="https://mics.tw/posts/2015/10/fast-deploy-laravel-to-heroku/" rel="alternate"></link><updated>2015-10-01T00:07:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-01:posts/2015/10/fast-deploy-laravel-to-heroku/</id><summary type="html">&lt;p&gt;環境需求&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;PHP&lt;/li&gt;
 &lt;li&gt;Composer&lt;/li&gt;
