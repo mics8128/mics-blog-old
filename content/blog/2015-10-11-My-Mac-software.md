@@ -23,7 +23,7 @@ tags: mac, software
 * [CheatSheet](http://www.mediaatelier.com/CheatSheet/) (Free) - 熱鍵顯示工具
 * [Karabiner](https://pqrs.org/osx/karabiner/) (Free) - 修改鍵盤功能
 * [Xee<sup>3</sup>](http://xee.c3.cx)($3.99) - 看圖工具
-* [5KPlayer](http://www.5kplayer.com) (Free) - 影音播放
+* <del>[5KPlayer](http://www.5kplayer.com) (Free) - 影音播放</del> (已在10/14移除，因為快轉時會lag...)
 * [No Sleep](http://www.macupdate.com/app/mac/37991/nosleep) (Free) - 防止電腦闔上時進入休眠狀態
 * [iTerm](https://iterm2.com) (Free) - 終端機工具
 * [ForkLift 2](http://www.binarynights.com/forklift/) ($29.95) - FTP, SFTP, Amazon S3 Client
