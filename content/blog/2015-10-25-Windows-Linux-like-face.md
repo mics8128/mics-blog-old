@@ -17,7 +17,8 @@ Babun
 
 下面是一些我自己的設定 可作可不做
 
-* 到C:\User\UserName\.babun\fonts裡面執行RegisterFont.exe
+* 到`C:\User\UserName\.babun\fonts\Menlo`裡找到四個字形檔，右鍵->安裝
+* 然後執行`RegisterFont.exe`
 * 然後到終端機更改字體為Menlo for Powerline
 * 最後打開.zshrc找到 `ZSH_THEME="babun"` 改成 `ZSH_THEME="agnoster"`
 
