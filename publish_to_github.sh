@@ -2,4 +2,4 @@
 # pelican content -o output -s pelicanconf.py
 make publish
 ghp-import output
-git push origin gh-pages:master
+git push origin -f gh-pages:master
