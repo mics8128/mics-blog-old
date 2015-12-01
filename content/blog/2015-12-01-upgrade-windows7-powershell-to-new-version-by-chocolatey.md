@@ -1,11 +1,13 @@
 Title: 使用chocolatey升級Windows7下的Powershell到最新版本
 Date: 2015-12-01 20:28
 Slug: upgrade-windows7-powershell-to-new-version-by-chocolatey
-tags: windows, choco
+tags: windows, chocolatey
 
 因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法
 
-假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考[官方網站](https://chocolatey.org/packages)，在這邊開始教學。 <!-- PELICAN_END_SUMMARY -->
+假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考[官方網站](https://chocolatey.org/packages)，在這邊開始教學。
+
+<!-- PELICAN_END_SUMMARY -->
 
 * 首先以系統管理員模式開啟cmd.exe
 
