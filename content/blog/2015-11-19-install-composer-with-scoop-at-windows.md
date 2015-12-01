@@ -3,8 +3,12 @@ Date: 2015-11-19 20:58
 Slug: install-composer-with-scoop-at-windows
 tags: composer, php, scoop, windows
 
-因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面，由於安裝scoop需要powershell 3，win7或win7以下使用者請先安裝powershell 3 (請參考[在 Lync Online 中下載並安裝 Windows PowerShell 3.0](https://technet.microsoft.com/zh-tw/library/dn362783(v=ocs.15).aspx) 沒有實測過)
+因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。
 <!-- PELICAN_END_SUMMARY -->
+
+## 確定是否有PowerShell 3.0
+* 假如你的作業系統是Windows 7 請先想辦法安裝PowerShell 3.0以上
+* 目前正在嘗試中，稍後會加上win7安裝PowerShell 3.0的教學
 
 ## 開始安裝Scoop
 * 請先打開powershell執行
