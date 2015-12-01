@@ -4,25 +4,25 @@ Slug: install-composer-with-scoop-at-windows
 tags: composer, php, scoop, windows
 
 因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。
+
 <!-- PELICAN_END_SUMMARY -->
 
 ## 確定是否有PowerShell 3.0
-* 假如你的作業系統是Windows 7 請先想辦法安裝PowerShell 3.0以上
-* 目前正在嘗試中，稍後會加上win7安裝PowerShell 3.0的教學
+* 假如你的作業系統是 Windows 7 請先參考[這篇文章]({filename}/blog/2015-12-01-upgrade-windows7-powershell-to-new-version-by-chocolatey.md)來升級powershell。
 
-## 開始安裝Scoop
-* 請先打開powershell執行
+## 開始安裝 Scoop
+* 請先打開 powershell 執行
 
 
 ```
     set-executionpolicy unrestricted -s cu
 ```
 
-* 然後按Y後按Enter
+* 然後按Y後按 Enter
 
 ![執行原則變更]({filename}/images/2015-11-19/1.png)
 
-* 接下來先安裝scoop然後安裝php
+* 接下來先安裝 scoo p然後安裝 php
 
 ```
     iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
@@ -33,7 +33,7 @@ tags: composer, php, scoop, windows
 
 ![安裝scoop與php]({filename}/images/2015-11-19/2.png)
 
-* 測試php是否正常執行
+* 測試 php 是否正常執行
 
 ![測試php是否正常執行]({filename}/images/2015-11-19/3.png)
 
@@ -42,7 +42,7 @@ tags: composer, php, scoop, windows
 ![找到scoop]({filename}/images/2015-11-19/4.png)
 
 * 三個資料夾的功能分別是
-    * apps  - 存放scoop安裝的程式的資料
+    * apps  - 存放 scoop 安裝的程式的資料
     * cache - 安裝檔案暫存
     * shims - 執行檔案(安裝的時候已經加入PATH中)
 
@@ -83,7 +83,7 @@ php -r "readfile('https://getcomposer.org/installer');" | php
 wget https://gist.githubusercontent.com/mics8128/de1ea57536a56aa48673/raw/268f1c15091a728ef2e051a81a5980c4531d89af/composer.bat -OutFile composer.bat
 ```
 
-* 最後測試我們的composer有沒有正常
+* 最後測試我們的 composer 有沒有正常
 
 ```
 composer.bat
@@ -96,7 +96,7 @@ composer.bat
 
 ##以下是選用安裝的軟體 都只要一個指令喔^.<
 
-* Git版本管理系統，在powershell執行``scoop install git``
+* Git版本管理系統，在 powershell 執行 ``scoop install git`` 
 * (暫時想不到其他的 隨時補充)
 
 
