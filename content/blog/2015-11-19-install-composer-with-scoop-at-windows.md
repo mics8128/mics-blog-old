@@ -22,7 +22,7 @@ tags: composer, php, scoop, windows
 
 ![執行原則變更]({filename}/images/2015-11-19/1.png)
 
-* 接下來先安裝 scoo p然後安裝 php
+* 接下來先安裝 scoop 然後安裝 php
 
 ```
     iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
