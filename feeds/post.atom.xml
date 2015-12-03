@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/post.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-03T08:12:00+08:00</updated><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
-&lt;h2&gt;前言&lt;/h2&gt;
+&lt;h3&gt;前言&lt;/h3&gt;
 &lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
 
 
 &lt;p&gt;本篇文章會持續修改，最新修改日期: 2015-12-03。&lt;/p&gt;
-&lt;h2&gt;第一章 環境建立&lt;/h2&gt;
-&lt;h3&gt;Windows&lt;/h3&gt;
+&lt;h3&gt;第一章 環境建立&lt;/h3&gt;
+&lt;h4&gt;Windows&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;使用官方php安裝php與composer&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Mac&lt;/h3&gt;
+&lt;h4&gt;Mac&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;安裝php與composer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;Linux&lt;/h3&gt;
+&lt;h4&gt;Linux&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;安裝php與composer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;第二章 Composer&lt;/h2&gt;
+&lt;h3&gt;第二章 Composer&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;使用Composer建立一個簡易的Laravel專案並&lt;/li&gt;
 &lt;li&gt;Composer基本介紹與用法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;第三章 homestead&lt;/h2&gt;
+&lt;h3&gt;第三章 homestead&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;尚未規劃&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;第四章 Laravel&lt;/h2&gt;
+&lt;h3&gt;第四章 Laravel&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;使用 Laravel 製作一個簡易 Blog (預計分成三部分)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;第五章 如何團隊合作&lt;/h2&gt;
+&lt;h3&gt;第五章 如何團隊合作&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;PHP 語法標準&lt;/li&gt;
 &lt;li&gt;Git使用教學&lt;/li&gt;
