@@ -1,5 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-10-11T00:00:00+08:00</updated><entry><title>我的Mac使用軟體紀錄</title><link href="https://mics.tw/posts/2015/10/my-mac-software/" rel="alternate"></link><updated>2015-10-11T00:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-11:posts/2015/10/my-mac-software/</id><summary type="html">&lt;p&gt;此文章記錄一些在我自己的MacBook Pro上執行的好Apps，使用的版本是OS X EI Capitan。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-03T08:12:00+08:00</updated><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
+&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
+
+
+&lt;p&gt;本篇文章會持續修改，最新修改日期: 2015-12-03。&lt;/p&gt;
+&lt;h2&gt;第一章 環境建立&lt;/h2&gt;
+&lt;h3&gt;Windows&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;使用官方php安裝php與composer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Mac&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;安裝php與composer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Linux&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;安裝php與composer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;第二章 Composer&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用Composer建立一個簡易的Laravel專案並&lt;/li&gt;
+&lt;li&gt;Composer基本介紹與用法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;第三章 homestead&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;尚未規劃&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;第四章 Laravel&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 Laravel 製作一個簡易 Blog (預計分成三部分)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;第五章 如何團隊合作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;PHP 語法標準&lt;/li&gt;
+&lt;li&gt;Git使用教學&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="windows"></category><category term="laravel"></category><category term="training"></category></entry><entry><title>使用chocolatey升級Windows7下的Powershell到最新版本</title><link href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/" rel="alternate"></link><updated>2015-12-01T20:28:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-01:posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/</id><summary type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
+&lt;p&gt;假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考&lt;a href="https://chocolatey.org/packages"&gt;官方網站&lt;/a&gt;，在這邊開始教學。&lt;/p&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;首先以系統管理員模式開啟cmd.exe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="開啟cmd.exe" src="https://mics.tw/images/2015-12-01/1.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;然後執行以下指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;@powershell&lt;/span&gt; &lt;span class="nt"&gt;-NoProfile&lt;/span&gt; &lt;span class="nt"&gt;-ExecutionPolicy&lt;/span&gt; &lt;span class="nt"&gt;Bypass&lt;/span&gt; &lt;span class="nt"&gt;-Command&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;iex ((new-object net.webclient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nt"&gt;SET&lt;/span&gt; &lt;span class="nt"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=%&lt;/span&gt;&lt;span class="nt"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="nt"&gt;ALLUSERSPROFILE&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;chocolatey&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;bin&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;我在測試時會看到一些警告訊息, 但是好像不影響使用, 所以可以繼續以下步驟.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接下來關閉 cmd.exe 然後以系統管理員權限打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="開啟powershell" src="https://mics.tw/images/2015-12-01/2.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;然後執行以下指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;choco install powershell -y
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;然後...重新開機後 就是 powershell 4.0 囉~&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;確認方法: 打開 powershell (不需要管理權限)後執行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;PSVersionTable&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;PSVersion&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;最後會看到以下訊息就是正確升級了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;Major  Minor  Build  Revision
+-----  -----  -----  --------
+4      0      -1     -1
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="windows"></category><category term="chocolatey"></category></entry><entry><title>在Windows中使用Scoop安裝php與Composer</title><link href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/" rel="alternate"></link><updated>2015-11-19T20:58:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-11-19:posts/2015/11/install-composer-with-scoop-at-windows/</id><summary type="html">&lt;p&gt;因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。&lt;/p&gt;
+
+
+&lt;h2&gt;確定是否有PowerShell 3.0&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;假如你的作業系統是 Windows 7 請先參考&lt;a href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/"&gt;這篇文章&lt;/a&gt;來升級powershell。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;開始安裝 Scoop&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;請先打開 powershell 執行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    set-executionpolicy unrestricted -s cu
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;然後按Y後按 Enter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="執行原則變更" src="https://mics.tw/images/2015-11-19/1.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;接下來先安裝 scoop 然後安裝 php&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;    iex (new-object net.webclient).downloadstring(&amp;#39;https://get.scoop.sh&amp;#39;)
+    scoop install php
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;靜待安裝完畢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="安裝scoop與php" src="https://mics.tw/images/2015-11-19/2.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;測試 php 是否正常執行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="測試php是否正常執行" src="https://mics.tw/images/2015-11-19/3.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;到&lt;code&gt;C:\Users\YOUR USER NAME\AppData\Local\scoop&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="找到scoop" src="https://mics.tw/images/2015-11-19/4.png" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;三個資料夾的功能分別是&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;apps  - 存放 scoop 安裝的程式的資料&lt;/li&gt;
+&lt;li&gt;cache - 安裝檔案暫存&lt;/li&gt;
+&lt;li&gt;shims - 執行檔案(安裝的時候已經加入PATH中)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再來進到&lt;code&gt;.\apps\php\5.6.15&lt;/code&gt;中(&lt;strong&gt;注意&lt;/strong&gt;版本號可能會不同)，找到&lt;code&gt;php.ini&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;搜尋&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;; extension_dir = &amp;quot;ext&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;改成 (注意 &lt;strong&gt;YOUR USER NAME&lt;/strong&gt; 和版本號 &lt;strong&gt;5.6.15&lt;/strong&gt;可能會不同，請自行隨機應變)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;extension_dir = &amp;quot;C:\Users\YOUR USER NAME\AppData\Local\scoop\apps\php\5.6.15\ext&amp;quot;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;再找到&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;;extension=php_openssl.dll
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;把前面的分號&lt;code&gt;;&lt;/code&gt;去掉&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;然後存檔&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;進入執行檔目錄(composer直接安裝在這裡)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cd \Users\YOUR USER NAME\AppData\Local\scoop\shims
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;安裝composer並設定執行script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;php&lt;/span&gt; &lt;span class="nt"&gt;-r&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;readfile(&amp;#39;https://getcomposer.org/installer&amp;#39;);&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nt"&gt;php&lt;/span&gt;
+&lt;span class="nt"&gt;wget&lt;/span&gt; &lt;span class="nt"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="nt"&gt;gist&lt;/span&gt;&lt;span class="nc"&gt;.githubusercontent.com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;mics8128&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;de1ea57536a56aa48673&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;raw&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;268f1c15091a728ef2e051a81a5980c4531d89af&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="nc"&gt;.bat&lt;/span&gt; &lt;span class="nt"&gt;-OutFile&lt;/span&gt; &lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="nc"&gt;.bat&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;最後測試我們的 composer 有沒有正常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;composer.bat
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="composer test" src="https://mics.tw/images/2015-11-19/5.png" /&gt;&lt;/p&gt;
+&lt;h1&gt;大功告成拉~ YA&lt;/h1&gt;
+&lt;h2&gt;以下是選用安裝的軟體 都只要一個指令喔^.&amp;lt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Git版本管理系統，在 powershell 執行 &lt;code&gt;scoop install git&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;(暫時想不到其他的 隨時補充)&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="composer"></category><category term="php"></category><category term="scoop"></category><category term="windows"></category></entry><entry><title>Windows下的Linux like介面懶人包 - Babun</title><link href="https://mics.tw/posts/2015/10/windows-linux-like-face/" rel="alternate"></link><updated>2015-10-25T11:37:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-25:posts/2015/10/windows-linux-like-face/</id><summary type="html">&lt;p&gt;紀錄一下在windows下使用zsh的方法(給自己看的，不會太詳細XD)&lt;/p&gt;
+
+
+&lt;p&gt;Babun&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;到&lt;a href="http://babun.github.io/"&gt;Babun&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下載後解壓縮到任一地方&lt;/li&gt;
+&lt;li&gt;執行install.bat&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;坐享其成~ 接下來就完成了在windows下的command line環境 :DDDDD&lt;/p&gt;
+&lt;p&gt;下面是一些我自己的設定 可作可不做&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;到&lt;code&gt;C:\User\UserName\.babun\fonts\Menlo&lt;/code&gt;裡找到四個字形檔，右鍵-&amp;gt;安裝&lt;/li&gt;
+&lt;li&gt;然後執行&lt;code&gt;RegisterFont.exe&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;然後到終端機更改字體為Menlo for Powerline&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最後打開.zshrc找到 &lt;code&gt;ZSH_THEME="babun"&lt;/code&gt; 改成 &lt;code&gt;ZSH_THEME="agnoster"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最後在最後一行加上 &lt;code&gt;DEFAULT_USER="UserName"&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="windows"></category><category term="linux"></category><category term="babun"></category></entry><entry><title>我的Mac使用軟體紀錄</title><link href="https://mics.tw/posts/2015/10/my-mac-software/" rel="alternate"></link><updated>2015-10-11T00:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-11:posts/2015/10/my-mac-software/</id><summary type="html">&lt;p&gt;此文章記錄一些在我自己的MacBook Pro上執行的好Apps，使用的版本是OS X EI Capitan。&lt;/p&gt;
 
 
 &lt;h2&gt;Apps&lt;/h2&gt;
