@@ -20,7 +20,7 @@
 <link rel="canonical" href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/">
 
         <meta name="author" content="Mics" />
-        <meta name="keywords" content="windows,chocolatey" />
+        <meta name="keywords" content="windows,chocolatey,powersehll" />
         <meta name="description" content="因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法 假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考官方網站，在這邊開始教學。" />
 
         <meta property="og:site_name" content="Mics.tw" />
@@ -32,6 +32,7 @@
             <meta property="article:section" content="Post" />
             <meta property="article:tag" content="windows" />
             <meta property="article:tag" content="chocolatey" />
+            <meta property="article:tag" content="powersehll" />
             <meta property="article:author" content="Mics" />
 
 
@@ -114,6 +115,8 @@ Mics.tw            </a>
 	<a href="https://mics.tw/tag/windows.html">windows</a>
         /
 	<a href="https://mics.tw/tag/chocolatey.html">chocolatey</a>
+        /
+	<a href="https://mics.tw/tag/powersehll.html">powersehll</a>
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
@@ -122,7 +125,7 @@ Mics.tw            </a>
 
 
 <ul>
-<li>首先以系統管理員模式開啟cmd.exe</li>
+<li>首先以<strong>系統管理員</strong>模式開啟cmd.exe</li>
 </ul>
 <p><img alt="開啟cmd.exe" src="https://mics.tw/images/2015-12-01/1.png" /></p>
 <ul>
@@ -133,12 +136,9 @@ Mics.tw            </a>
 
 
 <ul>
-<li>
-<p>我在測試時會看到一些警告訊息, 但是不影響使用, 所以可以繼續以下步驟.</p>
-</li>
-<li>
-<p>接下來關閉 cmd.exe 然後以系統管理員權限打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )</p>
-</li>
+<li>此指令的作用是安裝choco這個套件管理系統</li>
+<li>我在測試時會看到一些警告訊息, 但是不影響使用, 所以可以繼續以下步驟.</li>
+<li>接下來關閉 cmd.exe 然後以<strong>系統管理員</strong>模式打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )</li>
 </ul>
 <p><img alt="開啟powershell" src="https://mics.tw/images/2015-12-01/2.png" /></p>
 <ul>
@@ -149,12 +149,19 @@ Mics.tw            </a>
 
 
 <ul>
-<li>
-<p>然後...重新開機後 就是 powershell 4.0 囉~</p>
-</li>
-<li>
-<p>確認方法: 打開 powershell (不需要管理權限)後執行</p>
-</li>
+<li>此指令會幫你完成安裝 powershell 所需要做的動作</li>
+<li>但是因為 powershell 是 windows 系統元件所以務必要重新開機</li>
+<li>接下來務必要記得需要 <strong>重開機</strong></li>
+<li>不要忘記 <strong>重開機</strong></li>
+<li>記得 <strong>要重開機</strong></li>
+</ul>
+<h1>重開機之後</h1>
+<h1>重開機之後</h1>
+<h1>重開機之後</h1>
+<ul>
+<li>很重要所以寫三遍</li>
+<li>接下來確認 powershell 是否成功的更新了</li>
+<li>確認方法: 打開 powershell (不需要管理權限)後執行</li>
 </ul>
 <div class="highlight"><pre><span class="p">$</span><span class="nv">PSVersionTable</span><span class="p">.</span><span class="nv">PSVersion</span><span class="x"></span>
 </pre></div>
@@ -264,16 +271,6 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/babun.html">
-                            babun
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/training.html">
-                            training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/scoop.html">
                             scoop
                         </a>
@@ -284,13 +281,18 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/chocolatey.html">
-                            chocolatey
+                        <a href="https://mics.tw/tag/babun.html">
+                            babun
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/chocolatey.html">
+                            chocolatey
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -309,8 +311,18 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
+                        <a href="https://mics.tw/tag/powersehll.html">
+                            powersehll
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/training.html">
+                            training
                         </a>
                     </li>
                 </ul>
