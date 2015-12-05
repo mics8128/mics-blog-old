@@ -19,7 +19,7 @@ tags: windows, chocolatey
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 ```
 
-* 我在測試時會看到一些警告訊息, 但是好像不影響使用, 所以可以繼續以下步驟.
+* 我在測試時會看到一些警告訊息, 但是不影響使用, 所以可以繼續以下步驟.
 
 * 接下來關閉 cmd.exe 然後以系統管理員權限打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )
 

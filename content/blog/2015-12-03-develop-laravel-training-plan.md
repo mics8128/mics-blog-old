@@ -1,7 +1,7 @@
 Title: 開發Laravel的教學計畫
 Date: 2015-12-03 08:12
 Slug: develop-laravel-training-plan
-tags: windows, laravel, training
+tags: laravel, training
 
 最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。
 
@@ -20,6 +20,10 @@ tags: windows, laravel, training
 * [使用官方php安裝php與composer]({filename}/old_blog/2014-05-06-laravel-development-environment-on-windows7.md)
 * [使用scoop安裝php與composer]({filename}/blog/2015-11-19-install-composer-with-scoop-at-windows.md) (建議選擇此項，後續需要其它套件皆會使用scoop安裝)
 
+* 假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包，但我並沒有實際測試過。
+* [Wagon](http://www.laravel-dojo.com/opensource/wagon)
+* [影片: wagon：免安裝可攜式的 Laravel 開發懶人包 by 聖佑](https://www.youtube.com/watch?v=O7ynMSd0Tlo) 
+
 #### Mac
 
 * 安裝php與composer
@@ -29,7 +33,7 @@ tags: windows, laravel, training
 * 安裝php與composer
 
 ### 第二章 Composer
-* 使用Composer建立一個簡易的Laravel專案並
+* 使用Composer建立一個簡易的Laravel專案
 * Composer基本介紹與用法
 
 ### 第三章 homestead
