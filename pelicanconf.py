@@ -76,3 +76,8 @@ THEME = "./pelican-bootstrap3"
 CC_LICENSE = "by-nc-sa"
 FAVICON = "favicon.png"
 FAVICON_IE = "favicon.ico"
+
+
+#SUMMARY MARKER
+SUMMARY_BEGIN_MARKER = '<!-- SUMMARY_BEGIN -->'
+SUMMARY_END_MARKER = '<!-- SUMMARY_END -->'

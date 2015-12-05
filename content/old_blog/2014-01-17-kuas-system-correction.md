@@ -12,7 +12,8 @@ slug: kuas-system-correction
 **<font color=red>注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決</font>**
 
 ##以下是使用教學
-<!-- PELICAN_END_SUMMARY -->
+
+<!-- SUMMARY_END -->
 
 首先安裝Firefox plugin Greasemonkey (好像chrome也有??，我只有在firefox上測試而已)
 
@@ -27,5 +28,3 @@ https://addons.mozilla.org/zh-tw/firefox/addon/greasemonkey/
 ![螢幕擷圖存為 2014-01-17 08:50:26.png](http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png)
 
 點選安裝，恭喜你可以正常進入校務系統了............
-
-

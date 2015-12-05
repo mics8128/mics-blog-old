@@ -6,7 +6,7 @@ tags: mac, software
 
 此文章記錄一些在我自己的MacBook Pro上執行的好Apps，使用的版本是OS X EI Capitan。
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 ## Apps
 
@@ -29,7 +29,3 @@ tags: mac, software
 * [ForkLift 2](http://www.binarynights.com/forklift/) ($29.95) - FTP, SFTP, Amazon S3 Client
 * [Sketch](http://www.sketchapp.com) ($99) - 向量繪圖軟體
 * [Affinity Photo](https://affinity.serif.com/en-gb/photo/) ($49.99) - 點陣圖繪圖軟體
-
-
-
-

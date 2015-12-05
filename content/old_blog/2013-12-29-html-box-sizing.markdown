@@ -8,24 +8,19 @@ slug: html-box-sizing
 - padding
 - width
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上
 
-    * { 
+    * {
          -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
          -moz-box-sizing: border-box;    /* Firefox, other Gecko */
          box-sizing: border-box;         /* Opera/IE 8+ */
     }
 
-這個方法呢，會讓*內容+padding+border = 設定寬度*，多美好阿:D 
+這個方法呢，會讓*內容+padding+border = 設定寬度*，多美好阿:D
 
 
 參考資料
 ----
 [http://zh.learnlayout.com/box-sizing.html]()
-
-
-
-
-

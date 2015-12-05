@@ -5,7 +5,7 @@ tags: composer, php, scoop, windows
 
 因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 ## 確定是否有PowerShell 3.0
 * 假如你的作業系統是 Windows 7 請先參考[這篇文章]({filename}/blog/2015-12-01-upgrade-windows7-powershell-to-new-version-by-chocolatey.md)來升級powershell。
@@ -96,8 +96,5 @@ composer.bat
 
 ##以下是選用安裝的軟體 都只要一個指令喔^.<
 
-* Git版本管理系統，在 powershell 執行 ``scoop install git`` 
+* Git版本管理系統，在 powershell 執行 ``scoop install git``
 * (暫時想不到其他的 隨時補充)
-
-
-

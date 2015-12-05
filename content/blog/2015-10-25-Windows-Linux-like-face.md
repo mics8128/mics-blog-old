@@ -5,7 +5,7 @@ tags: windows, linux, babun
 
 紀錄一下在windows下使用zsh的方法(給自己看的，不會太詳細XD)
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 Babun
 
@@ -23,5 +23,3 @@ Babun
 * 最後打開.zshrc找到 `ZSH_THEME="babun"` 改成 `ZSH_THEME="agnoster"`
 
 * 最後在最後一行加上 `DEFAULT_USER="UserName"`
-
-

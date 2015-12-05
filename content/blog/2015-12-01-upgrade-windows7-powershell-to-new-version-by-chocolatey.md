@@ -7,7 +7,7 @@ tags: windows, chocolatey
 
 假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考[官方網站](https://chocolatey.org/packages)，在這邊開始教學。
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 * 首先以系統管理員模式開啟cmd.exe
 

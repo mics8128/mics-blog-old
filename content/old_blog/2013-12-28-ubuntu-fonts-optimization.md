@@ -4,9 +4,9 @@ slug: ubuntu-fonts-optimization
 
 最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
-教學: 
+教學:
 
 在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到
 

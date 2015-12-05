@@ -4,7 +4,7 @@ Slug: test-photo
 
 本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 ## 千島湖
 ![測試圖片1]({filename}/images/test-photo1.jpg)

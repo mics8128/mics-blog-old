@@ -11,8 +11,10 @@ Tags: php, laravel
 
 Windows使用者前兩個可以參考我的前一篇文章[Laravel 開發環境 on Windows7]({filename}../old_blog/2014-05-06-laravel-development-environment-on-windows7.md)，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通
 
+<!-- SUMMARY_END -->
+
 登入並在heroku創建專案
-    
+
     :::bash
     $ heroku login
     Enter your Heroku credentials.
@@ -39,7 +41,7 @@ Windows使用者前兩個可以參考我的前一篇文章[Laravel 開發環境 
     # 此檔案用意是告訴http server我們的根目錄是public
 
 Windows下可以直接把以下內容複製到Procfile裡面
-    
+
     web: vendor/bin/heroku-php-apache2 public
 
 初始化git
@@ -65,7 +67,7 @@ Windows下可以直接把以下內容複製到Procfile裡面
     Whoops, looks like something went wrong.
 
 會出現的原因是環境參數沒有設定
-    
+
     :::bash
     # 觀看環境參數
     $ cat .env
@@ -96,6 +98,3 @@ Windows下可以直接把以下內容複製到Procfile裡面
     # 其他的DATABASE USERNAME也可以以同樣方法設定 這裏沒有用到就不設定了
 
 最後再到同一個網址按下F5 就可以看到Laravel 5了~
-
-
-

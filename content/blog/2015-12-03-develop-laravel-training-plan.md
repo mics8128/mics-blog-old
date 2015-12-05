@@ -9,7 +9,7 @@ tags: windows, laravel, training
 
 其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。
 
-<!-- PELICAN_END_SUMMARY -->
+<!-- SUMMARY_END -->
 
 本篇文章會持續修改，最新修改日期: 2015-12-03。
 
