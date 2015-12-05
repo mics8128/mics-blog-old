@@ -11,7 +11,7 @@ tags: laravel, training
 
 <!-- SUMMARY_END -->
 
-本篇文章會持續修改，最新修改日期: 2015-12-03。
+本篇文章會持續修改，最新修改日期: 2015-12-05。
 
 ### 第一章 環境建立
 
@@ -20,7 +20,7 @@ tags: laravel, training
 * [使用官方php安裝php與composer]({filename}/old_blog/2014-05-06-laravel-development-environment-on-windows7.md)
 * [使用scoop安裝php與composer]({filename}/blog/2015-11-19-install-composer-with-scoop-at-windows.md) (建議選擇此項，後續需要其它套件皆會使用scoop安裝)
 
-* 假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包，但我並沒有實際測試過。
+##### 假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包。
 * [Wagon](http://www.laravel-dojo.com/opensource/wagon)
 * [影片: wagon：免安裝可攜式的 Laravel 開發懶人包 by 聖佑](https://www.youtube.com/watch?v=O7ynMSd0Tlo) 
 
@@ -34,7 +34,8 @@ tags: laravel, training
 
 ### 第二章 Composer
 * 使用Composer建立一個簡易的Laravel專案
-* Composer基本介紹與用法
+* [Composer基本用法 Part I]({filename}/blog/2015-12-04-composer-basic-use.md)
+* Composer基本用法 Part II
 
 ### 第三章 homestead
 * 尚未規劃
