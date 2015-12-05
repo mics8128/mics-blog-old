@@ -9,7 +9,14 @@
 &lt;h4&gt;Windows&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;使用官方php安裝php與composer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包，但我並沒有實際測試過。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.laravel-dojo.com/opensource/wagon"&gt;Wagon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=O7ynMSd0Tlo"&gt;影片: wagon：免安裝可攜式的 Laravel 開發懶人包 by 聖佑&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;Mac&lt;/h4&gt;
 &lt;ul&gt;
@@ -21,7 +28,7 @@
 &lt;/ul&gt;
 &lt;h3&gt;第二章 Composer&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;使用Composer建立一個簡易的Laravel專案並&lt;/li&gt;
+&lt;li&gt;使用Composer建立一個簡易的Laravel專案&lt;/li&gt;
 &lt;li&gt;Composer基本介紹與用法&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;第三章 homestead&lt;/h3&gt;
@@ -36,7 +43,7 @@
 &lt;ul&gt;
 &lt;li&gt;PHP 語法標準&lt;/li&gt;
 &lt;li&gt;Git使用教學&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="windows"></category><category term="laravel"></category><category term="training"></category></entry><entry><title>使用chocolatey升級Windows7下的Powershell到最新版本</title><link href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/" rel="alternate"></link><updated>2015-12-01T20:28:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-01:posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/</id><summary type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="laravel"></category><category term="training"></category></entry><entry><title>使用chocolatey升級Windows7下的Powershell到最新版本</title><link href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/" rel="alternate"></link><updated>2015-12-01T20:28:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-01:posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/</id><summary type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
 &lt;p&gt;假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考&lt;a href="https://chocolatey.org/packages"&gt;官方網站&lt;/a&gt;，在這邊開始教學。&lt;/p&gt;
 
 
@@ -53,7 +60,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;我在測試時會看到一些警告訊息, 但是好像不影響使用, 所以可以繼續以下步驟.&lt;/p&gt;
+&lt;p&gt;我在測試時會看到一些警告訊息, 但是不影響使用, 所以可以繼續以下步驟.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;接下來關閉 cmd.exe 然後以系統管理員權限打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )&lt;/p&gt;
@@ -192,7 +199,7 @@
 &lt;h1&gt;大功告成拉~ YA&lt;/h1&gt;
 &lt;h2&gt;以下是選用安裝的軟體 都只要一個指令喔^.&amp;lt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Git版本管理系統，在 powershell 執行 &lt;code&gt;scoop install git&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;Git版本管理系統，在 powershell 執行 &lt;code&gt;scoop install git&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;(暫時想不到其他的 隨時補充)&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="composer"></category><category term="php"></category><category term="scoop"></category><category term="windows"></category></entry><entry><title>Windows下的Linux like介面懶人包 - Babun</title><link href="https://mics.tw/posts/2015/10/windows-linux-like-face/" rel="alternate"></link><updated>2015-10-25T11:37:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-25:posts/2015/10/windows-linux-like-face/</id><summary type="html">&lt;p&gt;紀錄一下在windows下使用zsh的方法(給自己看的，不會太詳細XD)&lt;/p&gt;
 
@@ -246,6 +253,8 @@
 &lt;li&gt;&lt;a href="https://toolbelt.heroku.com/"&gt;Heroku toolbelt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
+
+
 &lt;p&gt;登入並在heroku創建專案&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;heroku login
 Enter your Heroku credentials.
@@ -423,8 +432,10 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;&lt;img alt="kuas_system_fix 2014-01-17 08-49-16.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/6EkshdpSczTwB0hCG4QM_kuas_system_fix%202014-01-17%2008-49-16.png" /&gt;&lt;/p&gt;
 &lt;p&gt;然後就會出現&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-17 08:50:26.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png" /&gt;&lt;/p&gt;
-&lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</summary></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="https://mics.tw/posts/2014/01/optimization-of-ubuntu/" rel="alternate"></link><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:posts/2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。
+&lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</summary></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="https://mics.tw/posts/2014/01/optimization-of-ubuntu/" rel="alternate"></link><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:posts/2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。&lt;/p&gt;
 
+
+&lt;p&gt;ß
 我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)(&lt;a href="http://www.edu.tw/treasure/filedown.aspx?Node=1123&amp;amp;Index=2&amp;amp;WID=c5ad5187-55ef-4811-8219-e946fe04f725"&gt;教育部資料下載頁面&lt;/a&gt;)，下載方式參考下圖&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;安裝方法&lt;/h2&gt;
@@ -458,8 +469,9 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;img alt="螢幕擷圖存為 2014-01-16 17:52:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/ikbaiuLSKGOUWA131LWm_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:52:36.png" /&gt;&lt;/p&gt;
 &lt;p&gt;最後附上一張教育部宋體字形檔的圖片&lt;/p&gt;
 &lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png" /&gt;&lt;/p&gt;</summary></entry><entry><title>保護眼睛? Redshift</title><link href="https://mics.tw/posts/2014/01/eye-protection-redshift/" rel="alternate"></link><updated>2014-01-01T06:50:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-01:posts/2014/01/eye-protection-redshift/</id><summary type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
-&lt;p&gt;詳細安裝方法請繼續閱讀
-&lt;/p&gt;
+&lt;p&gt;詳細安裝方法請繼續閱讀&lt;/p&gt;
+
+
 &lt;p&gt;因為Ubuntu 13.10套件庫內已經有了，所以直接安裝即可&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gtk-redshift redshift python-appindicator
 gtk-redshift
@@ -481,7 +493,7 @@ gtk-redshift
 temp-day=5700
 temp-night=3500&lt;/p&gt;
 &lt;p&gt;; Enable/Disable a smooth transition between day and night
-; 0 will cause a direct change from day to night screen temperature. 
+; 0 will cause a direct change from day to night screen temperature.
 ; 1 will gradually increase or decrease the screen temperature
 transition=1&lt;/p&gt;
 &lt;p&gt;; Set the screen brightness. Default is 1.0
@@ -540,7 +552,7 @@ lon=121.00
 
 
 &lt;p&gt;但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt; 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
      &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari/Chrome, other WebKit */&lt;/span&gt;
      &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;    &lt;span class="c"&gt;/* Firefox, other Gecko */&lt;/span&gt;
      &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;         &lt;span class="c"&gt;/* Opera/IE 8+ */&lt;/span&gt;
@@ -548,12 +560,12 @@ lon=121.00
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;這個方法呢，會讓&lt;em&gt;內容+padding+border = 設定寬度&lt;/em&gt;，多美好阿:D &lt;/p&gt;
+&lt;p&gt;這個方法呢，會讓&lt;em&gt;內容+padding+border = 設定寬度&lt;/em&gt;，多美好阿:D&lt;/p&gt;
 &lt;h2&gt;參考資料&lt;/h2&gt;
 &lt;p&gt;&lt;a href=""&gt;http://zh.learnlayout.com/box-sizing.html&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Netbeans On Ubuntu字體優化</title><link href="https://mics.tw/posts/2013/12/ubuntu-fonts-optimization/" rel="alternate"></link><updated>2013-12-28T12:15:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-28:posts/2013/12/ubuntu-fonts-optimization/</id><summary type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
 
 
-&lt;p&gt;教學: &lt;/p&gt;
+&lt;p&gt;教學:&lt;/p&gt;
 &lt;p&gt;在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;netbeans_default_options=&amp;quot;-J-xxxx -J-xxxx&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
