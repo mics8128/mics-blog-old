@@ -1,20 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-03T08:12:00+08:00</updated><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-05T12:14:00+08:00</updated><entry><title>Composer基本用法 Part I</title><link href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/" rel="alternate"></link><updated>2015-12-05T12:14:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-05:posts/2015/12/composer-basic-use-part-1/</id><summary type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
+&lt;h3&gt;前置作業&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;請先安裝php以及composer，&lt;a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h3&gt;實作開始&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;首先建立專案資料夾並開啟命令列 ( Mac 下的 Termial , Windows 下的 Power Shell )&lt;/li&gt;
+&lt;li&gt;再來執行以下指令 並根據提示回答適當的答案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer init
+
+Package name &lt;span class="o"&gt;(&lt;/span&gt;&amp;lt;vendor&amp;gt;/&amp;lt;name&amp;gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;mics/t1&lt;span class="o"&gt;]&lt;/span&gt;: mics8128/test1 
+&lt;span class="c"&gt;# mics8128請改為你的 Github 名稱，如果沒有，去註冊一個。 &lt;/span&gt;
+&lt;span class="c"&gt;# test1為專案名稱，可以照這邊填寫test2&lt;/span&gt;
+
+Description &lt;span class="o"&gt;[]&lt;/span&gt;:
+&lt;span class="c"&gt;# 專案說明 在這邊空白即可&lt;/span&gt;
+
+Author &lt;span class="o"&gt;[&lt;/span&gt;Mics &amp;lt;mics.mm@gmail.com&amp;gt;&lt;span class="o"&gt;]&lt;/span&gt;:
+&lt;span class="c"&gt;# 作者 空白或填上自己暱稱/姓名 都可以&lt;/span&gt;
+
+Minimum Stability &lt;span class="o"&gt;[]&lt;/span&gt;:
+Package Type &lt;span class="o"&gt;[]&lt;/span&gt;:
+License &lt;span class="o"&gt;[]&lt;/span&gt;:
+&lt;span class="c"&gt;# 以上三個空白即可，在這邊不重要&lt;/span&gt;
+
+Would you like to define your dependencies &lt;span class="o"&gt;(&lt;/span&gt;require&lt;span class="o"&gt;)&lt;/span&gt; interactively &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class="o"&gt;]&lt;/span&gt;? no
+Would you like to define your dev dependencies &lt;span class="o"&gt;(&lt;/span&gt;require-dev&lt;span class="o"&gt;)&lt;/span&gt; interactively &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class="o"&gt;]&lt;/span&gt;? no
+&lt;span class="c"&gt;# 這兩個先空白，稍後手動新增&lt;/span&gt;
+
+Do you confirm generation &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class="o"&gt;]&lt;/span&gt;?
+&lt;span class="c"&gt;# 在這之前會有一大串，就是即將生成的 composer.json 檔案內容，在這邊直接按 Enter ，同意生成設定檔。&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;可以看到專案的跟目錄下有一個檔案 composer.json，我的 composer.json 長得像這樣。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mics8128/test1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;quot;authors&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+        &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Mics&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;quot;email&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mics.mm@gmail.com&amp;quot;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;],&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;quot;require&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;在這邊修改require那一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mics8128/test1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;quot;authors&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
+        &lt;span class="p"&gt;{&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Mics&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+            &lt;span class="nt"&gt;&amp;quot;email&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mics.mm@gmail.com&amp;quot;&lt;/span&gt;
+        &lt;span class="p"&gt;}&lt;/span&gt;
+    &lt;span class="p"&gt;],&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;quot;require&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+        &lt;span class="nt"&gt;&amp;quot;monolog/monolog&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;^1.17&amp;quot;&lt;/span&gt;
+    &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;然後執行以下指令驗證 composer.json 有沒有錯誤&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer validate
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;你會看到他提示你沒有 license ，在這邊先忽視，反正這個專案沒有要發布&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接下來執行&lt;code&gt;composer install&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer install
+Loading composer repositories with package information
+Installing dependencies &lt;span class="o"&gt;(&lt;/span&gt;including require-dev&lt;span class="o"&gt;)&lt;/span&gt;
+  - Installing psr/log &lt;span class="o"&gt;(&lt;/span&gt;1.0.0&lt;span class="o"&gt;)&lt;/span&gt;
+    Loading from cache
+
+  - Installing monolog/monolog &lt;span class="o"&gt;(&lt;/span&gt;1.17.2&lt;span class="o"&gt;)&lt;/span&gt;
+    Loading from cache
+
+... &lt;span class="c"&gt;# 這邊一大串是建議安裝套件，我們這邊並不需要&lt;/span&gt;
+
+Writing lock file
+Generating autoload files
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;composer install&lt;/code&gt;這動作 會先檢查有沒有composer.lock，如果沒有就會根據composer.json裡面的版本敘述來安裝相關套件。&lt;/li&gt;
+&lt;li&gt;像是我們要求安裝monolog/monolog，但是他卻多安裝了一個psr/log，這就是因為monolog/monolog需要psr/log，他就會自動找相關的相依套件去下載。&lt;/li&gt;
+&lt;li&gt;然後現在已經把monolog安裝完成了，如何使用呢？&lt;/li&gt;
+&lt;li&gt;Composer提供一個自動載入器，只需要在專案內加上一行 &lt;code&gt;require __DIR__ . '/vendor/autoload.php'&lt;/code&gt;即可&lt;/li&gt;
+&lt;li&gt;在專案目錄下建立一個檔案叫做&lt;code&gt;test.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;放入以下內容&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class="k"&gt;require&lt;/span&gt; &lt;span class="nx"&gt;__DIR__&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/vendor/autoload.php&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="nv"&gt;$log&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Monolog\Logger&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="nv"&gt;$log&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="na"&gt;pushHandler&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Monolog\Handler\StreamHandler&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;app.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Monolog\Logger&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="na"&gt;WARNING&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;span class="nv"&gt;$log&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="na"&gt;addWarning&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Foo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="c1"&gt;//end of test.php&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;然後執行 &lt;code&gt;php test.php&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;會看到兩行警告，那是關於時區的東西，在這裡可以忽視。&lt;/li&gt;
+&lt;li&gt;接下來你會看到專案目錄下多出了一個app.log就是剛剛程式碼所新增的東西 (也就是Monolog所提供的功能)&lt;/li&gt;
+&lt;li&gt;打開該檔案會看到&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[2015-12-05 20:09:41] name.WARNING: Foo [] []
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;想一想 or 找一找&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;這是載入其他人開發的第三方程式庫，那自己開發的呢？&lt;/li&gt;
+&lt;li&gt;這裡只有安裝，萬一以後我想升級套件怎麼辦？&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="php"></category><category term="composer"></category></entry><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
 &lt;h3&gt;前言&lt;/h3&gt;
 &lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
 
 
-&lt;p&gt;本篇文章會持續修改，最新修改日期: 2015-12-03。&lt;/p&gt;
+&lt;p&gt;本篇文章會持續修改，最新修改日期: 2015-12-05。&lt;/p&gt;
 &lt;h3&gt;第一章 環境建立&lt;/h3&gt;
 &lt;h4&gt;Windows&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;使用官方php安裝php與composer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包，但我並沒有實際測試過。&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包。&lt;/h5&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://www.laravel-dojo.com/opensource/wagon"&gt;Wagon&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=O7ynMSd0Tlo"&gt;影片: wagon：免安裝可攜式的 Laravel 開發懶人包 by 聖佑&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;
@@ -29,7 +163,8 @@
 &lt;h3&gt;第二章 Composer&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;使用Composer建立一個簡易的Laravel專案&lt;/li&gt;
-&lt;li&gt;Composer基本介紹與用法&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/"&gt;Composer基本用法 Part I&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Composer基本用法 Part II&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;第三章 homestead&lt;/h3&gt;
 &lt;ul&gt;

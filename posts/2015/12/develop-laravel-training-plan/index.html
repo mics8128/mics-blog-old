@@ -122,17 +122,15 @@ Mics.tw            </a>
 <p>其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。</p>
 
 
-<p>本篇文章會持續修改，最新修改日期: 2015-12-03。</p>
+<p>本篇文章會持續修改，最新修改日期: 2015-12-05。</p>
 <h3>第一章 環境建立</h3>
 <h4>Windows</h4>
 <ul>
 <li><a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/">使用官方php安裝php與composer</a></li>
-<li>
-<p><a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/">使用scoop安裝php與composer</a> (建議選擇此項，後續需要其它套件皆會使用scoop安裝)</p>
-</li>
-<li>
-<p>假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包，但我並沒有實際測試過。</p>
-</li>
+<li><a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/">使用scoop安裝php與composer</a> (建議選擇此項，後續需要其它套件皆會使用scoop安裝)</li>
+</ul>
+<h5>假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包。</h5>
+<ul>
 <li><a href="http://www.laravel-dojo.com/opensource/wagon">Wagon</a></li>
 <li><a href="https://www.youtube.com/watch?v=O7ynMSd0Tlo">影片: wagon：免安裝可攜式的 Laravel 開發懶人包 by 聖佑</a> </li>
 </ul>
@@ -147,7 +145,8 @@ Mics.tw            </a>
 <h3>第二章 Composer</h3>
 <ul>
 <li>使用Composer建立一個簡易的Laravel專案</li>
-<li>Composer基本介紹與用法</li>
+<li><a href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/">Composer基本用法 Part I</a></li>
+<li>Composer基本用法 Part II</li>
 </ul>
 <h3>第三章 homestead</h3>
 <ul>
@@ -213,6 +212,11 @@ Mics.tw            </a>
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
+                        <a href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/">
+                            Composer基本用法 Part I
+                        </a>
+                    </li>
+                    <li class="list-group-item">
                         <a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/">
                             開發Laravel的教學計畫
                         </a>
@@ -232,11 +236,6 @@ Mics.tw            </a>
                             Windows下的Linux like介面懶人包 - Babun
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="https://mics.tw/posts/2015/10/my-mac-software/">
-                            我的Mac使用軟體紀錄
-                        </a>
-                    </li>
                 </ul>
             </li>
 
@@ -248,24 +247,24 @@ Mics.tw            </a>
                             windows
                         </a>
                     </li>
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
+                        </a>
+                    </li>
                     <li class="list-group-item tag-2">
                         <a href="https://mics.tw/tag/laravel.html">
                             laravel
                         </a>
                     </li>
                     <li class="list-group-item tag-2">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/scoop.html">
-                            scoop
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
+                        <a href="https://mics.tw/tag/mac.html">
+                            mac
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -274,23 +273,13 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/chocolatey.html">
-                            chocolatey
+                        <a href="https://mics.tw/tag/python.html">
+                            python
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/linux.html">
                             linux
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/mac.html">
-                            mac
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -304,13 +293,23 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/scoop.html">
+                            scoop
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/chocolatey.html">
+                            chocolatey
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                 </ul>
