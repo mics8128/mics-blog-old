@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-05T12:14:00+08:00</updated><entry><title>Composer基本用法 Part I</title><link href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/" rel="alternate"></link><updated>2015-12-05T12:14:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-05:posts/2015/12/composer-basic-use-part-1/</id><summary type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-06T02:12:00+08:00</updated><entry><title>Laravel Installer 安裝與使用</title><link href="https://mics.tw/posts/2015/12/laravel-installer-basic/" rel="alternate"></link><updated>2015-12-06T02:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-06:posts/2015/12/laravel-installer-basic/</id><summary type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer global require laravel/installer
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;此指令的 global 意思是安裝在家目錄下，通常使用 global 的時候是安裝一些指令列工具，這一行的作用是安裝 laravel installer。&lt;/p&gt;
+&lt;p&gt;Laravel installer 的好處是創新專案的時候比較快一點，因為正常使用 composer 時，他會去處理相依性問題，會分別下載所有的相依套件。使用此程式則有一個伺服器負責天天處理好相依性問題並打包成單一壓縮檔案。在執行安裝時直接下載該檔案來解壓縮，會比分別下載快很多。&lt;/p&gt;
+&lt;p&gt;安裝完成後執行 &lt;code&gt;laravel --version&lt;/code&gt; 確定是否安裝正確&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;laravel --version
+Laravel Installer version 1.2.2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在這邊僅測試過 MAC 環境，請 Windows 環境使用者測試看看。&lt;/p&gt;
+&lt;p&gt;假如無法找到 laravel 指令在這邊回報一下，我之後能測試 Windows 環境的時候會加上作法。&lt;/p&gt;
+&lt;p&gt;接下來就可以使用 laravel installer 創建新專案，在指令列執行 &lt;code&gt;laravel new laravel-new-project&lt;/code&gt; ，最後面的 &lt;code&gt;laravel-new-project&lt;/code&gt; 是專案名稱，可以隨意更改。&lt;/p&gt;
+&lt;p&gt;(提示說找不到laravel指令的可以先用 composer 直接創建專案 &lt;code&gt;composer create-project laravel/laravel laravel-new-project&lt;/code&gt;)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;laravel new laravel-new-project
+Crafting application...
+&amp;gt; php -r &lt;span class="s2"&gt;&amp;quot;copy(&amp;#39;.env.example&amp;#39;, &amp;#39;.env&amp;#39;);&amp;quot;&lt;/span&gt;
+&amp;gt; php artisan clear-compiled
+&amp;gt; php artisan optimize
+Generating optimized class loader
+&amp;gt; php artisan key:generate
+Application key &lt;span class="o"&gt;[&lt;/span&gt;myD1M6xsWMjkdMYBampWwW7EBwogtzxN&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="nb"&gt;set &lt;/span&gt;successfully.
+Application ready! Build something amazing.
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;就會在當下目錄看到一個laravel-new-project的資料夾，讓我們進去裡面並且看看有什麼檔案&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;laravel-new-project
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;在這邊先只介紹幾個重要檔案，其他的部分會在後續慢慢瞭解。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;app - 最重要的部分，你即將寫程式的檔案位置。&lt;/li&gt;
+&lt;li&gt;artisan - laravel的命令列工具，下面即將會用到這個工具建立簡易的伺服器來測試我們的第一個laravel app&lt;/li&gt;
+&lt;li&gt;composer.json - composer篇已經說過的，套件相依的檔案&lt;/li&gt;
+&lt;li&gt;composer.lock - composer篇已經說過的，套件相依的檔案&lt;/li&gt;
+&lt;li&gt;public - 靜態檔案請放在這邊( css, js ..等等 )&lt;/li&gt;
+&lt;li&gt;vendor - composer篇已經介紹過，第三方套件的放置處&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;接下來執行 &lt;code&gt;php artisan serve&lt;/code&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;php artisan serve
+Laravel development server started on http://localhost:8000/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然後連到 &lt;a href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;就會看到 Laravel 5 在畫面中央，恭喜你成功創建了一個什麼功能都沒有的 Laravel App。&lt;/p&gt;
+&lt;p&gt;最後後回到指令列 Ctrl + C 結束測試伺服器&lt;/p&gt;</summary><category term="php"></category><category term="composer"></category><category term="laravel"></category></entry><entry><title>Composer基本用法 Part I</title><link href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/" rel="alternate"></link><updated>2015-12-05T12:14:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-05:posts/2015/12/composer-basic-use-part-1/</id><summary type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
 &lt;h3&gt;前置作業&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;請先安裝php以及composer，&lt;a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
@@ -137,10 +190,10 @@ Generating autoload files
 &lt;li&gt;這裡只有安裝，萬一以後我想升級套件怎麼辦？&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="php"></category><category term="composer"></category></entry><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
 &lt;h3&gt;前言&lt;/h3&gt;
-&lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
+&lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的 Framework -- Laravel 來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
 
 
-&lt;p&gt;本篇文章會持續修改，最新修改日期: 2015-12-05。&lt;/p&gt;
+&lt;p&gt;本篇文章會持續修改，最新修改日期: 2015-12-06。&lt;/p&gt;
 &lt;h3&gt;第一章 環境建立&lt;/h3&gt;
 &lt;h4&gt;Windows&lt;/h4&gt;
 &lt;ul&gt;
@@ -162,7 +215,6 @@ Generating autoload files
 &lt;/ul&gt;
 &lt;h3&gt;第二章 Composer&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;使用Composer建立一個簡易的Laravel專案&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/"&gt;Composer基本用法 Part I&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Composer基本用法 Part II&lt;/li&gt;
 &lt;/ul&gt;
@@ -172,12 +224,13 @@ Generating autoload files
 &lt;/ul&gt;
 &lt;h3&gt;第四章 Laravel&lt;/h3&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/12/laravel-installer-basic/"&gt;Laravel Installer 的安裝與使用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;使用 Laravel 製作一個簡易 Blog (預計分成三部分)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;第五章 如何團隊合作&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;PHP 語法標準&lt;/li&gt;
-&lt;li&gt;Git使用教學&lt;/li&gt;
+&lt;li&gt;Git 使用教學&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="laravel"></category><category term="training"></category></entry><entry><title>使用chocolatey升級Windows7下的Powershell到最新版本</title><link href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/" rel="alternate"></link><updated>2015-12-01T20:28:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-01:posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/</id><summary type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
 &lt;p&gt;假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考&lt;a href="https://chocolatey.org/packages"&gt;官方網站&lt;/a&gt;，在這邊開始教學。&lt;/p&gt;
 
