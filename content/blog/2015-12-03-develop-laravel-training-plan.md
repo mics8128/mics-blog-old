@@ -7,11 +7,11 @@ tags: laravel, training
 
 ### 前言
 
-其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的Framework -- Laravel來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。
+其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的 Framework -- Laravel 來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。
 
 <!-- SUMMARY_END -->
 
-本篇文章會持續修改，最新修改日期: 2015-12-05。
+本篇文章會持續修改，最新修改日期: 2015-12-06。
 
 ### 第一章 環境建立
 
@@ -33,7 +33,6 @@ tags: laravel, training
 * 安裝php與composer
 
 ### 第二章 Composer
-* 使用Composer建立一個簡易的Laravel專案
 * [Composer基本用法 Part I]({filename}/blog/2015-12-05-composer-basic-use.md)
 * Composer基本用法 Part II
 
@@ -41,8 +40,9 @@ tags: laravel, training
 * 尚未規劃
 
 ### 第四章 Laravel
+* [Laravel Installer 的安裝與使用]({filename}/blog/2015-12-06-laravel-installer-basic.md)
 * 使用 Laravel 製作一個簡易 Blog (預計分成三部分)
 
 ### 第五章 如何團隊合作
 * PHP 語法標準
-* Git使用教學
+* Git 使用教學
