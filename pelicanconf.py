@@ -44,6 +44,7 @@ EXTRA_PATH_METADATA = {
                 'extra/CNAME': {'path': 'CNAME'},
                 'extra/favicon.ico': {'path': 'favicon.ico'},
                 'extra/favicon.png': {'path': 'favicon.png'},
+                'extra/custom.css': {'path':'css/custom.css'},
             }
 
 # Direct theme
@@ -81,3 +82,7 @@ FAVICON_IE = "favicon.ico"
 #SUMMARY MARKER
 SUMMARY_BEGIN_MARKER = '<!-- SUMMARY_BEGIN -->'
 SUMMARY_END_MARKER = '<!-- SUMMARY_END -->'
+
+
+#CUSTOM CSS
+CUSTOM_CSS = "css/custom.css"
