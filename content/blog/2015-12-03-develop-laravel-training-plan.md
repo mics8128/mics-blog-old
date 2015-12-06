@@ -34,7 +34,7 @@ tags: laravel, training
 
 ### 第二章 Composer
 * 使用Composer建立一個簡易的Laravel專案
-* [Composer基本用法 Part I]({filename}/blog/2015-12-04-composer-basic-use.md)
+* [Composer基本用法 Part I]({filename}/blog/2015-12-05-composer-basic-use.md)
 * Composer基本用法 Part II
 
 ### 第三章 homestead
