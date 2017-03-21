@@ -5,7 +5,7 @@
 &lt;p&gt;來刷刷存在感 (?)&lt;/p&gt;
 
 
-&lt;p&gt;最近買了新筆電，正在等待新筆電送到，原本是使用 Macbook pro 當作開發環境的，但最近覺得 13 寸的 Macbook pro 效能不敷使用，上網的時候常常頓頓的，因此購入了新筆電， 新筆電作業系統是 Win 10 可能會試用看看， Win 10 提供的 Ubuntu base 來建立 Laravel 開發環境。&lt;/p&gt;
+&lt;p&gt;最近買了新筆電，正在等待新筆電送到，原本是使用 Macbook pro 當作開發環境的，但最近覺得 13 寸的 Macbook pro 效能不敷使用，上網的時候常常頓頓的，因此購入了新筆電， 新筆電作業系統是 Win 10 ，可能會試用看看 Win 10 提供的 bash 來建立 Laravel 開發環境。&lt;/p&gt;
 &lt;p&gt;久違的 Laravel 開發教學可能會轉成 Win 10 底下為主，不過這些差異也只有初始環境設定上有差，實際在寫後面的部分應該是差不多的，有需要其他環境的教學我有計劃再補上。&lt;/p&gt;</content></entry><entry><title>Laravel Installer 安裝與使用</title><link href="https://mics.tw/posts/2015/12/laravel-installer-basic/" rel="alternate"></link><published>2015-12-06T02:12:00+08:00</published><updated>2015-12-06T02:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-06:/posts/2015/12/laravel-installer-basic/</id><summary type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
 
@@ -63,12 +63,12 @@ Laravel development server started on http://localhost:8000/
 &lt;p&gt;最後後回到指令列 Ctrl + C 結束測試伺服器&lt;/p&gt;</content><category term="php"></category><category term="composer"></category><category term="laravel"></category></entry><entry><title>Composer基本用法 Part I</title><link href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/" rel="alternate"></link><published>2015-12-05T12:14:00+08:00</published><updated>2015-12-05T12:14:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-05:/posts/2015/12/composer-basic-use-part-1/</id><summary type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
 &lt;h3&gt;前置作業&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;請先安裝php以及composer，&lt;a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
+&lt;li&gt;請先安裝php以及composer，&lt;a href="{filename}/blog/2015-12-03-develop-laravel-training-plan.md"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
 &lt;/ul&gt;
 </summary><content type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
 &lt;h3&gt;前置作業&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;請先安裝php以及composer，&lt;a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
+&lt;li&gt;請先安裝php以及composer，&lt;a href="{filename}/blog/2015-12-03-develop-laravel-training-plan.md"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -214,7 +214,7 @@ Generating autoload files
 &lt;h4&gt;Windows&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;使用官方php安裝php與composer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/li&gt;
+&lt;li&gt;&lt;a href="{filename}/blog/2015-11-19-install-composer-with-scoop-at-windows.md"&gt;使用scoop安裝php與composer&lt;/a&gt; (建議選擇此項，後續需要其它套件皆會使用scoop安裝)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;假如覺得以上步驟太麻煩，想要搶先體驗laravel開發可以試試wagon這個超級開發懶人包。&lt;/h5&gt;
 &lt;ul&gt;
@@ -231,7 +231,7 @@ Generating autoload files
 &lt;/ul&gt;
 &lt;h3&gt;第二章 Composer&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/"&gt;Composer基本用法 Part I&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{filename}/blog/2015-12-05-composer-basic-use.md"&gt;Composer基本用法 Part I&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Composer基本用法 Part II&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;第三章 homestead&lt;/h3&gt;
@@ -240,7 +240,7 @@ Generating autoload files
 &lt;/ul&gt;
 &lt;h3&gt;第四章 Laravel&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://mics.tw/posts/2015/12/laravel-installer-basic/"&gt;Laravel Installer 的安裝與使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="{filename}/blog/2015-12-06-laravel-installer-basic.md"&gt;Laravel Installer 的安裝與使用&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;使用 Laravel 製作一個簡易 Blog (預計分成三部分)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;第五章 如何團隊合作&lt;/h3&gt;
@@ -308,7 +308,7 @@ Generating autoload files
 
 &lt;h2&gt;確定是否有PowerShell 3.0&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;假如你的作業系統是 Windows 7 請先參考&lt;a href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/"&gt;這篇文章&lt;/a&gt;來升級powershell。&lt;/li&gt;
+&lt;li&gt;假如你的作業系統是 Windows 7 請先參考&lt;a href="{filename}/blog/2015-12-01-upgrade-windows7-powershell-to-new-version-by-chocolatey.md"&gt;這篇文章&lt;/a&gt;來升級powershell。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;開始安裝 Scoop&lt;/h2&gt;
 &lt;ul&gt;
@@ -465,14 +465,14 @@ Generating autoload files
 &lt;li&gt;Composer&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://toolbelt.heroku.com/"&gt;Heroku toolbelt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
+&lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="{filename}../old_blog/2014-05-06-laravel-development-environment-on-windows7.md"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;環境需求&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;PHP&lt;/li&gt;
 &lt;li&gt;Composer&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://toolbelt.heroku.com/"&gt;Heroku toolbelt&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
+&lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="{filename}../old_blog/2014-05-06-laravel-development-environment-on-windows7.md"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
 
 
 &lt;p&gt;登入並在heroku創建專案&lt;/p&gt;
