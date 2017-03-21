@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw - Post</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/post.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2017-03-21T11:19:00+08:00</updated><entry><title>刷個存在感</title><link href="https://mics.tw/posts/2017/03/just-update/" rel="alternate"></link><published>2017-03-21T11:19:00+08:00</published><updated>2017-03-21T11:19:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2017-03-21:/posts/2017/03/just-update/</id><summary type="html">&lt;p&gt;好久沒更新 Blog 了&lt;/p&gt;
 &lt;p&gt;來刷刷存在感 (?)&lt;/p&gt;
-&lt;p&gt;最近買了新筆電，正在等待新筆電送到，原本是使用 Macbook pro 當作開發環境的，但最近覺得 13 寸的 Macbook pro 效能不敷使用，上網的時候常常頓頓的，因此購入了新筆電， 新筆電作業系統是 Win 10 可能會試用看看， Win 10 提供的 Ubuntu base 來建立 Laravel 開發環境。&lt;/p&gt;
-&lt;p&gt;久違的 Laravel 開發教學可能會轉成 Win 10 底下為主，不過這些差異也只有初始環境設定上有差，實際在寫後面的部分應該是差不多的，有需要其他環境的教學我有計劃再補上。&lt;/p&gt;</summary><content type="html">&lt;p&gt;好久沒更新 Blog 了&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;好久沒更新 Blog 了&lt;/p&gt;
 &lt;p&gt;來刷刷存在感 (?)&lt;/p&gt;
+
+
 &lt;p&gt;最近買了新筆電，正在等待新筆電送到，原本是使用 Macbook pro 當作開發環境的，但最近覺得 13 寸的 Macbook pro 效能不敷使用，上網的時候常常頓頓的，因此購入了新筆電， 新筆電作業系統是 Win 10 可能會試用看看， Win 10 提供的 Ubuntu base 來建立 Laravel 開發環境。&lt;/p&gt;
 &lt;p&gt;久違的 Laravel 開發教學可能會轉成 Win 10 底下為主，不過這些差異也只有初始環境設定上有差，實際在寫後面的部分應該是差不多的，有需要其他環境的教學我有計劃再補上。&lt;/p&gt;</content></entry><entry><title>Laravel Installer 安裝與使用</title><link href="https://mics.tw/posts/2015/12/laravel-installer-basic/" rel="alternate"></link><published>2015-12-06T02:12:00+08:00</published><updated>2015-12-06T02:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-06:/posts/2015/12/laravel-installer-basic/</id><summary type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
