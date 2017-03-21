@@ -116,26 +116,26 @@ Mics.tw            </a>
 
 <p>ß
 我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)(<a href="http://www.edu.tw/treasure/filedown.aspx?Node=1123&amp;Index=2&amp;WID=c5ad5187-55ef-4811-8219-e946fe04f725">教育部資料下載頁面</a>)，下載方式參考下圖</p>
-<p><img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png" /></p>
+<p><img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png"></p>
 <h2>安裝方法</h2>
 <p><strong><font color=red>注意!! 後來發現用教育部宋體字太細了，閱讀起來眼睛其實蠻不舒服的，最後還是為了保護眼睛妥協於droid了，如果各位有找到任何耐看的符合台灣標準的字體歡迎推薦給我!!!!</font></strong></p>
 <p>下載之後把檔案放在以下目錄</p>
-<div class="highlight"><pre>./fonts/
+<div class="highlight"><pre><span></span>./fonts/
 </pre></div>
 
 
 <p>或是放到系統資料夾</p>
-<div class="highlight"><pre>/usr/share/fonts/
+<div class="highlight"><pre><span></span>/usr/share/fonts/
 </pre></div>
 
 
 <p>兩者選一個就可以了，前者是使用者自己的，後者是整個系統的。不過後面還是要修改系統檔案，還是建議以系統為主。然後修改字體優先順序檔案。</p>
-<div class="highlight"><pre>sudo vim /etc/fonts/conf.d/69-language-selector-zh-tw.conf
+<div class="highlight"><pre><span></span>sudo vim /etc/fonts/conf.d/69-language-selector-zh-tw.conf
 </pre></div>
 
 
 <p>找到類似</p>
-<div class="highlight"><pre>          <span class="nt">&lt;edit</span> <span class="na">name=</span><span class="s">&quot;family&quot;</span> <span class="na">mode=</span><span class="s">&quot;prepend&quot;</span> <span class="na">binding=</span><span class="s">&quot;strong&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span>          <span class="nt">&lt;edit</span> <span class="na">name=</span><span class="s">&quot;family&quot;</span> <span class="na">mode=</span><span class="s">&quot;prepend&quot;</span> <span class="na">binding=</span><span class="s">&quot;strong&quot;</span><span class="nt">&gt;</span>
             <span class="nt">&lt;string&gt;</span>AR PL New Sung<span class="nt">&lt;/string&gt;</span>
             <span class="nt">&lt;string&gt;</span>AR PL UMing TW<span class="nt">&lt;/string&gt;</span>
             <span class="nt">&lt;string&gt;</span>AR PL UMing HK<span class="nt">&lt;/string&gt;</span>
@@ -145,9 +145,9 @@ Mics.tw            </a>
 
 <p>這樣的東西，應該會有三個，然後將教育部宋體字型檔的英文名稱「MOESongUN Regular」放到第一個，然後將「AR PL New Sung」放到第二個， <strong>三個</strong> 都要做這樣的設定</p>
 <p>之所以要把「AR PL New Sung」放到第二個是因為教育部的字體並沒有簡體中文，為了讓簡體文章不會看起來很詭異所以把類似的有簡體字的字體放在第二順位，才不會造成字體詭異的狀況(參考下圖)
-<img alt="螢幕擷圖存為 2014-01-16 17:52:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/ikbaiuLSKGOUWA131LWm_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:52:36.png" /></p>
+<img alt="螢幕擷圖存為 2014-01-16 17:52:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/ikbaiuLSKGOUWA131LWm_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:52:36.png"></p>
 <p>最後附上一張教育部宋體字形檔的圖片</p>
-<p><img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png" /></p>
+<p><img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png"></p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -230,18 +230,13 @@ Mics.tw            </a>
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mics.tw/tag/windows.html">
                             windows
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -249,9 +244,9 @@ Mics.tw            </a>
                             laravel
                         </a>
                     </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/linux.html">
-                            linux
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -260,23 +255,13 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/software.html">
+                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/software.html">
-                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -290,8 +275,23 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/babun.html">
                             babun
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/linux.html">
+                            linux
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">

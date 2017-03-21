@@ -124,15 +124,15 @@ Mics.tw            </a>
                 <p>在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。</p>
 
 
-<div class="highlight"><pre><span class="nv">$ </span>composer global require laravel/installer
+<div class="highlight"><pre><span></span>$ composer global require laravel/installer
 </pre></div>
 
 
 <p>此指令的 global 意思是安裝在家目錄下，通常使用 global 的時候是安裝一些指令列工具，這一行的作用是安裝 laravel installer。</p>
 <p>Laravel installer 的好處是創新專案的時候比較快一點，因為正常使用 composer 時，他會去處理相依性問題，會分別下載所有的相依套件。使用此程式則有一個伺服器負責天天處理好相依性問題並打包成單一壓縮檔案。在執行安裝時直接下載該檔案來解壓縮，會比分別下載快很多。</p>
 <p>安裝完成後執行 <code>laravel --version</code> 確定是否安裝正確</p>
-<div class="highlight"><pre><span class="nv">$ </span>laravel --version
-Laravel Installer version 1.2.2
+<div class="highlight"><pre><span></span>$ laravel --version
+Laravel Installer version <span class="m">1</span>.2.2
 </pre></div>
 
 
@@ -140,20 +140,20 @@ Laravel Installer version 1.2.2
 <p>假如無法找到 laravel 指令在這邊回報一下，我之後能測試 Windows 環境的時候會加上作法。</p>
 <p>接下來就可以使用 laravel installer 創建新專案，在指令列執行 <code>laravel new laravel-new-project</code> ，最後面的 <code>laravel-new-project</code> 是專案名稱，可以隨意更改。</p>
 <p>(提示說找不到laravel指令的可以先用 composer 直接創建專案 <code>composer create-project laravel/laravel laravel-new-project</code>)</p>
-<div class="highlight"><pre><span class="nv">$ </span>laravel new laravel-new-project
+<div class="highlight"><pre><span></span>$ laravel new laravel-new-project
 Crafting application...
 &gt; php -r <span class="s2">&quot;copy(&#39;.env.example&#39;, &#39;.env&#39;);&quot;</span>
 &gt; php artisan clear-compiled
 &gt; php artisan optimize
 Generating optimized class loader
 &gt; php artisan key:generate
-Application key <span class="o">[</span>myD1M6xsWMjkdMYBampWwW7EBwogtzxN<span class="o">]</span> <span class="nb">set </span>successfully.
+Application key <span class="o">[</span>myD1M6xsWMjkdMYBampWwW7EBwogtzxN<span class="o">]</span> <span class="nb">set</span> successfully.
 Application ready! Build something amazing.
 </pre></div>
 
 
 <p>就會在當下目錄看到一個laravel-new-project的資料夾，讓我們進去裡面並且看看有什麼檔案</p>
-<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>laravel-new-project
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> laravel-new-project
 </pre></div>
 
 
@@ -167,7 +167,7 @@ Application ready! Build something amazing.
 <li>vendor - composer篇已經介紹過，第三方套件的放置處</li>
 </ul>
 <p>接下來執行 <code>php artisan serve</code></p>
-<div class="highlight"><pre><span class="nv">$ </span>php artisan serve
+<div class="highlight"><pre><span></span>$ php artisan serve
 Laravel development server started on http://localhost:8000/
 </pre></div>
 
@@ -257,18 +257,13 @@ Laravel development server started on http://localhost:8000/
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mics.tw/tag/windows.html">
                             windows
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -276,9 +271,9 @@ Laravel development server started on http://localhost:8000/
                             laravel
                         </a>
                     </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/linux.html">
-                            linux
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -287,23 +282,13 @@ Laravel development server started on http://localhost:8000/
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/software.html">
+                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/software.html">
-                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -317,8 +302,23 @@ Laravel development server started on http://localhost:8000/
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/babun.html">
                             babun
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/linux.html">
+                            linux
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">

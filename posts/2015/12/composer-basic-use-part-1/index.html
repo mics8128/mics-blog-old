@@ -130,36 +130,36 @@ Mics.tw            </a>
 <li>首先建立專案資料夾並開啟命令列 ( Mac 下的 Termial , Windows 下的 Power Shell )</li>
 <li>再來執行以下指令 並根據提示回答適當的答案</li>
 </ul>
-<div class="highlight"><pre><span class="nv">$ </span>composer init
+<div class="highlight"><pre><span></span>$ composer init
 
 Package name <span class="o">(</span>&lt;vendor&gt;/&lt;name&gt;<span class="o">)</span> <span class="o">[</span>mics/t1<span class="o">]</span>: mics8128/test1 
-<span class="c"># mics8128請改為你的 Github 名稱，如果沒有，去註冊一個。 </span>
-<span class="c"># test1為專案名稱，可以照這邊填寫test2</span>
+<span class="c1"># mics8128請改為你的 Github 名稱，如果沒有，去註冊一個。 </span>
+<span class="c1"># test1為專案名稱，可以照這邊填寫test2</span>
 
 Description <span class="o">[]</span>:
-<span class="c"># 專案說明 在這邊空白即可</span>
+<span class="c1"># 專案說明 在這邊空白即可</span>
 
 Author <span class="o">[</span>Mics &lt;mics.mm@gmail.com&gt;<span class="o">]</span>:
-<span class="c"># 作者 空白或填上自己暱稱/姓名 都可以</span>
+<span class="c1"># 作者 空白或填上自己暱稱/姓名 都可以</span>
 
 Minimum Stability <span class="o">[]</span>:
 Package Type <span class="o">[]</span>:
 License <span class="o">[]</span>:
-<span class="c"># 以上三個空白即可，在這邊不重要</span>
+<span class="c1"># 以上三個空白即可，在這邊不重要</span>
 
 Would you like to define your dependencies <span class="o">(</span>require<span class="o">)</span> interactively <span class="o">[</span>yes<span class="o">]</span>? no
 Would you like to define your dev dependencies <span class="o">(</span>require-dev<span class="o">)</span> interactively <span class="o">[</span>yes<span class="o">]</span>? no
-<span class="c"># 這兩個先空白，稍後手動新增</span>
+<span class="c1"># 這兩個先空白，稍後手動新增</span>
 
 Do you confirm generation <span class="o">[</span>yes<span class="o">]</span>?
-<span class="c"># 在這之前會有一大串，就是即將生成的 composer.json 檔案內容，在這邊直接按 Enter ，同意生成設定檔。</span>
+<span class="c1"># 在這之前會有一大串，就是即將生成的 composer.json 檔案內容，在這邊直接按 Enter ，同意生成設定檔。</span>
 </pre></div>
 
 
 <ul>
 <li>可以看到專案的跟目錄下有一個檔案 composer.json，我的 composer.json 長得像這樣。</li>
 </ul>
-<div class="highlight"><pre><span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;mics8128/test1&quot;</span><span class="p">,</span>
     <span class="nt">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
@@ -175,7 +175,7 @@ Do you confirm generation <span class="o">[</span>yes<span class="o">]</span>?
 <ul>
 <li>在這邊修改require那一行</li>
 </ul>
-<div class="highlight"><pre><span class="p">{</span>
+<div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;mics8128/test1&quot;</span><span class="p">,</span>
     <span class="nt">&quot;authors&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="p">{</span>
@@ -193,7 +193,7 @@ Do you confirm generation <span class="o">[</span>yes<span class="o">]</span>?
 <ul>
 <li>然後執行以下指令驗證 composer.json 有沒有錯誤</li>
 </ul>
-<div class="highlight"><pre><span class="nv">$ </span>composer validate
+<div class="highlight"><pre><span></span>$ composer validate
 </pre></div>
 
 
@@ -205,16 +205,16 @@ Do you confirm generation <span class="o">[</span>yes<span class="o">]</span>?
 <p>接下來執行<code>composer install</code></p>
 </li>
 </ul>
-<div class="highlight"><pre><span class="nv">$ </span>composer install
+<div class="highlight"><pre><span></span>$ composer install
 Loading composer repositories with package information
 Installing dependencies <span class="o">(</span>including require-dev<span class="o">)</span>
-  - Installing psr/log <span class="o">(</span>1.0.0<span class="o">)</span>
+  - Installing psr/log <span class="o">(</span><span class="m">1</span>.0.0<span class="o">)</span>
     Loading from cache
 
-  - Installing monolog/monolog <span class="o">(</span>1.17.2<span class="o">)</span>
+  - Installing monolog/monolog <span class="o">(</span><span class="m">1</span>.17.2<span class="o">)</span>
     Loading from cache
 
-... <span class="c"># 這邊一大串是建議安裝套件，我們這邊並不需要</span>
+... <span class="c1"># 這邊一大串是建議安裝套件，我們這邊並不需要</span>
 
 Writing lock file
 Generating autoload files
@@ -229,8 +229,8 @@ Generating autoload files
 <li>在專案目錄下建立一個檔案叫做<code>test.php</code></li>
 <li>放入以下內容</li>
 </ul>
-<div class="highlight"><pre><span class="cp">&lt;?php</span>
-<span class="k">require</span> <span class="nx">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/vendor/autoload.php&#39;</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">require</span> <span class="no">__DIR__</span> <span class="o">.</span> <span class="s1">&#39;/vendor/autoload.php&#39;</span><span class="p">;</span>
 
 <span class="nv">$log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Monolog\Logger</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
 <span class="nv">$log</span><span class="o">-&gt;</span><span class="na">pushHandler</span><span class="p">(</span><span class="k">new</span> <span class="nx">Monolog\Handler\StreamHandler</span><span class="p">(</span><span class="s1">&#39;app.log&#39;</span><span class="p">,</span> <span class="nx">Monolog\Logger</span><span class="o">::</span><span class="na">WARNING</span><span class="p">));</span>
@@ -246,7 +246,7 @@ Generating autoload files
 <li>接下來你會看到專案目錄下多出了一個app.log就是剛剛程式碼所新增的東西 (也就是Monolog所提供的功能)</li>
 <li>打開該檔案會看到</li>
 </ul>
-<div class="highlight"><pre>[2015-12-05 20:09:41] name.WARNING: Foo [] []
+<div class="highlight"><pre><span></span>[2015-12-05 20:09:41] name.WARNING: Foo [] []
 </pre></div>
 
 
@@ -337,18 +337,13 @@ Generating autoload files
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mics.tw/tag/windows.html">
                             windows
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -356,9 +351,9 @@ Generating autoload files
                             laravel
                         </a>
                     </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/linux.html">
-                            linux
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -367,23 +362,13 @@ Generating autoload files
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/software.html">
+                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/software.html">
-                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -397,8 +382,23 @@ Generating autoload files
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/babun.html">
                             babun
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/linux.html">
+                            linux
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">

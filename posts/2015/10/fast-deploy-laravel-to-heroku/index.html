@@ -128,11 +128,11 @@ Mics.tw            </a>
 
 
 <p>登入並在heroku創建專案</p>
-<div class="highlight"><pre><span class="nv">$ </span>heroku login
+<div class="highlight"><pre><span></span>$ heroku login
 Enter your Heroku credentials.
 Email: yout@email.address
 Password <span class="o">(</span>typing will be hidden<span class="o">)</span>:
-<span class="nv">$ </span>heroku create
+$ heroku create
 Creating mighty-scrubland-5244... <span class="k">done</span>, stack is cedar-14
 https://mighty-scrubland-5244.herokuapp.com/ <span class="p">|</span> https://git.heroku.com/mighty-scrubland-5244.gi
 </pre></div>
@@ -140,49 +140,49 @@ https://mighty-scrubland-5244.herokuapp.com/ <span class="p">|</span> https://gi
 
 <p>把專案名稱記下來，在這裡是<em>mighty-scrubland-5244</em>，<strong><font color=red>後面請都將此字串取代為你自己的專案名稱</font></strong>。</p>
 <p>在本機使用composer創造一個新專案</p>
-<div class="highlight"><pre><span class="nv">$ </span>composer create-project laravel/laravel laravel-heroku
+<div class="highlight"><pre><span></span>$ composer create-project laravel/laravel laravel-heroku
 
-<span class="c"># 進入Project資料夾</span>
-<span class="nv">$ </span><span class="nb">cd </span>laravel-heroku
+<span class="c1"># 進入Project資料夾</span>
+$ <span class="nb">cd</span> laravel-heroku
 </pre></div>
 
 
 <p>增加Procfile</p>
-<div class="highlight"><pre><span class="nv">$ </span><span class="nb">echo </span>web: vendor/bin/heroku-php-apache2 public &gt; Procfile
-<span class="c"># 此檔案用意是告訴http server我們的根目錄是public</span>
+<div class="highlight"><pre><span></span>$ <span class="nb">echo</span> web: vendor/bin/heroku-php-apache2 public &gt; Procfile
+<span class="c1"># 此檔案用意是告訴http server我們的根目錄是public</span>
 </pre></div>
 
 
 <p>Windows下可以直接把以下內容複製到Procfile裡面</p>
-<div class="highlight"><pre><span class="n">web</span><span class="o">:</span> <span class="n">vendor</span><span class="sr">/bin/</span><span class="n">heroku</span><span class="o">-</span><span class="n">php</span><span class="o">-</span><span class="n">apache2</span> <span class="kd">public</span>
+<div class="highlight"><pre><span></span><span class="n">web</span><span class="o">:</span> <span class="n">vendor</span><span class="sr">/bin/</span><span class="n">heroku</span><span class="o">-</span><span class="n">php</span><span class="o">-</span><span class="n">apache2</span> <span class="kd">public</span>
 </pre></div>
 
 
 <p>初始化git</p>
-<div class="highlight"><pre><span class="nv">$ </span>git init
-<span class="nv">$ </span>git add .
-<span class="nv">$ </span>git commit -am <span class="s2">&quot;init&quot;</span>
+<div class="highlight"><pre><span></span>$ git init
+$ git add .
+$ git commit -am <span class="s2">&quot;init&quot;</span>
 
-<span class="c"># 增加remote端</span>
-<span class="nv">$ </span>heroku git:remote -a mighty-scrubland-5244
+<span class="c1"># 增加remote端</span>
+$ heroku git:remote -a mighty-scrubland-5244
 
-<span class="c"># 設定此app為php app</span>
-<span class="nv">$ </span>heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
+<span class="c1"># 設定此app為php app</span>
+$ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
 
-<span class="c"># 把本地端的master推送到heroku</span>
-<span class="nv">$ </span>git push heroku master
+<span class="c1"># 把本地端的master推送到heroku</span>
+$ git push heroku master
 </pre></div>
 
 
 <p>然後到 http://mighty-scrubland-5244.herokuapp.com 觀看 (請記得改成你自己得專案名稱)</p>
 <p>你會看到</p>
-<div class="highlight"><pre>Whoops, looks like something went wrong.
+<div class="highlight"><pre><span></span>Whoops, looks like something went wrong.
 </pre></div>
 
 
 <p>會出現的原因是環境參數沒有設定</p>
-<div class="highlight"><pre><span class="c"># 觀看環境參數</span>
-<span class="nv">$ </span>cat .env
+<div class="highlight"><pre><span></span><span class="c1"># 觀看環境參數</span>
+$ cat .env
 <span class="nv">APP_ENV</span><span class="o">=</span><span class="nb">local</span>
 <span class="nv">APP_DEBUG</span><span class="o">=</span><span class="nb">true</span>
 <span class="nv">APP_KEY</span><span class="o">=</span>ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
@@ -198,16 +198,16 @@ https://mighty-scrubland-5244.herokuapp.com/ <span class="p">|</span> https://gi
 
 <span class="nv">MAIL_DRIVER</span><span class="o">=</span>smtp
 <span class="nv">MAIL_HOST</span><span class="o">=</span>mailtrap.io
-<span class="nv">MAIL_PORT</span><span class="o">=</span>2525
+<span class="nv">MAIL_PORT</span><span class="o">=</span><span class="m">2525</span>
 <span class="nv">MAIL_USERNAME</span><span class="o">=</span>null
 <span class="nv">MAIL_PASSWORD</span><span class="o">=</span>null
 <span class="nv">MAIL_ENCRYPTION</span><span class="o">=</span>null
 
-<span class="c"># 設定參數 請記得把ZMz9G6.....改成自己的</span>
-<span class="nv">$ </span>heroku config:set <span class="nv">APP_KEY</span><span class="o">=</span>ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
+<span class="c1"># 設定參數 請記得把ZMz9G6.....改成自己的</span>
+$ heroku config:set <span class="nv">APP_KEY</span><span class="o">=</span>ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
 Setting config vars and restarting mighty-scrubland-5244... <span class="k">done</span>, v6
 APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
-<span class="c"># 其他的DATABASE USERNAME也可以以同樣方法設定 這裏沒有用到就不設定了</span>
+<span class="c1"># 其他的DATABASE USERNAME也可以以同樣方法設定 這裏沒有用到就不設定了</span>
 </pre></div>
 
 
@@ -294,18 +294,13 @@ APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mics.tw/tag/windows.html">
                             windows
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -313,9 +308,9 @@ APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
                             laravel
                         </a>
                     </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/linux.html">
-                            linux
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -324,23 +319,13 @@ APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/software.html">
+                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/software.html">
-                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -354,8 +339,23 @@ APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/babun.html">
                             babun
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/linux.html">
+                            linux
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">

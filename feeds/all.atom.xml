@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-06T02:12:00+08:00</updated><entry><title>Laravel Installer 安裝與使用</title><link href="https://mics.tw/posts/2015/12/laravel-installer-basic/" rel="alternate"></link><updated>2015-12-06T02:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-06:posts/2015/12/laravel-installer-basic/</id><summary type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mics.tw</title><link href="https://mics.tw/" rel="alternate"></link><link href="https://mics.tw/feeds/all.atom.xml" rel="self"></link><id>https://mics.tw/</id><updated>2015-12-06T02:12:00+08:00</updated><entry><title>Laravel Installer 安裝與使用</title><link href="https://mics.tw/posts/2015/12/laravel-installer-basic/" rel="alternate"></link><published>2015-12-06T02:12:00+08:00</published><updated>2015-12-06T02:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-06:/posts/2015/12/laravel-installer-basic/</id><summary type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;在這邊介紹使用 laravel installer 來初始化 laravel 專案，並使用 php 附帶的 http server 執行測試伺服器。&lt;/p&gt;
 
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer global require laravel/installer
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ composer global require laravel/installer
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;此指令的 global 意思是安裝在家目錄下，通常使用 global 的時候是安裝一些指令列工具，這一行的作用是安裝 laravel installer。&lt;/p&gt;
 &lt;p&gt;Laravel installer 的好處是創新專案的時候比較快一點，因為正常使用 composer 時，他會去處理相依性問題，會分別下載所有的相依套件。使用此程式則有一個伺服器負責天天處理好相依性問題並打包成單一壓縮檔案。在執行安裝時直接下載該檔案來解壓縮，會比分別下載快很多。&lt;/p&gt;
 &lt;p&gt;安裝完成後執行 &lt;code&gt;laravel --version&lt;/code&gt; 確定是否安裝正確&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;laravel --version
-Laravel Installer version 1.2.2
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ laravel --version
+Laravel Installer version &lt;span class="m"&gt;1&lt;/span&gt;.2.2
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -18,20 +19,20 @@ Laravel Installer version 1.2.2
 &lt;p&gt;假如無法找到 laravel 指令在這邊回報一下，我之後能測試 Windows 環境的時候會加上作法。&lt;/p&gt;
 &lt;p&gt;接下來就可以使用 laravel installer 創建新專案，在指令列執行 &lt;code&gt;laravel new laravel-new-project&lt;/code&gt; ，最後面的 &lt;code&gt;laravel-new-project&lt;/code&gt; 是專案名稱，可以隨意更改。&lt;/p&gt;
 &lt;p&gt;(提示說找不到laravel指令的可以先用 composer 直接創建專案 &lt;code&gt;composer create-project laravel/laravel laravel-new-project&lt;/code&gt;)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;laravel new laravel-new-project
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ laravel new laravel-new-project
 Crafting application...
 &amp;gt; php -r &lt;span class="s2"&gt;&amp;quot;copy(&amp;#39;.env.example&amp;#39;, &amp;#39;.env&amp;#39;);&amp;quot;&lt;/span&gt;
 &amp;gt; php artisan clear-compiled
 &amp;gt; php artisan optimize
 Generating optimized class loader
 &amp;gt; php artisan key:generate
-Application key &lt;span class="o"&gt;[&lt;/span&gt;myD1M6xsWMjkdMYBampWwW7EBwogtzxN&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="nb"&gt;set &lt;/span&gt;successfully.
+Application key &lt;span class="o"&gt;[&lt;/span&gt;myD1M6xsWMjkdMYBampWwW7EBwogtzxN&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="nb"&gt;set&lt;/span&gt; successfully.
 Application ready! Build something amazing.
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;就會在當下目錄看到一個laravel-new-project的資料夾，讓我們進去裡面並且看看有什麼檔案&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;laravel-new-project
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;cd&lt;/span&gt; laravel-new-project
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -45,14 +46,19 @@ Application ready! Build something amazing.
 &lt;li&gt;vendor - composer篇已經介紹過，第三方套件的放置處&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;接下來執行 &lt;code&gt;php artisan serve&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;php artisan serve
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ php artisan serve
 Laravel development server started on http://localhost:8000/
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;然後連到 &lt;a href="http://localhost:8000/"&gt;http://localhost:8000/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;就會看到 Laravel 5 在畫面中央，恭喜你成功創建了一個什麼功能都沒有的 Laravel App。&lt;/p&gt;
-&lt;p&gt;最後後回到指令列 Ctrl + C 結束測試伺服器&lt;/p&gt;</summary><category term="php"></category><category term="composer"></category><category term="laravel"></category></entry><entry><title>Composer基本用法 Part I</title><link href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/" rel="alternate"></link><updated>2015-12-05T12:14:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-05:posts/2015/12/composer-basic-use-part-1/</id><summary type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
+&lt;p&gt;最後後回到指令列 Ctrl + C 結束測試伺服器&lt;/p&gt;</content><category term="php"></category><category term="composer"></category><category term="laravel"></category></entry><entry><title>Composer基本用法 Part I</title><link href="https://mics.tw/posts/2015/12/composer-basic-use-part-1/" rel="alternate"></link><published>2015-12-05T12:14:00+08:00</published><updated>2015-12-05T12:14:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-05:/posts/2015/12/composer-basic-use-part-1/</id><summary type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
+&lt;h3&gt;前置作業&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;請先安裝php以及composer，&lt;a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
+&lt;/ul&gt;
+</summary><content type="html">&lt;p&gt;Composer 是 PHP 的一個依賴管理工具。它允許你簡單申明項目所依賴的程式庫，就可以幫你在專案中自動的安裝他們。&lt;/p&gt;
 &lt;h3&gt;前置作業&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;請先安裝php以及composer，&lt;a href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/"&gt;這篇文章&lt;/a&gt;的環境建立部分有安裝方法。&lt;/li&gt;
@@ -64,36 +70,36 @@ Laravel development server started on http://localhost:8000/
 &lt;li&gt;首先建立專案資料夾並開啟命令列 ( Mac 下的 Termial , Windows 下的 Power Shell )&lt;/li&gt;
 &lt;li&gt;再來執行以下指令 並根據提示回答適當的答案&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer init
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ composer init
 
 Package name &lt;span class="o"&gt;(&lt;/span&gt;&amp;lt;vendor&amp;gt;/&amp;lt;name&amp;gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;mics/t1&lt;span class="o"&gt;]&lt;/span&gt;: mics8128/test1 
-&lt;span class="c"&gt;# mics8128請改為你的 Github 名稱，如果沒有，去註冊一個。 &lt;/span&gt;
-&lt;span class="c"&gt;# test1為專案名稱，可以照這邊填寫test2&lt;/span&gt;
+&lt;span class="c1"&gt;# mics8128請改為你的 Github 名稱，如果沒有，去註冊一個。 &lt;/span&gt;
+&lt;span class="c1"&gt;# test1為專案名稱，可以照這邊填寫test2&lt;/span&gt;
 
 Description &lt;span class="o"&gt;[]&lt;/span&gt;:
-&lt;span class="c"&gt;# 專案說明 在這邊空白即可&lt;/span&gt;
+&lt;span class="c1"&gt;# 專案說明 在這邊空白即可&lt;/span&gt;
 
 Author &lt;span class="o"&gt;[&lt;/span&gt;Mics &amp;lt;mics.mm@gmail.com&amp;gt;&lt;span class="o"&gt;]&lt;/span&gt;:
-&lt;span class="c"&gt;# 作者 空白或填上自己暱稱/姓名 都可以&lt;/span&gt;
+&lt;span class="c1"&gt;# 作者 空白或填上自己暱稱/姓名 都可以&lt;/span&gt;
 
 Minimum Stability &lt;span class="o"&gt;[]&lt;/span&gt;:
 Package Type &lt;span class="o"&gt;[]&lt;/span&gt;:
 License &lt;span class="o"&gt;[]&lt;/span&gt;:
-&lt;span class="c"&gt;# 以上三個空白即可，在這邊不重要&lt;/span&gt;
+&lt;span class="c1"&gt;# 以上三個空白即可，在這邊不重要&lt;/span&gt;
 
 Would you like to define your dependencies &lt;span class="o"&gt;(&lt;/span&gt;require&lt;span class="o"&gt;)&lt;/span&gt; interactively &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class="o"&gt;]&lt;/span&gt;? no
 Would you like to define your dev dependencies &lt;span class="o"&gt;(&lt;/span&gt;require-dev&lt;span class="o"&gt;)&lt;/span&gt; interactively &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class="o"&gt;]&lt;/span&gt;? no
-&lt;span class="c"&gt;# 這兩個先空白，稍後手動新增&lt;/span&gt;
+&lt;span class="c1"&gt;# 這兩個先空白，稍後手動新增&lt;/span&gt;
 
 Do you confirm generation &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class="o"&gt;]&lt;/span&gt;?
-&lt;span class="c"&gt;# 在這之前會有一大串，就是即將生成的 composer.json 檔案內容，在這邊直接按 Enter ，同意生成設定檔。&lt;/span&gt;
+&lt;span class="c1"&gt;# 在這之前會有一大串，就是即將生成的 composer.json 檔案內容，在這邊直接按 Enter ，同意生成設定檔。&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;可以看到專案的跟目錄下有一個檔案 composer.json，我的 composer.json 長得像這樣。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mics8128/test1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;quot;authors&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
         &lt;span class="p"&gt;{&lt;/span&gt;
@@ -109,7 +115,7 @@ Do you confirm generation &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class=
 &lt;ul&gt;
 &lt;li&gt;在這邊修改require那一行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mics8128/test1&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
     &lt;span class="nt"&gt;&amp;quot;authors&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;
         &lt;span class="p"&gt;{&lt;/span&gt;
@@ -127,7 +133,7 @@ Do you confirm generation &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class=
 &lt;ul&gt;
 &lt;li&gt;然後執行以下指令驗證 composer.json 有沒有錯誤&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer validate
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ composer validate
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -139,16 +145,16 @@ Do you confirm generation &lt;span class="o"&gt;[&lt;/span&gt;yes&lt;span class=
 &lt;p&gt;接下來執行&lt;code&gt;composer install&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer install
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ composer install
 Loading composer repositories with package information
 Installing dependencies &lt;span class="o"&gt;(&lt;/span&gt;including require-dev&lt;span class="o"&gt;)&lt;/span&gt;
-  - Installing psr/log &lt;span class="o"&gt;(&lt;/span&gt;1.0.0&lt;span class="o"&gt;)&lt;/span&gt;
+  - Installing psr/log &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;.0.0&lt;span class="o"&gt;)&lt;/span&gt;
     Loading from cache
 
-  - Installing monolog/monolog &lt;span class="o"&gt;(&lt;/span&gt;1.17.2&lt;span class="o"&gt;)&lt;/span&gt;
+  - Installing monolog/monolog &lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;.17.2&lt;span class="o"&gt;)&lt;/span&gt;
     Loading from cache
 
-... &lt;span class="c"&gt;# 這邊一大串是建議安裝套件，我們這邊並不需要&lt;/span&gt;
+... &lt;span class="c1"&gt;# 這邊一大串是建議安裝套件，我們這邊並不需要&lt;/span&gt;
 
 Writing lock file
 Generating autoload files
@@ -163,8 +169,8 @@ Generating autoload files
 &lt;li&gt;在專案目錄下建立一個檔案叫做&lt;code&gt;test.php&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;放入以下內容&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class="k"&gt;require&lt;/span&gt; &lt;span class="nx"&gt;__DIR__&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/vendor/autoload.php&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class="k"&gt;require&lt;/span&gt; &lt;span class="no"&gt;__DIR__&lt;/span&gt; &lt;span class="o"&gt;.&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;/vendor/autoload.php&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
 &lt;span class="nv"&gt;$log&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Monolog\Logger&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;name&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="nv"&gt;$log&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="na"&gt;pushHandler&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="nx"&gt;Monolog\Handler\StreamHandler&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;app.log&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Monolog\Logger&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="na"&gt;WARNING&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
@@ -180,7 +186,7 @@ Generating autoload files
 &lt;li&gt;接下來你會看到專案目錄下多出了一個app.log就是剛剛程式碼所新增的東西 (也就是Monolog所提供的功能)&lt;/li&gt;
 &lt;li&gt;打開該檔案會看到&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;[2015-12-05 20:09:41] name.WARNING: Foo [] []
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;[2015-12-05 20:09:41] name.WARNING: Foo [] []
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -188,7 +194,10 @@ Generating autoload files
 &lt;ul&gt;
 &lt;li&gt;這是載入其他人開發的第三方程式庫，那自己開發的呢？&lt;/li&gt;
 &lt;li&gt;這裡只有安裝，萬一以後我想升級套件怎麼辦？&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="php"></category><category term="composer"></category></entry><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
+&lt;/ul&gt;</content><category term="php"></category><category term="composer"></category></entry><entry><title>開發Laravel的教學計畫</title><link href="https://mics.tw/posts/2015/12/develop-laravel-training-plan/" rel="alternate"></link><published>2015-12-03T08:12:00+08:00</published><updated>2015-12-03T08:12:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-03:/posts/2015/12/develop-laravel-training-plan/</id><summary type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
+&lt;h3&gt;前言&lt;/h3&gt;
+&lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的 Framework -- Laravel 來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;最近有不少學徒加入了，在這邊針對學徒建立一個laravel開發入門指南。&lt;/p&gt;
 &lt;h3&gt;前言&lt;/h3&gt;
 &lt;p&gt;其實我自己是比較偏好 Python 居多，曾經想以 Django 來當作主力開發的 Framework ，但是身邊的開發者都是接觸 PHP 居多，所以最後選擇了一個最近非常熱門的 Framework -- Laravel 來當作主力開發的框架，為此而撰寫的一整系列教學文，文中有任何錯誤或是不懂的地方，歡迎在留言中提出，如果沒有超連結，代表文章還尚未撰寫完成，敬請期待。&lt;/p&gt;
 
@@ -231,18 +240,20 @@ Generating autoload files
 &lt;ul&gt;
 &lt;li&gt;PHP 語法標準&lt;/li&gt;
 &lt;li&gt;Git 使用教學&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="laravel"></category><category term="training"></category></entry><entry><title>使用chocolatey升級Windows7下的Powershell到最新版本</title><link href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/" rel="alternate"></link><updated>2015-12-01T20:28:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-01:posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/</id><summary type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
+&lt;/ul&gt;</content><category term="laravel"></category><category term="training"></category></entry><entry><title>使用chocolatey升級Windows7下的Powershell到最新版本</title><link href="https://mics.tw/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/" rel="alternate"></link><published>2015-12-01T20:28:00+08:00</published><updated>2015-12-01T20:28:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-12-01:/posts/2015/12/upgrade-windows7-powershell-to-new-version-by-chocolatey/</id><summary type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
+&lt;p&gt;假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考&lt;a href="https://chocolatey.org/packages"&gt;官方網站&lt;/a&gt;，在這邊開始教學。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;因為安裝 scoop 需要 PowerShell 3.0 以上版本, 但是 Windows 7 內建的 PowerShell 的版本號是 2.0，安裝時會遇到一些問題，在這邊附上使用 chocolatey 在 windows 7 上安裝 Powershell 4.0 的方法&lt;/p&gt;
 &lt;p&gt;假如你已經是 windows 8 或以上 powershell 版本應該已經足夠安裝 scoop 了, 但是 chocolatey 是一套套件管理程式 也可以用來安裝軟體(ex. FileZilla, Notepad++, virtualBox 等)，更多詳細資料可以參考&lt;a href="https://chocolatey.org/packages"&gt;官方網站&lt;/a&gt;，在這邊開始教學。&lt;/p&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;首先以&lt;strong&gt;系統管理員&lt;/strong&gt;模式開啟cmd.exe&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="開啟cmd.exe" src="https://mics.tw/images/2015-12-01/1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="開啟cmd.exe" src="https://mics.tw/images/2015-12-01/1.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;然後執行以下指令&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;@powershell&lt;/span&gt; &lt;span class="nt"&gt;-NoProfile&lt;/span&gt; &lt;span class="nt"&gt;-ExecutionPolicy&lt;/span&gt; &lt;span class="nt"&gt;Bypass&lt;/span&gt; &lt;span class="nt"&gt;-Command&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;iex ((new-object net.webclient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nt"&gt;SET&lt;/span&gt; &lt;span class="nt"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=%&lt;/span&gt;&lt;span class="nt"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="nt"&gt;ALLUSERSPROFILE&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;chocolatey&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;bin&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;@&lt;/span&gt;&lt;span class="k"&gt;powershell&lt;/span&gt; &lt;span class="nt"&gt;-NoProfile&lt;/span&gt; &lt;span class="nt"&gt;-ExecutionPolicy&lt;/span&gt; &lt;span class="nt"&gt;Bypass&lt;/span&gt; &lt;span class="nt"&gt;-Command&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;iex ((new-object net.webclient).DownloadString(&amp;#39;https://chocolatey.org/install.ps1&amp;#39;))&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="nt"&gt;SET&lt;/span&gt; &lt;span class="nt"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=%&lt;/span&gt;&lt;span class="nt"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="nt"&gt;ALLUSERSPROFILE&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;chocolatey&lt;/span&gt;&lt;span class="err"&gt;\&lt;/span&gt;&lt;span class="nt"&gt;bin&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -251,11 +262,11 @@ Generating autoload files
 &lt;li&gt;我在測試時會看到一些警告訊息, 但是不影響使用, 所以可以繼續以下步驟.&lt;/li&gt;
 &lt;li&gt;接下來關閉 cmd.exe 然後以&lt;strong&gt;系統管理員&lt;/strong&gt;模式打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="開啟powershell" src="https://mics.tw/images/2015-12-01/2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="開啟powershell" src="https://mics.tw/images/2015-12-01/2.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;然後執行以下指令&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;choco install powershell -y
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;choco install powershell -y
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -274,17 +285,18 @@ Generating autoload files
 &lt;li&gt;接下來確認 powershell 是否成功的更新了&lt;/li&gt;
 &lt;li&gt;確認方法: 打開 powershell (不需要管理權限)後執行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;PSVersionTable&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nv"&gt;PSVersion&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$PSVersionTable.PSVersion
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;最後會看到以下訊息就是正確升級了&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Major  Minor  Build  Revision
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Major  Minor  Build  Revision
 -----  -----  -----  --------
 4      0      -1     -1
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="windows"></category><category term="chocolatey"></category><category term="powersehll"></category></entry><entry><title>在Windows中使用Scoop安裝php與Composer</title><link href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/" rel="alternate"></link><updated>2015-11-19T20:58:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-11-19:posts/2015/11/install-composer-with-scoop-at-windows/</id><summary type="html">&lt;p&gt;因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="windows"></category><category term="chocolatey"></category><category term="powersehll"></category></entry><entry><title>在Windows中使用Scoop安裝php與Composer</title><link href="https://mics.tw/posts/2015/11/install-composer-with-scoop-at-windows/" rel="alternate"></link><published>2015-11-19T20:58:00+08:00</published><updated>2015-11-19T20:58:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-11-19:/posts/2015/11/install-composer-with-scoop-at-windows/</id><summary type="html">&lt;p&gt;因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;因為我周邊的開發者都使用Windows，因此特意寫了這篇文章，給我周邊的開發者練習使用在windows下的文字介面。&lt;/p&gt;
 
 
 &lt;h2&gt;確定是否有PowerShell 3.0&lt;/h2&gt;
@@ -295,18 +307,18 @@ Generating autoload files
 &lt;ul&gt;
 &lt;li&gt;請先打開 powershell 執行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    set-executionpolicy unrestricted -s cu
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    set-executionpolicy unrestricted -s cu
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;然後按Y後按 Enter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="執行原則變更" src="https://mics.tw/images/2015-11-19/1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="執行原則變更" src="https://mics.tw/images/2015-11-19/1.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;接下來先安裝 scoop 然後安裝 php&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    iex (new-object net.webclient).downloadstring(&amp;#39;https://get.scoop.sh&amp;#39;)
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;    iex (new-object net.webclient).downloadstring(&amp;#39;https://get.scoop.sh&amp;#39;)
     scoop install php
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -314,15 +326,15 @@ Generating autoload files
 &lt;ul&gt;
 &lt;li&gt;靜待安裝完畢&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="安裝scoop與php" src="https://mics.tw/images/2015-11-19/2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="安裝scoop與php" src="https://mics.tw/images/2015-11-19/2.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;測試 php 是否正常執行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="測試php是否正常執行" src="https://mics.tw/images/2015-11-19/3.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="測試php是否正常執行" src="https://mics.tw/images/2015-11-19/3.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;到&lt;code&gt;C:\Users\YOUR USER NAME\AppData\Local\scoop&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="找到scoop" src="https://mics.tw/images/2015-11-19/4.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="找到scoop" src="https://mics.tw/images/2015-11-19/4.png"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;三個資料夾的功能分別是&lt;/p&gt;
@@ -339,21 +351,21 @@ Generating autoload files
 &lt;p&gt;搜尋&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;; extension_dir = &amp;quot;ext&amp;quot;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;; extension_dir = &amp;quot;ext&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;改成 (注意 &lt;strong&gt;YOUR USER NAME&lt;/strong&gt; 和版本號 &lt;strong&gt;5.6.15&lt;/strong&gt;可能會不同，請自行隨機應變)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;extension_dir = &amp;quot;C:\Users\YOUR USER NAME\AppData\Local\scoop\apps\php\5.6.15\ext&amp;quot;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;extension_dir = &amp;quot;C:\Users\YOUR USER NAME\AppData\Local\scoop\apps\php\5.6.15\ext&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;再找到&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;;extension=php_openssl.dll
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;;extension=php_openssl.dll
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -368,32 +380,33 @@ Generating autoload files
 &lt;p&gt;進入執行檔目錄(composer直接安裝在這裡)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;cd \Users\YOUR USER NAME\AppData\Local\scoop\shims
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd \Users\YOUR USER NAME\AppData\Local\scoop\shims
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;安裝composer並設定執行script&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;php&lt;/span&gt; &lt;span class="nt"&gt;-r&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;readfile(&amp;#39;https://getcomposer.org/installer&amp;#39;);&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nt"&gt;php&lt;/span&gt;
-&lt;span class="nt"&gt;wget&lt;/span&gt; &lt;span class="nt"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="nt"&gt;gist&lt;/span&gt;&lt;span class="nc"&gt;.githubusercontent.com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;mics8128&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;de1ea57536a56aa48673&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;raw&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;268f1c15091a728ef2e051a81a5980c4531d89af&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="nc"&gt;.bat&lt;/span&gt; &lt;span class="nt"&gt;-OutFile&lt;/span&gt; &lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="nc"&gt;.bat&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;php&lt;/span&gt; &lt;span class="nt"&gt;-r&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;readfile(&amp;#39;https://getcomposer.org/installer&amp;#39;);&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="nt"&gt;php&lt;/span&gt;
+&lt;span class="nt"&gt;wget&lt;/span&gt; &lt;span class="nt"&gt;https&lt;/span&gt;&lt;span class="o"&gt;://&lt;/span&gt;&lt;span class="nt"&gt;gist&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;githubusercontent&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;mics8128&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;de1ea57536a56aa48673&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;raw&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;268f1c15091a728ef2e051a81a5980c4531d89af&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;bat&lt;/span&gt; &lt;span class="nt"&gt;-OutFile&lt;/span&gt; &lt;span class="nt"&gt;composer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;bat&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
 &lt;li&gt;最後測試我們的 composer 有沒有正常&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;composer.bat
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;composer.bat
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="composer test" src="https://mics.tw/images/2015-11-19/5.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="composer test" src="https://mics.tw/images/2015-11-19/5.png"&gt;&lt;/p&gt;
 &lt;h1&gt;大功告成拉~ YA&lt;/h1&gt;
 &lt;h2&gt;以下是選用安裝的軟體 都只要一個指令喔^.&amp;lt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Git版本管理系統，在 powershell 執行 &lt;code&gt;scoop install git&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;(暫時想不到其他的 隨時補充)&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="composer"></category><category term="php"></category><category term="scoop"></category><category term="windows"></category></entry><entry><title>Windows下的Linux like介面懶人包 - Babun</title><link href="https://mics.tw/posts/2015/10/windows-linux-like-face/" rel="alternate"></link><updated>2015-10-25T11:37:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-25:posts/2015/10/windows-linux-like-face/</id><summary type="html">&lt;p&gt;紀錄一下在windows下使用zsh的方法(給自己看的，不會太詳細XD)&lt;/p&gt;
+&lt;/ul&gt;</content><category term="composer"></category><category term="php"></category><category term="scoop"></category><category term="windows"></category></entry><entry><title>Windows下的Linux like介面懶人包 - Babun</title><link href="https://mics.tw/posts/2015/10/windows-linux-like-face/" rel="alternate"></link><published>2015-10-25T11:37:00+08:00</published><updated>2015-10-25T11:37:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-25:/posts/2015/10/windows-linux-like-face/</id><summary type="html">&lt;p&gt;紀錄一下在windows下使用zsh的方法(給自己看的，不會太詳細XD)&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;紀錄一下在windows下使用zsh的方法(給自己看的，不會太詳細XD)&lt;/p&gt;
 
 
 &lt;p&gt;Babun&lt;/p&gt;
@@ -414,7 +427,8 @@ Generating autoload files
 &lt;li&gt;
 &lt;p&gt;最後在最後一行加上 &lt;code&gt;DEFAULT_USER="UserName"&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</summary><category term="windows"></category><category term="linux"></category><category term="babun"></category></entry><entry><title>我的Mac使用軟體紀錄</title><link href="https://mics.tw/posts/2015/10/my-mac-software/" rel="alternate"></link><updated>2015-10-11T00:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-11:posts/2015/10/my-mac-software/</id><summary type="html">&lt;p&gt;此文章記錄一些在我自己的MacBook Pro上執行的好Apps，使用的版本是OS X EI Capitan。&lt;/p&gt;
+&lt;/ul&gt;</content><category term="windows"></category><category term="linux"></category><category term="babun"></category></entry><entry><title>我的Mac使用軟體紀錄</title><link href="https://mics.tw/posts/2015/10/my-mac-software/" rel="alternate"></link><published>2015-10-11T00:00:00+08:00</published><updated>2015-10-11T00:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-11:/posts/2015/10/my-mac-software/</id><summary type="html">&lt;p&gt;此文章記錄一些在我自己的MacBook Pro上執行的好Apps，使用的版本是OS X EI Capitan。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;此文章記錄一些在我自己的MacBook Pro上執行的好Apps，使用的版本是OS X EI Capitan。&lt;/p&gt;
 
 
 &lt;h2&gt;Apps&lt;/h2&gt;
@@ -438,7 +452,14 @@ Generating autoload files
 &lt;li&gt;&lt;a href="http://www.binarynights.com/forklift/"&gt;ForkLift 2&lt;/a&gt; ($29.95) - FTP, SFTP, Amazon S3 Client&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.sketchapp.com"&gt;Sketch&lt;/a&gt; ($99) - 向量繪圖軟體&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://affinity.serif.com/en-gb/photo/"&gt;Affinity Photo&lt;/a&gt; ($49.99) - 點陣圖繪圖軟體&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="mac"></category><category term="software"></category></entry><entry><title>快速部署laravel到heroku</title><link href="https://mics.tw/posts/2015/10/fast-deploy-laravel-to-heroku/" rel="alternate"></link><updated>2015-10-01T00:07:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-01:posts/2015/10/fast-deploy-laravel-to-heroku/</id><summary type="html">&lt;p&gt;環境需求&lt;/p&gt;
+&lt;/ul&gt;</content><category term="mac"></category><category term="software"></category></entry><entry><title>快速部署laravel到heroku</title><link href="https://mics.tw/posts/2015/10/fast-deploy-laravel-to-heroku/" rel="alternate"></link><published>2015-10-01T00:07:00-05:00</published><updated>2015-10-01T00:07:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-10-01:/posts/2015/10/fast-deploy-laravel-to-heroku/</id><summary type="html">&lt;p&gt;環境需求&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PHP&lt;/li&gt;
+&lt;li&gt;Composer&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://toolbelt.heroku.com/"&gt;Heroku toolbelt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Windows使用者前兩個可以參考我的前一篇文章&lt;a href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/"&gt;Laravel 開發環境 on Windows7&lt;/a&gt;，不過本篇是以Unix like系統為角度撰寫，Windows使用者可能需要自行變通&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;環境需求&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;PHP&lt;/li&gt;
 &lt;li&gt;Composer&lt;/li&gt;
@@ -448,11 +469,11 @@ Generating autoload files
 
 
 &lt;p&gt;登入並在heroku創建專案&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;heroku login
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ heroku login
 Enter your Heroku credentials.
 Email: yout@email.address
 Password &lt;span class="o"&gt;(&lt;/span&gt;typing will be hidden&lt;span class="o"&gt;)&lt;/span&gt;:
-&lt;span class="nv"&gt;$ &lt;/span&gt;heroku create
+$ heroku create
 Creating mighty-scrubland-5244... &lt;span class="k"&gt;done&lt;/span&gt;, stack is cedar-14
 https://mighty-scrubland-5244.herokuapp.com/ &lt;span class="p"&gt;|&lt;/span&gt; https://git.heroku.com/mighty-scrubland-5244.gi
 &lt;/pre&gt;&lt;/div&gt;
@@ -460,49 +481,49 @@ https://mighty-scrubland-5244.herokuapp.com/ &lt;span class="p"&gt;|&lt;/span&gt
 
 &lt;p&gt;把專案名稱記下來，在這裡是&lt;em&gt;mighty-scrubland-5244&lt;/em&gt;，&lt;strong&gt;&lt;font color=red&gt;後面請都將此字串取代為你自己的專案名稱&lt;/font&gt;&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;在本機使用composer創造一個新專案&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;composer create-project laravel/laravel laravel-heroku
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ composer create-project laravel/laravel laravel-heroku
 
-&lt;span class="c"&gt;# 進入Project資料夾&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;laravel-heroku
+&lt;span class="c1"&gt;# 進入Project資料夾&lt;/span&gt;
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; laravel-heroku
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;增加Procfile&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo &lt;/span&gt;web: vendor/bin/heroku-php-apache2 public &amp;gt; Procfile
-&lt;span class="c"&gt;# 此檔案用意是告訴http server我們的根目錄是public&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ &lt;span class="nb"&gt;echo&lt;/span&gt; web: vendor/bin/heroku-php-apache2 public &amp;gt; Procfile
+&lt;span class="c1"&gt;# 此檔案用意是告訴http server我們的根目錄是public&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Windows下可以直接把以下內容複製到Procfile裡面&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;vendor&lt;/span&gt;&lt;span class="sr"&gt;/bin/&lt;/span&gt;&lt;span class="n"&gt;heroku&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt; &lt;span class="kd"&gt;public&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;web&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;vendor&lt;/span&gt;&lt;span class="sr"&gt;/bin/&lt;/span&gt;&lt;span class="n"&gt;heroku&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;php&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;apache2&lt;/span&gt; &lt;span class="kd"&gt;public&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;初始化git&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;git init
-&lt;span class="nv"&gt;$ &lt;/span&gt;git add .
-&lt;span class="nv"&gt;$ &lt;/span&gt;git commit -am &lt;span class="s2"&gt;&amp;quot;init&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git init
+$ git add .
+$ git commit -am &lt;span class="s2"&gt;&amp;quot;init&amp;quot;&lt;/span&gt;
 
-&lt;span class="c"&gt;# 增加remote端&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;heroku git:remote -a mighty-scrubland-5244
+&lt;span class="c1"&gt;# 增加remote端&lt;/span&gt;
+$ heroku git:remote -a mighty-scrubland-5244
 
-&lt;span class="c"&gt;# 設定此app為php app&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
+&lt;span class="c1"&gt;# 設定此app為php app&lt;/span&gt;
+$ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
 
-&lt;span class="c"&gt;# 把本地端的master推送到heroku&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;git push heroku master
+&lt;span class="c1"&gt;# 把本地端的master推送到heroku&lt;/span&gt;
+$ git push heroku master
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;然後到 http://mighty-scrubland-5244.herokuapp.com 觀看 (請記得改成你自己得專案名稱)&lt;/p&gt;
 &lt;p&gt;你會看到&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Whoops, looks like something went wrong.
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Whoops, looks like something went wrong.
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;會出現的原因是環境參數沒有設定&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;# 觀看環境參數&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;cat .env
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# 觀看環境參數&lt;/span&gt;
+$ cat .env
 &lt;span class="nv"&gt;APP_ENV&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;local&lt;/span&gt;
 &lt;span class="nv"&gt;APP_DEBUG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nb"&gt;true&lt;/span&gt;
 &lt;span class="nv"&gt;APP_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
@@ -518,32 +539,41 @@ https://mighty-scrubland-5244.herokuapp.com/ &lt;span class="p"&gt;|&lt;/span&gt
 
 &lt;span class="nv"&gt;MAIL_DRIVER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;smtp
 &lt;span class="nv"&gt;MAIL_HOST&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;mailtrap.io
-&lt;span class="nv"&gt;MAIL_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;2525
+&lt;span class="nv"&gt;MAIL_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;2525&lt;/span&gt;
 &lt;span class="nv"&gt;MAIL_USERNAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;null
 &lt;span class="nv"&gt;MAIL_PASSWORD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;null
 &lt;span class="nv"&gt;MAIL_ENCRYPTION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;null
 
-&lt;span class="c"&gt;# 設定參數 請記得把ZMz9G6.....改成自己的&lt;/span&gt;
-&lt;span class="nv"&gt;$ &lt;/span&gt;heroku config:set &lt;span class="nv"&gt;APP_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
+&lt;span class="c1"&gt;# 設定參數 請記得把ZMz9G6.....改成自己的&lt;/span&gt;
+$ heroku config:set &lt;span class="nv"&gt;APP_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
 Setting config vars and restarting mighty-scrubland-5244... &lt;span class="k"&gt;done&lt;/span&gt;, v6
 APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
-&lt;span class="c"&gt;# 其他的DATABASE USERNAME也可以以同樣方法設定 這裏沒有用到就不設定了&lt;/span&gt;
+&lt;span class="c1"&gt;# 其他的DATABASE USERNAME也可以以同樣方法設定 這裏沒有用到就不設定了&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;最後再到同一個網址按下F5 就可以看到Laravel 5了~&lt;/p&gt;</summary><category term="php"></category><category term="laravel"></category></entry><entry><title>測試圖片</title><link href="https://mics.tw/posts/2015/09/test-photo/" rel="alternate"></link><updated>2015-09-30T23:38:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/test-photo/</id><summary type="html">&lt;p&gt;本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。&lt;/p&gt;
+&lt;p&gt;最後再到同一個網址按下F5 就可以看到Laravel 5了~&lt;/p&gt;</content><category term="php"></category><category term="laravel"></category></entry><entry><title>測試圖片</title><link href="https://mics.tw/posts/2015/09/test-photo/" rel="alternate"></link><published>2015-09-30T23:38:00-05:00</published><updated>2015-09-30T23:38:00-05:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:/posts/2015/09/test-photo/</id><summary type="html">&lt;p&gt;本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;本篇文章單純只有測試在文章中貼上圖片，不用其他會有其他內容。&lt;/p&gt;
 
 
 &lt;h2&gt;千島湖&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="測試圖片1" src="https://mics.tw/images/test-photo1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="測試圖片1" src="https://mics.tw/images/test-photo1.jpg"&gt;&lt;/p&gt;
 &lt;h2&gt;加拿大&lt;/h2&gt;
-&lt;p&gt;&lt;img alt="測試圖片2" src="https://mics.tw/images/test-photo2.jpg" /&gt;&lt;/p&gt;</summary></entry><entry><title>改用Pelican來做部落格</title><link href="https://mics.tw/posts/2015/09/change-to-pelican/" rel="alternate"></link><updated>2015-09-30T10:06:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:posts/2015/09/change-to-pelican/</id><summary type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="測試圖片2" src="https://mics.tw/images/test-photo2.jpg"&gt;&lt;/p&gt;</content></entry><entry><title>改用Pelican來做部落格</title><link href="https://mics.tw/posts/2015/09/change-to-pelican/" rel="alternate"></link><published>2015-09-30T10:06:00+08:00</published><updated>2015-09-30T10:06:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2015-09-30:/posts/2015/09/change-to-pelican/</id><summary type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
 &lt;p&gt;然後加上我比較慣用Python，所以改用Pelican來當作部落格使用。&lt;/p&gt;
 &lt;p&gt;在這邊紀錄一下用了什麼東西&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;pelican-bootstrap3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="pelican"></category><category term="python"></category></entry><entry><title>Laravel 開發環境 on Windows7 - part I - 安裝Composer</title><link href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/" rel="alternate"></link><updated>2014-05-06T09:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-05-06:posts/2014/05/laravel-development-environment-on-windows7/</id><summary type="html">&lt;p&gt;Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。&lt;/p&gt;
+&lt;/ul&gt;</summary><content type="html">&lt;p&gt;已經很久沒寫部落格了，但是看到山姆鍋的文章&lt;a href="https://samkuo.me/post/2015/09/why-developers-should-have-a-blog/"&gt;程式人就該有個部落格&lt;/a&gt;就覺得應該要來寫一下文章。加上最近有需要寫一些教學給別人看，所以又重新開啟了。&lt;/p&gt;
+&lt;p&gt;然後加上我比較慣用Python，所以改用Pelican來當作部落格使用。&lt;/p&gt;
+&lt;p&gt;在這邊紀錄一下用了什麼東西&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/DandyDev/pelican-bootstrap3"&gt;pelican-bootstrap3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><category term="pelican"></category><category term="python"></category></entry><entry><title>Laravel 開發環境 on Windows7 - part I - 安裝Composer</title><link href="https://mics.tw/posts/2014/05/laravel-development-environment-on-windows7/" rel="alternate"></link><published>2014-05-06T09:00:00+08:00</published><updated>2014-05-06T09:00:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-05-06:/posts/2014/05/laravel-development-environment-on-windows7/</id><summary type="html">&lt;p&gt;Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。&lt;/p&gt;
+&lt;p&gt;大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Laravel是一個最近很熱門的一個php framework，有鑑於有同學想學可是環境都是windows，有一些環境建立的障礙，所以就想說寫一篇Laravel環境建立的教學，讓windows下的使用者也可以快樂開發Laravel  :D。&lt;/p&gt;
 &lt;p&gt;大家常用的Appserv的stable版本的php太舊了，無法直接使用composer，但是開發Laravel不用composer跟跛腳沒什麼兩樣阿...所以本篇文章以最新的php版本為主，但不使用apache2 之類的的http server，而是使用php內建的開發用server，至於MySQL不在本篇教學範圍內 :P。&lt;/p&gt;
 
 
@@ -555,10 +585,10 @@ APP_KEY: ZMz9G6vGDWHT1HZAA9GNUZCsiYlAYCw9
     VC11 x64 Thread Safe (for 64位元作業系統)
     VC11 x86 Thread Safe (for 32位元作業系統)&lt;/p&gt;
 &lt;p&gt;解壓縮到C:\php
-&lt;img alt="Screenshot from 2014-05-06 16:16:54.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/76ADaLGkRmuQEMqekgww_Screenshot%20from%202014-05-06%2016:16:54.png" /&gt;&lt;/p&gt;
+&lt;img alt="Screenshot from 2014-05-06 16:16:54.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/76ADaLGkRmuQEMqekgww_Screenshot%20from%202014-05-06%2016:16:54.png"&gt;&lt;/p&gt;
 &lt;p&gt;增加php到PATH內
-&lt;img alt="Screenshot from 2014-05-06 16:17:53.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/0indF8zcS5CHBs03UhJi_Screenshot%20from%202014-05-06%2016:17:53.png" /&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;PATH
+&lt;img alt="Screenshot from 2014-05-06 16:17:53.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/0indF8zcS5CHBs03UhJi_Screenshot%20from%202014-05-06%2016:17:53.png"&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;PATH
 C:\php
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -566,26 +596,26 @@ C:\php
 &lt;h2&gt;啟用php擴充套件 (安裝composer必須)&lt;/h2&gt;
 &lt;p&gt;用純文字編輯程式打開C:\php\php.ini (如果沒有就從php.ini-development 複製一個)
 找到&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;;extension=php_openssl.dll
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;;extension=php_openssl.dll
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;將前面的分號去掉後存檔&lt;/p&gt;
 &lt;p&gt;然後把&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;C:\php\ext\php_openssl.dll
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;C:\php\ext\php_openssl.dll
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;複製到&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;C:\php\php_openssl.dll
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;C:\php\php_openssl.dll
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;h2&gt;安裝composer&lt;/h2&gt;
 &lt;p&gt;開啟cmd
-&lt;img alt="Screenshot from 2014-05-06 16:26:24.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/R46kxDH5QQyWYHHUgB6L_Screenshot%20from%202014-05-06%2016:26:24.png" /&gt;&lt;/p&gt;
+&lt;img alt="Screenshot from 2014-05-06 16:26:24.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/197377/R46kxDH5QQyWYHHUgB6L_Screenshot%20from%202014-05-06%2016:26:24.png"&gt;&lt;/p&gt;
 &lt;p&gt;下達以下指令&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;C:\Users\username&amp;gt;C:
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;C:\Users\username&amp;gt;C:
 C:\Users\username&amp;gt;cd \php
 C:\php&amp;gt;php -r &amp;quot;readfile(&amp;#39;https://getcomposer.org/installer&amp;#39;);&amp;quot; | php
 C:\php&amp;gt;echo @php &amp;quot;%~dp0composer.phar&amp;quot; %*&amp;gt;composer.bat
@@ -594,12 +624,12 @@ C:\php&amp;gt;echo @php &amp;quot;%~dp0composer.phar&amp;quot; %*&amp;gt;compose
 
 &lt;h2&gt;測試composer&lt;/h2&gt;
 &lt;p&gt;開啟cmd然後下達以下指令&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;C:\Users\username&amp;gt;composer -V
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;C:\Users\username&amp;gt;composer -V
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;如果看到(後面那一大串亂亂的可能會不同)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Composer version 3677c1ea6905b71daf8c3c4af716d2fe2d6f85bd 2014-05-03 07:46:50
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Composer version 3677c1ea6905b71daf8c3c4af716d2fe2d6f85bd 2014-05-03 07:46:50
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -611,7 +641,12 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;http://laravel.com/docs/quick&lt;/li&gt;
 &lt;li&gt;https://getcomposer.org/doc/00-intro.md&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>高應大校務系統修正</title><link href="https://mics.tw/posts/2014/01/kuas-system-correction/" rel="alternate"></link><updated>2014-01-17T00:40:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-17:posts/2014/01/kuas-system-correction/</id><summary type="html">&lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;本文已經過期，這裏有一個&lt;a href="https://github.com/grapherd/kuas"&gt;學弟做的版本&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/ul&gt;</content></entry><entry><title>高應大校務系統修正</title><link href="https://mics.tw/posts/2014/01/kuas-system-correction/" rel="alternate"></link><published>2014-01-17T00:40:00+08:00</published><updated>2014-01-17T00:40:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-17:/posts/2014/01/kuas-system-correction/</id><summary type="html">&lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;本文已經過期，這裏有一個&lt;a href="https://github.com/grapherd/kuas"&gt;學弟做的版本&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最近把作業系統換成linux，完全把windows移除了，但是..但是..但是...我們學校的校務系統居然是IE Only.....哪年代的東西了阿，也該改一下了吧..........&lt;/p&gt;
+&lt;p&gt;因為我沒有IE所以我只好來研究有沒有什麼解決辦法，和爛的要死(一堆非標準寫法)的HTML奮戰兩小時後，把我有用到的功能修正了，我是用Greasemonkey的使用者腳本來達成修正的。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;以下是使用教學&lt;/h2&gt;
+</summary><content type="html">&lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;本文已經過期，這裏有一個&lt;a href="https://github.com/grapherd/kuas"&gt;學弟做的版本&lt;/a&gt;&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;最近把作業系統換成linux，完全把windows移除了，但是..但是..但是...我們學校的校務系統居然是IE Only.....哪年代的東西了阿，也該改一下了吧..........&lt;/p&gt;
 &lt;p&gt;因為我沒有IE所以我只好來研究有沒有什麼解決辦法，和爛的要死(一堆非標準寫法)的HTML奮戰兩小時後，把我有用到的功能修正了，我是用Greasemonkey的使用者腳本來達成修正的。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;注意 我只有修正我用到的功能，如果有任何其他功能不完善的地方請勿見怪...也歡迎回報我會試著解決&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -621,34 +656,35 @@ Part III - laravel Quickstart&lt;/p&gt;
 &lt;p&gt;首先安裝Firefox plugin Greasemonkey (好像chrome也有??，我只有在firefox上測試而已)&lt;/p&gt;
 &lt;p&gt;https://addons.mozilla.org/zh-tw/firefox/addon/greasemonkey/&lt;/p&gt;
 &lt;p&gt;到&lt;a href="https://github.com/mics8128/kuas_system_fix/blob/master/%E9%AB%98%E6%87%89%E5%A4%A7%E6%A0%A1%E5%8B%99%E7%B3%BB%E7%B5%B1fix.user.js"&gt;我的github&lt;/a&gt;上點&lt;/p&gt;
-&lt;p&gt;&lt;img alt="kuas_system_fix 2014-01-17 08-49-16.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/6EkshdpSczTwB0hCG4QM_kuas_system_fix%202014-01-17%2008-49-16.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="kuas_system_fix 2014-01-17 08-49-16.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/6EkshdpSczTwB0hCG4QM_kuas_system_fix%202014-01-17%2008-49-16.png"&gt;&lt;/p&gt;
 &lt;p&gt;然後就會出現&lt;/p&gt;
-&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-17 08:50:26.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png" /&gt;&lt;/p&gt;
-&lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</summary></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="https://mics.tw/posts/2014/01/optimization-of-ubuntu/" rel="alternate"></link><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:posts/2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-17 08:50:26.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175994/H0J0cBRbTtaNSQbAYoij_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-17%2008:50:26.png"&gt;&lt;/p&gt;
+&lt;p&gt;點選安裝，恭喜你可以正常進入校務系統了............&lt;/p&gt;</content></entry><entry><title>Ubuntu字體優化 - 去除GB 18030</title><link href="https://mics.tw/posts/2014/01/optimization-of-ubuntu/" rel="alternate"></link><published>2014-01-15T21:01:00+08:00</published><updated>2014-01-15T21:01:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-15:/posts/2014/01/optimization-of-ubuntu/</id><summary type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;一直以來我都沒有什麼注意字體的部份，只要看的順眼，沒有鋸齒狀（上一篇文章 &lt;a href="http://mics.logdown.com/posts/2013/12/28/ubuntu-fonts-optimization"&gt;Netbeans on Ubuntu字體優化&lt;/a&gt; 就是因為有了鋸齒所以我想要改進)，就可以接受了，但是今天在Facebook上看到了同學轉發了一篇文章(&lt;a href="http://www.techbang.com/posts/16514"&gt;小心！GB 18030 就在你身邊&lt;/a&gt;)，突然驚覺我在使用的字體居然有這麼多簡體中文的成份存在，我向來是不寫簡體字的，雖然看得懂，但是書寫時仍然以繁體為主，今天看到這篇文章之後我立刻查看了Ubuntu預設的繁體中文字體，居然是簡體的格式，今天就要來把這問題修正。&lt;/p&gt;
 
 
 &lt;p&gt;ß
 我找到的字體是教育部的標準字體--教育部宋體字形檔(Unicode碼)(&lt;a href="http://www.edu.tw/treasure/filedown.aspx?Node=1123&amp;amp;Index=2&amp;amp;WID=c5ad5187-55ef-4811-8219-e946fe04f725"&gt;教育部資料下載頁面&lt;/a&gt;)，下載方式參考下圖&lt;/p&gt;
-&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 17:37:49.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/XZ9PD84NQCKnLr1LuH3e_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:37:49.png"&gt;&lt;/p&gt;
 &lt;h2&gt;安裝方法&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=red&gt;注意!! 後來發現用教育部宋體字太細了，閱讀起來眼睛其實蠻不舒服的，最後還是為了保護眼睛妥協於droid了，如果各位有找到任何耐看的符合台灣標準的字體歡迎推薦給我!!!!&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;下載之後把檔案放在以下目錄&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;./fonts/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./fonts/
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;或是放到系統資料夾&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;/usr/share/fonts/
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;/usr/share/fonts/
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;兩者選一個就可以了，前者是使用者自己的，後者是整個系統的。不過後面還是要修改系統檔案，還是建議以系統為主。然後修改字體優先順序檔案。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo vim /etc/fonts/conf.d/69-language-selector-zh-tw.conf
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo vim /etc/fonts/conf.d/69-language-selector-zh-tw.conf
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;找到類似&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;          &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;strong&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;          &lt;span class="nt"&gt;&amp;lt;edit&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;family&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;mode=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;prepend&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;binding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;strong&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
             &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;AR PL New Sung&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
             &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;AR PL UMing TW&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
             &lt;span class="nt"&gt;&amp;lt;string&amp;gt;&lt;/span&gt;AR PL UMing HK&lt;span class="nt"&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
@@ -658,21 +694,23 @@ Part III - laravel Quickstart&lt;/p&gt;
 
 &lt;p&gt;這樣的東西，應該會有三個，然後將教育部宋體字型檔的英文名稱「MOESongUN Regular」放到第一個，然後將「AR PL New Sung」放到第二個， &lt;strong&gt;三個&lt;/strong&gt; 都要做這樣的設定&lt;/p&gt;
 &lt;p&gt;之所以要把「AR PL New Sung」放到第二個是因為教育部的字體並沒有簡體中文，為了讓簡體文章不會看起來很詭異所以把類似的有簡體字的字體放在第二順位，才不會造成字體詭異的狀況(參考下圖)
-&lt;img alt="螢幕擷圖存為 2014-01-16 17:52:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/ikbaiuLSKGOUWA131LWm_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:52:36.png" /&gt;&lt;/p&gt;
+&lt;img alt="螢幕擷圖存為 2014-01-16 17:52:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/ikbaiuLSKGOUWA131LWm_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2017:52:36.png"&gt;&lt;/p&gt;
 &lt;p&gt;最後附上一張教育部宋體字形檔的圖片&lt;/p&gt;
-&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png" /&gt;&lt;/p&gt;</summary></entry><entry><title>保護眼睛? Redshift</title><link href="https://mics.tw/posts/2014/01/eye-protection-redshift/" rel="alternate"></link><updated>2014-01-01T06:50:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-01:posts/2014/01/eye-protection-redshift/</id><summary type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="螢幕擷圖存為 2014-01-16 18:12:36.png" src="http://user-image.logdown.io/user/6349/blog/6343/post/175873/A54cYVeQWz1HhbTGGsga_%E8%9E%A2%E5%B9%95%E6%93%B7%E5%9C%96%E5%AD%98%E7%82%BA%202014-01-16%2018:12:36.png"&gt;&lt;/p&gt;</content></entry><entry><title>保護眼睛? Redshift</title><link href="https://mics.tw/posts/2014/01/eye-protection-redshift/" rel="alternate"></link><published>2014-01-01T06:50:00+08:00</published><updated>2014-01-01T06:50:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2014-01-01:/posts/2014/01/eye-protection-redshift/</id><summary type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
+&lt;p&gt;詳細安裝方法請繼續閱讀&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;今天回老家的時候，我跟跟我推薦了一個保護眼睛的軟體，叫做&lt;a href="http://justgetflux.com/"&gt;f.lux&lt;/a&gt;，不過他用在ubuntu會有一些莫名其妙的小問題，我也解決不了只好找替代軟體了，上網搜尋了一下找到&lt;a href="http://jonls.dk/redshift/"&gt;Redshift&lt;/a&gt;這套軟體，於是就把他裝上去了。&lt;/p&gt;
 &lt;p&gt;詳細安裝方法請繼續閱讀&lt;/p&gt;
 
 
 &lt;p&gt;因為Ubuntu 13.10套件庫內已經有了，所以直接安裝即可&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo apt-get install gtk-redshift redshift python-appindicator
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install gtk-redshift redshift python-appindicator
 gtk-redshift
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;以上為安裝和執行
 如果要自訂設定請下以下指令&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;vim ~/.config/redshift.conf
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;vim ~/.config/redshift.conf
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -715,7 +753,7 @@ lon=121.00
 ;hawaii :D
 ; lat=21.28
 ; lon=157.81&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;這是我的設定檔，給大家參考參考&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;這是我的設定檔，給大家參考參考&lt;/span&gt;
 
 
 &lt;span class="err"&gt;如果想要自動執行&lt;/span&gt;
@@ -735,7 +773,13 @@ lon=121.00
 &lt;span class="n"&gt;GenericName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;gtk&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;redshift&lt;/span&gt;
 &lt;span class="n"&gt;X&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;GNOME&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;FullName&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;Redshift&lt;/span&gt;
 &lt;span class="n"&gt;Comment&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;good&lt;/span&gt; &lt;span class="nl"&gt;redshift&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;D&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>html box sizing</title><link href="https://mics.tw/posts/2013/12/html-box-sizing/" rel="alternate"></link><updated>2013-12-29T12:25:25+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-29:posts/2013/12/html-box-sizing/</id><summary type="html">&lt;p&gt;以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</content></entry><entry><title>html box sizing</title><link href="https://mics.tw/posts/2013/12/html-box-sizing/" rel="alternate"></link><published>2013-12-29T12:25:25+08:00</published><updated>2013-12-29T12:25:25+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-29:/posts/2013/12/html-box-sizing/</id><summary type="html">&lt;p&gt;以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;border&lt;/li&gt;
+&lt;li&gt;padding&lt;/li&gt;
+&lt;li&gt;width&lt;/li&gt;
+&lt;/ul&gt;
+</summary><content type="html">&lt;p&gt;以前在寫網頁CSS的時候下面這三個加起來，會等於你的總寬度&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;border&lt;/li&gt;
 &lt;li&gt;padding&lt;/li&gt;
@@ -744,32 +788,33 @@ lon=121.00
 
 
 &lt;p&gt;但是大家覺得數學並不好玩，所以到了新世代，應該要有新方法，以下這個方法適用於IE8以上&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
-     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;webkit&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari/Chrome, other WebKit */&lt;/span&gt;
-     &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;moz&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;    &lt;span class="c"&gt;/* Firefox, other Gecko */&lt;/span&gt;
-     &lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sizing&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;border&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;         &lt;span class="c"&gt;/* Opera/IE 8+ */&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+     &lt;span class="kp"&gt;-webkit-&lt;/span&gt;&lt;span class="k"&gt;box-sizing&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;border-box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="c"&gt;/* Safari/Chrome, other WebKit */&lt;/span&gt;
+     &lt;span class="kp"&gt;-moz-&lt;/span&gt;&lt;span class="k"&gt;box-sizing&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;border-box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;    &lt;span class="c"&gt;/* Firefox, other Gecko */&lt;/span&gt;
+     &lt;span class="k"&gt;box-sizing&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;border-box&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;         &lt;span class="c"&gt;/* Opera/IE 8+ */&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;這個方法呢，會讓&lt;em&gt;內容+padding+border = 設定寬度&lt;/em&gt;，多美好阿:D&lt;/p&gt;
 &lt;h2&gt;參考資料&lt;/h2&gt;
-&lt;p&gt;&lt;a href=""&gt;http://zh.learnlayout.com/box-sizing.html&lt;/a&gt;&lt;/p&gt;</summary></entry><entry><title>Netbeans On Ubuntu字體優化</title><link href="https://mics.tw/posts/2013/12/ubuntu-fonts-optimization/" rel="alternate"></link><updated>2013-12-28T12:15:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-28:posts/2013/12/ubuntu-fonts-optimization/</id><summary type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;http://zh.learnlayout.com/box-sizing.html&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Netbeans On Ubuntu字體優化</title><link href="https://mics.tw/posts/2013/12/ubuntu-fonts-optimization/" rel="alternate"></link><published>2013-12-28T12:15:00+08:00</published><updated>2013-12-28T12:15:00+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-28:/posts/2013/12/ubuntu-fonts-optimization/</id><summary type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;最近在公司開發php的專案，使用Netbeans來作開發，但是在Ubuntu上字體有夠詭異的，所以就開始上網找解決方案了。&lt;/p&gt;
 
 
 &lt;p&gt;教學:&lt;/p&gt;
 &lt;p&gt;在Netbean中的設定檔 ./netbeans-7.x/etc/netbeans.conf 裡面找到&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;netbeans_default_options=&amp;quot;-J-xxxx -J-xxxx&amp;quot;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;netbeans_default_options=&amp;quot;-J-xxxx -J-xxxx&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;然後在這段的最後雙引號(")前 加上&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;-J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;-J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;看起來會像這樣&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;netbeans_default_options=&amp;quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J -Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-D sun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemo ryMapping=true -J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd&amp;quot;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;netbeans_default_options=&amp;quot;-J-client -J-Xss2m -J-Xms32m -J-XX:PermSize=32m -J -Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-D sun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemo ryMapping=true -J-Dswing.aatext=true -J-Dawt.useSystemAAFontSettings=lcd&amp;quot;
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -794,7 +839,11 @@ lon=121.00
 &lt;h2&gt;參考資料&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://blog.lyhdev.com/2013/11/netbeans-ide-on-ubuntu-linux.html"&gt;NetBeans IDE 字型美化 on Ubuntu Linux&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>第一次使用Octopress</title><link href="https://mics.tw/posts/2013/12/first-use-octopress/" rel="alternate"></link><updated>2013-12-23T09:31:52+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-23:posts/2013/12/first-use-octopress/</id><summary type="html">&lt;p&gt;第一次使用octopress :D&lt;/p&gt;
+&lt;/ul&gt;</content></entry><entry><title>第一次使用Octopress</title><link href="https://mics.tw/posts/2013/12/first-use-octopress/" rel="alternate"></link><published>2013-12-23T09:31:52+08:00</published><updated>2013-12-23T09:31:52+08:00</updated><author><name>Mics</name></author><id>tag:mics.tw,2013-12-23:/posts/2013/12/first-use-octopress/</id><summary type="html">&lt;p&gt;第一次使用octopress :D&lt;/p&gt;
+&lt;p&gt;用git的方式和markdown來撰寫blog&lt;/p&gt;
+&lt;p&gt;可以用vim來寫blog&lt;/p&gt;
+&lt;p&gt;好特別XDDD&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;第一次使用octopress :D&lt;/p&gt;
 &lt;p&gt;用git的方式和markdown來撰寫blog&lt;/p&gt;
 &lt;p&gt;可以用vim來寫blog&lt;/p&gt;
 &lt;p&gt;好特別XDDD&lt;/p&gt;
@@ -805,4 +854,4 @@ lon=121.00
 &lt;li&gt;http://markdown.tw/ - markdown語法教學&lt;/li&gt;
 &lt;li&gt;http://octopress.org/docs/setup/ - octopress初始化教學&lt;/li&gt;
 &lt;li&gt;http://octopress.org/docs/deploying/github/ - octopress on github教學&lt;/li&gt;
-&lt;/ul&gt;</summary></entry></feed>
+&lt;/ul&gt;</content></entry></feed>

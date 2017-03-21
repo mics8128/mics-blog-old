@@ -128,11 +128,11 @@ Mics.tw            </a>
 <ul>
 <li>首先以<strong>系統管理員</strong>模式開啟cmd.exe</li>
 </ul>
-<p><img alt="開啟cmd.exe" src="https://mics.tw/images/2015-12-01/1.png" /></p>
+<p><img alt="開啟cmd.exe" src="https://mics.tw/images/2015-12-01/1.png"></p>
 <ul>
 <li>然後執行以下指令</li>
 </ul>
-<div class="highlight"><pre><span class="k">@powershell</span> <span class="nt">-NoProfile</span> <span class="nt">-ExecutionPolicy</span> <span class="nt">Bypass</span> <span class="nt">-Command</span> <span class="s2">&quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot;</span> <span class="o">&amp;&amp;</span> <span class="nt">SET</span> <span class="nt">PATH</span><span class="o">=%</span><span class="nt">PATH</span><span class="o">%</span><span class="p">;</span><span class="o">%</span><span class="nt">ALLUSERSPROFILE</span><span class="o">%</span><span class="err">\</span><span class="nt">chocolatey</span><span class="err">\</span><span class="nt">bin</span>
+<div class="highlight"><pre><span></span><span class="p">@</span><span class="k">powershell</span> <span class="nt">-NoProfile</span> <span class="nt">-ExecutionPolicy</span> <span class="nt">Bypass</span> <span class="nt">-Command</span> <span class="s2">&quot;iex ((new-object net.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot;</span> <span class="o">&amp;&amp;</span> <span class="nt">SET</span> <span class="nt">PATH</span><span class="o">=%</span><span class="nt">PATH</span><span class="o">%</span><span class="p">;</span><span class="o">%</span><span class="nt">ALLUSERSPROFILE</span><span class="o">%</span><span class="err">\</span><span class="nt">chocolatey</span><span class="err">\</span><span class="nt">bin</span>
 </pre></div>
 
 
@@ -141,11 +141,11 @@ Mics.tw            </a>
 <li>我在測試時會看到一些警告訊息, 但是不影響使用, 所以可以繼續以下步驟.</li>
 <li>接下來關閉 cmd.exe 然後以<strong>系統管理員</strong>模式打開 powershell (不要開錯了喔, 是 powershell 不是 cmd.exe )</li>
 </ul>
-<p><img alt="開啟powershell" src="https://mics.tw/images/2015-12-01/2.png" /></p>
+<p><img alt="開啟powershell" src="https://mics.tw/images/2015-12-01/2.png"></p>
 <ul>
 <li>然後執行以下指令</li>
 </ul>
-<div class="highlight"><pre>choco install powershell -y
+<div class="highlight"><pre><span></span>choco install powershell -y
 </pre></div>
 
 
@@ -164,14 +164,14 @@ Mics.tw            </a>
 <li>接下來確認 powershell 是否成功的更新了</li>
 <li>確認方法: 打開 powershell (不需要管理權限)後執行</li>
 </ul>
-<div class="highlight"><pre><span class="p">$</span><span class="nv">PSVersionTable</span><span class="p">.</span><span class="nv">PSVersion</span><span class="x"></span>
+<div class="highlight"><pre><span></span>$PSVersionTable.PSVersion
 </pre></div>
 
 
 <ul>
 <li>最後會看到以下訊息就是正確升級了</li>
 </ul>
-<div class="highlight"><pre>Major  Minor  Build  Revision
+<div class="highlight"><pre><span></span>Major  Minor  Build  Revision
 -----  -----  -----  --------
 4      0      -1     -1
 </pre></div>
@@ -257,18 +257,13 @@ Mics.tw            </a>
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mics.tw/tag/windows.html">
                             windows
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -276,9 +271,9 @@ Mics.tw            </a>
                             laravel
                         </a>
                     </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/linux.html">
-                            linux
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -287,23 +282,13 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/software.html">
+                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/software.html">
-                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -317,8 +302,23 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/babun.html">
                             babun
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/linux.html">
+                            linux
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">

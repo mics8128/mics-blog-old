@@ -135,18 +135,18 @@ Mics.tw            </a>
 <ul>
 <li>請先打開 powershell 執行</li>
 </ul>
-<div class="highlight"><pre>    set-executionpolicy unrestricted -s cu
+<div class="highlight"><pre><span></span>    set-executionpolicy unrestricted -s cu
 </pre></div>
 
 
 <ul>
 <li>然後按Y後按 Enter</li>
 </ul>
-<p><img alt="執行原則變更" src="https://mics.tw/images/2015-11-19/1.png" /></p>
+<p><img alt="執行原則變更" src="https://mics.tw/images/2015-11-19/1.png"></p>
 <ul>
 <li>接下來先安裝 scoop 然後安裝 php</li>
 </ul>
-<div class="highlight"><pre>    iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
+<div class="highlight"><pre><span></span>    iex (new-object net.webclient).downloadstring(&#39;https://get.scoop.sh&#39;)
     scoop install php
 </pre></div>
 
@@ -154,15 +154,15 @@ Mics.tw            </a>
 <ul>
 <li>靜待安裝完畢</li>
 </ul>
-<p><img alt="安裝scoop與php" src="https://mics.tw/images/2015-11-19/2.png" /></p>
+<p><img alt="安裝scoop與php" src="https://mics.tw/images/2015-11-19/2.png"></p>
 <ul>
 <li>測試 php 是否正常執行</li>
 </ul>
-<p><img alt="測試php是否正常執行" src="https://mics.tw/images/2015-11-19/3.png" /></p>
+<p><img alt="測試php是否正常執行" src="https://mics.tw/images/2015-11-19/3.png"></p>
 <ul>
 <li>到<code>C:\Users\YOUR USER NAME\AppData\Local\scoop</code></li>
 </ul>
-<p><img alt="找到scoop" src="https://mics.tw/images/2015-11-19/4.png" /></p>
+<p><img alt="找到scoop" src="https://mics.tw/images/2015-11-19/4.png"></p>
 <ul>
 <li>
 <p>三個資料夾的功能分別是</p>
@@ -179,21 +179,21 @@ Mics.tw            </a>
 <p>搜尋</p>
 </li>
 </ul>
-<div class="highlight"><pre>; extension_dir = &quot;ext&quot;
+<div class="highlight"><pre><span></span>; extension_dir = &quot;ext&quot;
 </pre></div>
 
 
 <ul>
 <li>改成 (注意 <strong>YOUR USER NAME</strong> 和版本號 <strong>5.6.15</strong>可能會不同，請自行隨機應變)</li>
 </ul>
-<div class="highlight"><pre>extension_dir = &quot;C:\Users\YOUR USER NAME\AppData\Local\scoop\apps\php\5.6.15\ext&quot;
+<div class="highlight"><pre><span></span>extension_dir = &quot;C:\Users\YOUR USER NAME\AppData\Local\scoop\apps\php\5.6.15\ext&quot;
 </pre></div>
 
 
 <ul>
 <li>再找到</li>
 </ul>
-<div class="highlight"><pre>;extension=php_openssl.dll
+<div class="highlight"><pre><span></span>;extension=php_openssl.dll
 </pre></div>
 
 
@@ -208,26 +208,26 @@ Mics.tw            </a>
 <p>進入執行檔目錄(composer直接安裝在這裡)</p>
 </li>
 </ul>
-<div class="highlight"><pre>cd \Users\YOUR USER NAME\AppData\Local\scoop\shims
+<div class="highlight"><pre><span></span>cd \Users\YOUR USER NAME\AppData\Local\scoop\shims
 </pre></div>
 
 
 <ul>
 <li>安裝composer並設定執行script</li>
 </ul>
-<div class="highlight"><pre><span class="nt">php</span> <span class="nt">-r</span> <span class="s2">&quot;readfile(&#39;https://getcomposer.org/installer&#39;);&quot;</span> <span class="o">|</span> <span class="nt">php</span>
-<span class="nt">wget</span> <span class="nt">https</span><span class="o">://</span><span class="nt">gist</span><span class="nc">.githubusercontent.com</span><span class="o">/</span><span class="nt">mics8128</span><span class="o">/</span><span class="nt">de1ea57536a56aa48673</span><span class="o">/</span><span class="nt">raw</span><span class="o">/</span><span class="nt">268f1c15091a728ef2e051a81a5980c4531d89af</span><span class="o">/</span><span class="nt">composer</span><span class="nc">.bat</span> <span class="nt">-OutFile</span> <span class="nt">composer</span><span class="nc">.bat</span>
+<div class="highlight"><pre><span></span><span class="nt">php</span> <span class="nt">-r</span> <span class="s2">&quot;readfile(&#39;https://getcomposer.org/installer&#39;);&quot;</span> <span class="o">|</span> <span class="nt">php</span>
+<span class="nt">wget</span> <span class="nt">https</span><span class="o">://</span><span class="nt">gist</span><span class="p">.</span><span class="nc">githubusercontent</span><span class="p">.</span><span class="nc">com</span><span class="o">/</span><span class="nt">mics8128</span><span class="o">/</span><span class="nt">de1ea57536a56aa48673</span><span class="o">/</span><span class="nt">raw</span><span class="o">/</span><span class="nt">268f1c15091a728ef2e051a81a5980c4531d89af</span><span class="o">/</span><span class="nt">composer</span><span class="p">.</span><span class="nc">bat</span> <span class="nt">-OutFile</span> <span class="nt">composer</span><span class="p">.</span><span class="nc">bat</span>
 </pre></div>
 
 
 <ul>
 <li>最後測試我們的 composer 有沒有正常</li>
 </ul>
-<div class="highlight"><pre>composer.bat
+<div class="highlight"><pre><span></span>composer.bat
 </pre></div>
 
 
-<p><img alt="composer test" src="https://mics.tw/images/2015-11-19/5.png" /></p>
+<p><img alt="composer test" src="https://mics.tw/images/2015-11-19/5.png"></p>
 <h1>大功告成拉~ YA</h1>
 <h2>以下是選用安裝的軟體 都只要一個指令喔^.&lt;</h2>
 <ul>
@@ -316,18 +316,13 @@ Mics.tw            </a>
             <li class="list-group-item"><a href="https://mics.tw/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group " id="tags">
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/composer.html">
-                            composer
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-1">
                         <a href="https://mics.tw/tag/windows.html">
                             windows
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
-                        <a href="https://mics.tw/tag/php.html">
-                            php
+                        <a href="https://mics.tw/tag/composer.html">
+                            composer
                         </a>
                     </li>
                     <li class="list-group-item tag-1">
@@ -335,9 +330,9 @@ Mics.tw            </a>
                             laravel
                         </a>
                     </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/linux.html">
-                            linux
+                    <li class="list-group-item tag-1">
+                        <a href="https://mics.tw/tag/php.html">
+                            php
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -346,23 +341,13 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/python.html">
-                            python
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/pelican.html">
-                            pelican
+                        <a href="https://mics.tw/tag/software.html">
+                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/training.html">
                             training
-                        </a>
-                    </li>
-                    <li class="list-group-item tag-4">
-                        <a href="https://mics.tw/tag/software.html">
-                            software
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
@@ -376,8 +361,23 @@ Mics.tw            </a>
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/python.html">
+                            python
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
                         <a href="https://mics.tw/tag/babun.html">
                             babun
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/linux.html">
+                            linux
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="https://mics.tw/tag/pelican.html">
+                            pelican
                         </a>
                     </li>
                     <li class="list-group-item tag-4">
